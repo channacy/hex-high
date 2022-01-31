@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "EventCard",
+"language": "GDScript",
+"path": "res://EventCard.gd"
+}, {
+"base": "Resource",
+"class": "EventCardData",
+"language": "GDScript",
+"path": "res://EventCardData.gd"
+}, {
+"base": "Resource",
+"class": "OptionCardData",
+"language": "GDScript",
+"path": "res://OptionCardData.gd"
+} ]
+_global_script_class_icons={
+"EventCard": "",
+"EventCardData": "",
+"OptionCardData": ""
+}
+
+[application]
+
+config/name="Hex High"
+run/main_scene="res://Menu.tscn"
+config/icon="res://sprites/icon.png"
+
+[autoload]
+
+Global="*res://Global.gd"
+
+[physics]
+
+common/enable_pause_aware_picking=true

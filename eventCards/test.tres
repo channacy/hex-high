@@ -1,9 +1,42 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=9 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
+[ext_resource path="res://EffectData.gd" type="Script" id=3]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 3 )
+addId = [  ]
+addCategory = [  ]
+removeId = [  ]
+removeCategory = [  ]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+flavorText = "test 1"
+effectText = "test 1w"
+effectData = SubResource( 4 )
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 3 )
+addId = [  ]
+addCategory = [  ]
+removeId = [  ]
+removeCategory = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+flavorText = "test 2"
+effectText = "test 2w"
+effectData = SubResource( 5 )
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+flavorText = "test 3"
+effectText = "test 3 w"
 
 [resource]
 script = ExtResource( 1 )
 id = ""
-categories = [  ]
-options = [  ]
+tags = [  ]
+options = [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ) ]

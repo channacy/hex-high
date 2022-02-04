@@ -9,7 +9,12 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Node",
+"base": "Resource",
+"class": "EffectData",
+"language": "GDScript",
+"path": "res://EffectData.gd"
+}, {
+"base": "Area2D",
 "class": "EventCard",
 "language": "GDScript",
 "path": "res://EventCard.gd"
@@ -19,14 +24,21 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://EventCardData.gd"
 }, {
+"base": "Area2D",
+"class": "OptionCard",
+"language": "GDScript",
+"path": "res://OptionCard.gd"
+}, {
 "base": "Resource",
 "class": "OptionCardData",
 "language": "GDScript",
 "path": "res://OptionCardData.gd"
 } ]
 _global_script_class_icons={
+"EffectData": "",
 "EventCard": "",
 "EventCardData": "",
+"OptionCard": "",
 "OptionCardData": ""
 }
 

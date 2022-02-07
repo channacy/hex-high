@@ -5,7 +5,7 @@ var eventCardNode = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	loadEvent("test", false)
+	#loadEvent("test", false)
 	print_tree()
 
 # Creates an event card node and initializes it
@@ -22,10 +22,14 @@ func execute(effectData):
 		optionCardNode.queue_free()
 	eventCardNode.queue_free()
 	
+
 	# Since the deck and hand are not implemented yet, this function cannot be fully implemented
 	# Instead, it just loads the test event card again
-	loadEvent("test", false)
+	#loadEvent("test", false)
 
 # Returns true if there is an active event card on the board
 func hasEventCard():
 	return is_instance_valid(eventCardNode)
+
+	#loadEvent("test", false)
+

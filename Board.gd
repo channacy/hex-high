@@ -10,7 +10,7 @@ func _ready():
 
 # Creates an event card node and initializes it
 func loadEvent(eventCardId, faceUp):
-	if not eventCardNode == null:
+	if is_instance_valid(eventCardNode):
 		eventCardNode.queue_free()
 	eventCardNode = load("res://EventCard.tscn").instance()
 	eventCardNode.setup(eventCardId, faceUp)
@@ -25,3 +25,7 @@ func execute(effectData):
 	# Since the deck and hand are not implemented yet, this function cannot be fully implemented
 	# Instead, it just loads the test event card again
 	loadEvent("test", false)
+
+# Returns true if there is an active event card on the board
+func hasEventCard():
+	return is_instance_valid(eventCardNode)

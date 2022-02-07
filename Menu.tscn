@@ -22,6 +22,9 @@ margin_right = 200.0
 margin_bottom = 50.0
 grow_horizontal = 2
 grow_vertical = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Control" type="Control" parent="."]
 anchor_left = 0.5

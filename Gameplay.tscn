@@ -15,18 +15,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Deck" type="Area2D" parent="."]
-script = ExtResource( 3 )
-
-[node name="Sprite" type="Sprite" parent="Deck"]
-position = Vector2( 115, 233 )
-scale = Vector2( 0.1, 0.1 )
-texture = ExtResource( 2 )
-
-[node name="DeckHitbox" type="CollisionShape2D" parent="Deck"]
-position = Vector2( 115, 233 )
-shape = SubResource( 1 )
-
 [node name="Board" type="Control" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
@@ -37,3 +25,23 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Deck" type="Control" parent="."]
+margin_left = 122.0
+margin_top = 150.0
+margin_right = 122.0
+margin_bottom = 150.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="Deck"]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Deck/Area2D"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )
+
+[node name="DeckHitbox" type="CollisionShape2D" parent="Deck/Area2D"]
+visible = false
+shape = SubResource( 1 )

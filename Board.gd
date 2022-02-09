@@ -31,5 +31,3 @@ func execute(effectData):
 func hasEventCard():
 	return is_instance_valid(eventCardNode)
 
-	#loadEvent("test", false)
-

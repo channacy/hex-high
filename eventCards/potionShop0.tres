@@ -1,0 +1,39 @@
+[gd_resource type="Resource" load_steps=9 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://EffectData.gd" type="Script" id=2]
+[ext_resource path="res://sprites/defaultFront.png" type="Texture" id=3]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+addId = [  ]
+addCategory = [ "potionShop" ]
+removeId = [  ]
+removeCategory = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 4 )
+flavorText = "Accept"
+effectText = "Add \"Matilda's Potion Shop\" cards to the deck"
+effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+addId = [  ]
+addCategory = [  ]
+removeId = [  ]
+removeCategory = [  ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 4 )
+flavorText = "Decline"
+effectText = ""
+effectData = SubResource( 3 )
+
+[resource]
+script = ExtResource( 1 )
+id = "potionShop0"
+tags = [ "acceptWork", "declineWork" ]
+face = ExtResource( 3 )
+options = [ SubResource( 2 ), SubResource( 4 ) ]

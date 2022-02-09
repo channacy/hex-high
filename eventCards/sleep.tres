@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=9 format=2]
+[gd_resource type="Resource" load_steps=11 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://EffectData.gd" type="Script" id=2]
@@ -14,8 +14,8 @@ removeCategory = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
-flavorText = "Pay "
-effectText = "Decrease Resources"
+flavorText = "Sleep"
+effectText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -27,13 +27,26 @@ removeCategory = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
-flavorText = "Sell "
-effectText = "Decrease Resources"
+flavorText = "Nap "
+effectText = ""
 effectData = SubResource( 3 )
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 2 )
+addId = [  ]
+addCategory = [ "schoolEventCards" ]
+removeId = [  ]
+removeCategory = [  ]
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 4 )
+flavorText = "Awake "
+effectText = ""
+effectData = SubResource( 5 )
 
 [resource]
 script = ExtResource( 1 )
-id = "schoolEvent3"
-tags = [ "tutiton", "schoolEvent" ]
+id = "schoolEvent0"
+tags = [ "sleep", "schoolEvent" ]
 face = ExtResource( 3 )
-options = [ SubResource( 2 ), SubResource( 4 ) ]
+options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ) ]

@@ -7,7 +7,7 @@ export(Array, String) var tags = []
 
 # Event card textures
 export(Texture) var face = load("res://sprites/defaultFront.png")
-export(Texture) var back = load("res://sprites/eventBack.jpg")
+var back = load("res://sprites/eventBack.jpg")
 
 #Option cards
 export(Array, Resource) var options = []

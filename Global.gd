@@ -12,11 +12,13 @@ func _ready():
 	dir.open("res://eventCards/")
 	dir.list_dir_begin()
 	
+	#Goes through everything in the eventCard directory
 	while true:
 		var file = dir.get_next()
 		if file == "":
 			break
 		elif not file.begins_with("."):
+			# Adds to a dictionary {'cardID : eventCardData'}
 			files[str(load("res://eventCards/" + file).id)] = load("res://eventCards/" + file)
 	
 	print(files)

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://EffectData.gd" type="Script" id=2]
-[ext_resource path="res://sprites/defaultFront.png" type="Texture" id=3]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=4]
 
 [sub_resource type="Resource" id=1]
@@ -34,6 +34,6 @@ effectData = SubResource( 3 )
 [resource]
 script = ExtResource( 1 )
 id = "scenario0"
-tags = [ "scenario", "" ]
+tags = [ "scenario", "oldWitch" ]
 face = ExtResource( 3 )
 options = [ SubResource( 2 ), SubResource( 4 ) ]

@@ -1,8 +1,8 @@
 extends Area2D
 
 var board = null
-# to be finished array of event cards - strings 
-var cards = ["potionShop0", "potionShop1", "Scenario0","sleep", "study","tuition", ]
+# array of event cards from folder called eventCards
+var cards = ["potionShop0", "potionShop1", "Scenario0","sleep", "study","tuition", "shopping"]
 var randomNum = RandomNumberGenerator.new()
 var myRandomNum = 0 
 # Finds the board in the hierarchy and saves it for later use

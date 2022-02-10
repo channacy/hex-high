@@ -1,39 +1,39 @@
 [gd_resource type="Resource" load_steps=9 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
-[ext_resource path="res://EffectData.gd" type="Script" id=2]
-[ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
+[ext_resource path="res://EffectData.gd" type="Script" id=3]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=4]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 addId = [  ]
-addCategory = [ "schoolEventCards" ]
+addCategory = [ "scenarioCards" ]
 removeId = [  ]
 removeCategory = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
-flavorText = "Pay "
-effectText = "Decrease Resources"
+flavorText = "Brew a Potion to Defend yourself "
+effectText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 addId = [  ]
-addCategory = [ "schoolEventCards" ]
+addCategory = [  ]
 removeId = [  ]
 removeCategory = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
-flavorText = "Sell "
-effectText = "Decrease Resources"
+flavorText = "Ignore "
+effectText = ""
 effectData = SubResource( 3 )
 
 [resource]
 script = ExtResource( 1 )
-id = "schoolEvent3"
-tags = [ "tutiton", "schoolEvent" ]
-face = ExtResource( 3 )
+id = "scenario4"
+tags = [ "scenario", "virus" ]
+face = ExtResource( 2 )
 options = [ SubResource( 2 ), SubResource( 4 ) ]

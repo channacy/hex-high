@@ -6,6 +6,20 @@ var current_scene = null
 func _ready():
 	var root = get_tree().get_root()
 	current_scene = root.get_child(root.get_child_count() - 1)
+	#Files dictionary of the id : eventCard
+	var files = {}
+	var dir = Directory.new()
+	dir.open("res://eventCards/")
+	dir.list_dir_begin()
+	
+	while true:
+		var file = dir.get_next()
+		if file == "":
+			break
+		elif not file.begins_with("."):
+			files[str(load("res://eventCards/" + file).id)] = load("res://eventCards/" + file)
+	
+	print(files)
 	
 # Switches the active scene to the one given by the path
 func goto_scene(path):

@@ -37,7 +37,7 @@ effectText = "test 3 w"
 
 [resource]
 script = ExtResource( 1 )
-id = ""
+id = "test"
 tags = [  ]
 eventText = "test card"
 infinite = false

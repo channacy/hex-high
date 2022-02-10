@@ -1,8 +1,9 @@
-[gd_resource type="Resource" load_steps=9 format=2]
+[gd_resource type="Resource" load_steps=10 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=2]
 [ext_resource path="res://EffectData.gd" type="Script" id=3]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 3 )
@@ -37,8 +38,9 @@ effectText = "test 3 w"
 
 [resource]
 script = ExtResource( 1 )
-id = ""
+id = "test"
 tags = [  ]
 eventText = "test card"
+face = ExtResource( 4 )
 infinite = false
 options = [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ) ]

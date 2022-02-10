@@ -35,5 +35,7 @@ effectData = SubResource( 3 )
 script = ExtResource( 1 )
 id = "potionShop1"
 tags = [ "acceptWork1", "declineWork1" ]
+eventText = "A job opening at Rose's"
 face = ExtResource( 3 )
+infinite = false
 options = [ SubResource( 2 ), SubResource( 4 ) ]

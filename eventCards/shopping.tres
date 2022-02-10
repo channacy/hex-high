@@ -35,5 +35,7 @@ effectData = SubResource( 3 )
 script = ExtResource( 1 )
 id = "schoolEventCard2"
 tags = [ "schoolEvent", "shopping" ]
+eventText = "The travelling merchant is in town!"
 face = ExtResource( 2 )
+infinite = false
 options = [ SubResource( 2 ), SubResource( 4 ) ]

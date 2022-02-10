@@ -40,7 +40,7 @@ removeCategory = [  ]
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 4 )
-flavorText = "Stay Awake "
+flavorText = "Awake "
 effectText = ""
 effectData = SubResource( 5 )
 
@@ -48,5 +48,7 @@ effectData = SubResource( 5 )
 script = ExtResource( 1 )
 id = "schoolEvent0"
 tags = [ "sleep", "schoolEvent" ]
+eventText = "Maybe I should go to bed..."
 face = ExtResource( 3 )
+infinite = false
 options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ) ]

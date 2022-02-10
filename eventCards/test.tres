@@ -39,4 +39,6 @@ effectText = "test 3 w"
 script = ExtResource( 1 )
 id = ""
 tags = [  ]
+eventText = "test card"
+infinite = false
 options = [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ) ]

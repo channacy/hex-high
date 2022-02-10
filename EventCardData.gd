@@ -5,9 +5,15 @@ class_name EventCardData
 export(String) var id = ""
 export(Array, String) var tags = []
 
+# Event card text
+export(String) var eventText = ""
+
 # Event card textures
 export(Texture) var face = load("res://sprites/defaultFront.png")
 var back = load("res://sprites/eventBack.jpg")
 
-#Option cards
+# If true, do not discard after drawn from the deck
+export(bool) var infinite = false
+
+# Option cards
 export(Array, Resource) var options = []

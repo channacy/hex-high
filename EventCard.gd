@@ -19,17 +19,21 @@ func setup(dataId, faceUp):
 	cardData = load("res://eventCards/" + dataId + ".tres")
 	if faceUp:
 		$Sprite.texture = cardData.face
+		$EventContainer/EventText.bbcode_text = "[center][color=black]" + cardData.eventText + "[/color][/center]"
 	else:
 		$Sprite.texture = cardData.back
+		$EventContainer/EventText.bbcode_text = ""
 
 # Flips the card over, changing its state and sprite
 func flip():
 	if faceUp:
 		faceUp = false
 		$Sprite.texture = cardData.back
+		$EventContainer/EventText.bbcode_text = ""
 	else:
 		faceUp = true
 		$Sprite.texture = cardData.face
+		$EventContainer/EventText.bbcode_text = "[center][color=black]" + cardData.eventText + "[/color][/center]"
 
 # Spawns the option card nodes in the proper place and initializes them
 func spawn_options():

@@ -17,8 +17,8 @@ func setup(data, faceUp):
 		$EffectContainer/EffectText.bbcode_text = "[center][color=black]" + optionData.effectText + "[/color][/center]"
 	else:
 		$Sprite.texture = optionData.back
-		$FlavorText.bbcode_text = ""
-		$EffectText.bbcode_text = ""
+		$FlavorContainer/FlavorText.bbcode_text = ""
+		$EffectContainer/EffectText.bbcode_text = ""
 
 # Flips the card over, changing its state, sprite, and text
 func flip():

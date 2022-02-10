@@ -35,5 +35,7 @@ effectData = SubResource( 3 )
 script = ExtResource( 1 )
 id = "scenario0"
 tags = [ "scenario", "oldWitch" ]
+eventText = "An old lady needs help!"
 face = ExtResource( 3 )
+infinite = false
 options = [ SubResource( 2 ), SubResource( 4 ) ]

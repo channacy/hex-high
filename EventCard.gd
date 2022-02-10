@@ -4,6 +4,9 @@ class_name EventCard
 # Whether the card is face up or not
 export(bool) var faceUp = false
 
+# Whether the card is in the hand or not
+export(bool) var inHand = false
+
 # The data that is used to generate the card
 export(Resource) var cardData = null
 
@@ -54,7 +57,11 @@ func spawn_options():
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
 		if faceUp:
-			if not optionsRevealed:
+			if inHand:
+				get_node("../../Board").loadEvent(cardData.id, true)
+				self.queue_free()
+				get_node("../").updateHand()
+			elif not optionsRevealed:
 				spawn_options()
 		else:
 			flip()

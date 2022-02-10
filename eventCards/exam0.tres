@@ -48,5 +48,7 @@ effectData = SubResource( 5 )
 script = ExtResource( 3 )
 id = "alchemyExam"
 tags = [ "exam", "alchemy " ]
+eventText = "Time for your alchemy exam!"
 face = ExtResource( 1 )
+infinite = false
 options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ) ]

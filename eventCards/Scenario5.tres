@@ -35,5 +35,7 @@ effectData = SubResource( 3 )
 script = ExtResource( 1 )
 id = "scenario5"
 tags = [ "scenario", "olympiad " ]
+eventText = "A rival witch academia has challenged Hex High to a Magic Olympiad!"
 face = ExtResource( 2 )
+infinite = false
 options = [ SubResource( 2 ), SubResource( 4 ) ]

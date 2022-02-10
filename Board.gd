@@ -21,8 +21,6 @@ func execute(effectData):
 	for optionCardNode in eventCardNode.optionCards:
 		optionCardNode.queue_free()
 	eventCardNode.queue_free()
-	
-
 	# Since the deck and hand are not implemented yet, this function cannot be fully implemented
 	# Instead, it just loads the test event card again
 	#loadEvent("test", false)

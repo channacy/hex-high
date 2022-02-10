@@ -1,11 +1,13 @@
 extends Area2D
 
 var board = null
-
+# to be finished array of event cards - strings 
+var cards = ["potionShop0", "potionShop1", "Scenario0","sleep", "study","tuition", ]
+var randomNum = RandomNumberGenerator.new()
+var myRandomNum = 0 
 # Finds the board in the hierarchy and saves it for later use
 func _ready():
 	board = get_node("../../Board")
-
 # If left click the deck sprite, runs action.
 # In this case, when you click the deck, it will use the loadEvent fucntion from the Board.gd script
 func _input_event(viewport, event, shape_idx):
@@ -13,6 +15,13 @@ func _input_event(viewport, event, shape_idx):
 	and not board.hasEventCard() \
 	and event.button_index == BUTTON_LEFT \
 	and event.is_pressed():
+		randomNum.randomize()
+		myRandomNum = randomNum.randf_range(0, cards.size())
+		var cardId = cards[myRandomNum]
 		print("Yes")
-		board.loadEvent("test", false)
+		print(cardId)
+		board.loadEvent(cardId, false)
+
+		
+		
 

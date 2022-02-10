@@ -8,7 +8,7 @@
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
 addId = [  ]
-addCategory = [ "scenarioCards" ]
+addCategory = [ "scenarioCard" ]
 removeId = [  ]
 removeCategory = [  ]
 

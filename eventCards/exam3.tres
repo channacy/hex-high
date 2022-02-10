@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=9 format=2]
+[gd_resource type="Resource" load_steps=11 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
@@ -8,34 +8,45 @@
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
 addId = [  ]
-addCategory = [ "scenarioCard" ]
+addCategory = [  ]
 removeId = [  ]
 removeCategory = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
-flavorText = "Help Them"
+flavorText = "Cast a magic spell to create a flying broom "
 effectText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
 addId = [  ]
-addCategory = [  ]
+addCategory = [ "examCard" ]
 removeId = [  ]
 removeCategory = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
-flavorText = "Ignore Them"
+flavorText = "Fail"
 effectText = ""
 effectData = SubResource( 3 )
 
+[sub_resource type="Resource" id=5]
+script = ExtResource( 3 )
+addId = [  ]
+addCategory = [ "examCard" ]
+removeId = [  ]
+removeCategory = [  ]
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 4 )
+flavorText = "Save for Later"
+effectText = ""
+effectData = SubResource( 5 )
+
 [resource]
 script = ExtResource( 1 )
-id = "scenario2"
-tags = [ "scenario", "classmate" ]
-eventText = ""
+id = "sorceryCard"
+tags = [ "sorcery", "exam" ]
 face = ExtResource( 2 )
-infinite = false
-options = [ SubResource( 2 ), SubResource( 4 ) ]
+options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ) ]

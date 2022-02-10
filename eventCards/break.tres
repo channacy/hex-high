@@ -14,7 +14,7 @@ removeCategory = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
-flavorText = "Enjoy your rest!"
+flavorText = "Academia Break is here! Enjoy your rest!"
 effectText = "Add resources"
 effectData = SubResource( 1 )
 

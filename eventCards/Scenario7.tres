@@ -14,7 +14,7 @@ removeCategory = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
-flavorText = "Help Them"
+flavorText = "Join in the heist"
 effectText = ""
 effectData = SubResource( 1 )
 
@@ -27,15 +27,13 @@ removeCategory = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
-flavorText = "Ignore Them"
+flavorText = "Decline politely "
 effectText = ""
 effectData = SubResource( 3 )
 
 [resource]
 script = ExtResource( 1 )
-id = "scenario2"
-tags = [ "scenario", "classmate" ]
-eventText = ""
+id = "scenario7"
+tags = [ "scenario", "crime" ]
 face = ExtResource( 2 )
-infinite = false
 options = [ SubResource( 2 ), SubResource( 4 ) ]

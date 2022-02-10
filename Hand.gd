@@ -8,6 +8,7 @@ func _ready():
 	addCard("test")
 	pass # Replace with function body.
 
+# Adds a card to the hand
 func addCard(id):
 	var eventCardNode = load("res://EventCard.tscn").instance()
 	eventCardNode.setup(id, true)
@@ -16,6 +17,7 @@ func addCard(id):
 	add_child(eventCardNode)
 	updateHand()
 
+# After option card effects are implemented, this function will update the hand visually
 func updateHand():
 	pass
 

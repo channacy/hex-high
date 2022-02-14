@@ -40,3 +40,6 @@ __meta__ = {
 "_edit_use_anchors_": false,
 "_editor_description_": ""
 }
+
+[connection signal="area_entered" from="." to="." method="_on_EventCard_area_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_EventCard_mouse_exited"]

@@ -19,7 +19,8 @@ var optionsRevealed = false
 # Loads the data from resources by id - this needs to be called every time an EventCard is created
 func setup(dataId, faceUp):
 	self.faceUp = faceUp
-	cardData = load("res://eventCards/" + dataId + ".tres")
+	cardData = Global.files[dataId]
+	#load("res://eventCards/" + dataId + ".tres")
 	if faceUp:
 		$Sprite.texture = cardData.face
 		$EventContainer/EventText.bbcode_text = "[center][color=black]" + cardData.eventText + "[/color][/center]"
@@ -58,10 +59,19 @@ func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
 		if faceUp:
 			if inHand:
-				get_node("../../Board").loadEvent(cardData.id, true)
-				self.queue_free()
-				get_node("../").updateHand()
+				if not get_node("../../Board").hasEventCard() and get_node("../").highlighted == self.z_index:
+					get_node("../../Board").loadEvent(cardData.id, true)
+					self.queue_free()
+					get_node("../").removeCard(self)
 			elif not optionsRevealed:
 				spawn_options()
 		else:
 			flip()
+	elif inHand and event is InputEventMouse:
+		if get_node("../").highlighted < self.z_index:
+			get_node("../").highlighted = self.z_index
+
+# Resets the highlight if the mouse moves off of this card and it was highlighted
+func _on_EventCard_mouse_exited():
+	if inHand and get_node("../").highlighted == self.z_index:
+			get_node("../").highlighted = 0

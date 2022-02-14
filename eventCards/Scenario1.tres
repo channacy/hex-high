@@ -1,9 +1,9 @@
 [gd_resource type="Resource" load_steps=9 format=2]
 
-[ext_resource path="res://EventCardData.gd" type="Script" id=1]
-[ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=1]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
 [ext_resource path="res://EffectData.gd" type="Script" id=3]
-[ext_resource path="res://OptionCardData.gd" type="Script" id=4]
+[ext_resource path="res://EventCardData.gd" type="Script" id=4]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
@@ -13,7 +13,7 @@ removeId = [  ]
 removeCategory = [  ]
 
 [sub_resource type="Resource" id=2]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 flavorText = "Trade gold coins"
 effectText = "Add Resource"
 effectData = SubResource( 1 )
@@ -26,16 +26,16 @@ removeId = [  ]
 removeCategory = [  ]
 
 [sub_resource type="Resource" id=4]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 flavorText = "Trade textbooks"
 effectText = "Add Resource"
 effectData = SubResource( 3 )
 
 [resource]
-script = ExtResource( 1 )
+script = ExtResource( 4 )
 id = "scenario1"
 tags = [ "scenario", "tradesman" ]
 eventText = "A tradesman passes through Ethereal!"
-face = ExtResource( 2 )
+face = ExtResource( 1 )
 infinite = false
 options = [ SubResource( 2 ), SubResource( 4 ) ]

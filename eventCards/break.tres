@@ -20,7 +20,7 @@ effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 1 )
-id = "schoolEventCards"
+id = "break"
 tags = [ "schoolEventCard", "academiaBreak" ]
 eventText = "Academia Break is here!"
 face = ExtResource( 2 )

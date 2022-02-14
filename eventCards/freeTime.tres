@@ -33,8 +33,8 @@ effectData = SubResource( 3 )
 
 [resource]
 script = ExtResource( 1 )
-id = "schoolEvent5"
-tags = [ "schoolEvent", "" ]
+id = "freeTime"
+tags = [ "schoolEvent" ]
 eventText = "Free Time!"
 face = ExtResource( 2 )
 infinite = false

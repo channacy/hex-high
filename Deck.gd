@@ -2,9 +2,9 @@ extends Area2D
 
 var board = null
 # array of event cards from folder called eventCards
-var cards = ["potionShop0", "potionShop1", "Scenario0","sleep", "study", "tuition", "shopping", "exam0","exam1","exam2","exam3","Scenario1","Scenario2","Scenario3","Scenario4","Scenario5","Scenario6","Scenario7","break","freeTime"]
+var cards = ["potionShop0", "witchShop0", "scenario0", "sleep", "study", "tuition", "shopping", "alchemyExam", "artificeExam", "sorceryExam", "summoningExam", "exam3", "scenario1", "scenario2", "scenario3", "scenario4", "scenario5", "scenario6", "scenario7", "break", "freeTime"]
 var randomNum = RandomNumberGenerator.new()
-var myRandomNum = 0 
+var myRandomNum = 0
 
 # Finds the board in the hierarchy and saves it for later use
 func _ready():
@@ -23,7 +23,3 @@ func _input_event(viewport, event, shape_idx):
 		print("Yes")
 		print(cardId)
 		board.loadEvent(cardId, false)
-
-		
-		
-

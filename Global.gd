@@ -1,13 +1,13 @@
 extends Node
 
 var current_scene = null
+var files = {}
 
 # Gets the current scene
 func _ready():
 	var root = get_tree().get_root()
 	current_scene = root.get_child(root.get_child_count() - 1)
 	#Files dictionary of the id : eventCard
-	var files = {}
 	var dir = Directory.new()
 	dir.open("res://eventCards/")
 	dir.list_dir_begin()

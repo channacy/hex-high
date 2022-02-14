@@ -46,7 +46,7 @@ effectData = SubResource( 5 )
 
 [resource]
 script = ExtResource( 1 )
-id = "schoolEvent0"
+id = "sleep"
 tags = [ "sleep", "schoolEvent" ]
 eventText = "Maybe I should go to bed..."
 face = ExtResource( 3 )

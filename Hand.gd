@@ -30,7 +30,9 @@ func removeCard(node):
 func updateHand():
 	var num = len(eventCardNodes)
 	for card in num:
+		# Fan the cards out in 20 degree intervals
 		var angle = deg2rad(-(num-1)*10 + card * 20)
+		# If there are more than 5 cards, fan the cards out over a 100 degree arc
 		if num > 5:
 			angle = deg2rad(-(num-1)*(50.0/num) + card * (100.0/num))
 		

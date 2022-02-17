@@ -46,7 +46,7 @@ effectData = SubResource( 5 )
 
 [resource]
 script = ExtResource( 4 )
-id = "artifaceExam"
+id = "artificeExam"
 tags = [ "artiface", "exam" ]
 eventText = "Time for your Artiface Exam!"
 face = ExtResource( 1 )

@@ -3,6 +3,7 @@ extends Node
 var current_scene = null
 var files = {}
 
+
 # Gets the current scene
 func _ready():
 	var root = get_tree().get_root()
@@ -20,6 +21,7 @@ func _ready():
 		elif not file.begins_with("."):
 			# Adds to a dictionary {'cardID : eventCardData'}
 			files[str(load("res://eventCards/" + file).id)] = load("res://eventCards/" + file)
+
 	
 	print(files)
 	

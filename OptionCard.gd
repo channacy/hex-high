@@ -35,8 +35,11 @@ func flip():
 
 # Called when the option card isclicked
 # If the option card is face up, execute its effect
+
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed and faceUp:
 			print("test")
 			get_node("../").execute(optionData.effectData)
 			
+			
+

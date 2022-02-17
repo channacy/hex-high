@@ -8,3 +8,6 @@ export(Array, String) var addCategory = []
 # The list of cards/tags that should be removed from the deck when this card is played
 export(Array, String) var removeId = []
 export(Array, String) var removeCategory = []
+
+
+

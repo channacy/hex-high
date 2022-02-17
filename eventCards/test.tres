@@ -14,7 +14,7 @@ removeCategory = [  ]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
-flavorText = "test 1"
+flavorText = "test"
 effectText = "test 1w"
 effectData = SubResource( 4 )
 

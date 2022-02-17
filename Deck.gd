@@ -2,7 +2,7 @@ extends Area2D
 
 var board = null
 # array of event cards from folder called eventCards
-var cards = ["potionShop0", "witchShop0", "scenario0", "sleep", "study", "tuition", "shopping", "alchemyExam", "artificeExam", "sorceryExam", "summoningExam", "exam3", "scenario1", "scenario2", "scenario3", "scenario4", "scenario5", "scenario6", "scenario7", "break", "freeTime"]
+var cards = ["potionShop0", "witchShop0", "scenario0", "sleep", "study", "tuition", "shopping", "alchemyExam", "artificeExam", "sorceryExam", "summoningExam", "scenario1", "scenario2", "scenario3", "scenario4", "scenario5", "scenario6", "scenario7", "break", "freeTime"]
 var randomNum = RandomNumberGenerator.new()
 var myRandomNum = 0
 

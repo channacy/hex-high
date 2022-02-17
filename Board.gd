@@ -21,9 +21,28 @@ func execute(effectData):
 	for optionCardNode in eventCardNode.optionCards:
 		optionCardNode.queue_free()
 	eventCardNode.queue_free()
-	# Since the deck and hand are not implemented yet, this function cannot be fully implemented
-	# Instead, it just loads the test event card again
-	#loadEvent("test", false)
+	var deck = get_node("../Deck/Area2D")
+	
+	# Removes cards by id
+	if len(effectData.removeId) > 0:
+		var cardsToRemove = []
+		for card in deck.cards:
+			for id in effectData.removeId:
+				if(Global.files[card].id == id):
+					cardsToRemove.append(card)
+		for card in cardsToRemove:
+			deck.cards.erase(card)
+	
+	# Removes cards by tag
+	if len(effectData.removeTag) > 0:
+		var cardsToRemove = []
+		for card in deck.cards:
+			for searchTag in effectData.removeTag:
+				for cardTag in Global.files[card].tags:
+					if cardTag == searchTag:
+						cardsToRemove.append(card)
+		for card in cardsToRemove:
+			deck.cards.erase(card)
 
 # Returns true if there is an active event card on the board
 func hasEventCard():

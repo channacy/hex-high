@@ -1,0 +1,42 @@
+[gd_resource type="Resource" load_steps=9 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
+[ext_resource path="res://EffectData.gd" type="Script" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [ "exam" ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+flavorText = "Remove exams"
+effectText = "All exam cards are removed from the deck."
+effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [ "sleep" ]
+removeTag = [  ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+flavorText = "No sleep"
+effectText = "Removes sleep from the deck."
+effectData = SubResource( 3 )
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource( 1 )
+id = "debug"
+tags = [  ]
+eventText = "Debug"
+face = ExtResource( 3 )
+infinite = false
+options = [ SubResource( 2 ), SubResource( 4 ) ]

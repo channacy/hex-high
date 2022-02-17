@@ -9,6 +9,7 @@ var highlighted = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	addCard("test")
+	addCard("debug")
 	pass # Replace with function body.
 
 # Adds a card to the hand

@@ -43,6 +43,29 @@ func execute(effectData):
 						cardsToRemove.append(card)
 		for card in cardsToRemove:
 			deck.cards.erase(card)
+			
+	#When an option card that adds cards is selected, it adds the correct cards to the deck
+	#Cards can be added to the deck by id
+	if len(effectData.addId) > 0:
+		var cardsToAdd = []
+		for card in deck.cards:
+			for id in effectData.addId:
+				if(Global.files[card].id == id):
+					cardsToAdd.append(card)
+		for card in cardsToAdd:
+			deck.cards.add(card)
+	#Cards can be added to the deck by tag
+	if len(effectData.addTag) > 0:
+		var cardsToAdd = []
+		for card in deck.cards:
+			for tag in effectData.addTag:
+				for cardTag in Global.files[card].tags:
+					if cardTag == tag:
+						cardsToAdd.append(card)
+		for card in cardsToAdd:
+			deck.cards.add(card)
+		
+
 
 # Returns true if there is an active event card on the board
 func hasEventCard():

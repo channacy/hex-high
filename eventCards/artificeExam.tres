@@ -10,6 +10,7 @@ script = ExtResource( 3 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
+removeCategory = [  ]
 removeTag = [  ]
 
 [sub_resource type="Resource" id=2]
@@ -23,6 +24,7 @@ script = ExtResource( 3 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
+removeCategory = [  ]
 removeTag = [  ]
 
 [sub_resource type="Resource" id=4]
@@ -36,6 +38,7 @@ script = ExtResource( 3 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
+removeCategory = [  ]
 removeTag = [  ]
 
 [sub_resource type="Resource" id=6]

@@ -8,9 +8,10 @@
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
 addId = [  ]
-addCategory = [  ]
+addTag = [  ]
 removeId = [  ]
 removeCategory = [  ]
+removeTag = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
@@ -24,5 +25,5 @@ id = "break"
 tags = [ "schoolEventCard", "academiaBreak" ]
 eventText = "Academia Break is here!"
 face = ExtResource( 2 )
-infinite = false
+infinite = true
 options = [ SubResource( 2 ) ]

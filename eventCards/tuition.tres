@@ -8,9 +8,10 @@
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
 addId = [  ]
-addCategory = [ "schoolEventCards" ]
+addTag = [  ]
 removeId = [  ]
 removeCategory = [  ]
+removeTag = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
@@ -21,9 +22,10 @@ effectData = SubResource( 1 )
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
 addId = [  ]
-addCategory = [ "schoolEventCards" ]
+addTag = [  ]
 removeId = [  ]
 removeCategory = [  ]
+removeTag = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
@@ -37,5 +39,5 @@ id = "tuition"
 tags = [ "tutiton", "schoolEvent" ]
 eventText = "Tuition Day"
 face = ExtResource( 3 )
-infinite = false
+infinite = true
 options = [ SubResource( 2 ), SubResource( 4 ) ]

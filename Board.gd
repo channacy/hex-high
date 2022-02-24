@@ -22,8 +22,9 @@ func execute(effectData):
 		optionCardNode.queue_free()
 	eventCardNode.queue_free()
 	var deck = get_node("../Deck/Area2D")
+	var hand = get_node("../Hand")
 	
-	# Removes cards by id
+	# Removes cards by id from the deck
 	if len(effectData.removeId) > 0:
 		var cardsToRemove = []
 		for card in deck.cards:
@@ -33,7 +34,7 @@ func execute(effectData):
 		for card in cardsToRemove:
 			deck.cards.erase(card)
 	
-	# Removes cards by tag
+	# Removes cards by tag from the deck
 	if len(effectData.removeTag) > 0:
 		var cardsToRemove = []
 		for card in deck.cards:
@@ -64,7 +65,31 @@ func execute(effectData):
 						cardsToAdd.append(card)
 		for card in cardsToAdd:
 			deck.cards.add(card)
-		
+	
+	# Removes cards by id from the hand
+	if len(effectData.removeHandId) > 0:
+		var cardsToRemove = []
+		for cardNode in hand.eventCardNodes:
+			var card = cardNode.cardData
+			for id in effectData.removeHandId:
+				if(card.id == id):
+					cardsToRemove.append(cardNode)
+		for card in cardsToRemove:
+			card.queue_free()
+			hand.removeCard(card)
+	
+	# Removes cards by tag from the hand
+	if len(effectData.removeHandTag) > 0:
+		var cardsToRemove = []
+		for cardNode in hand.eventCardNodes:
+			var card = cardNode.cardData
+			for searchTag in effectData.removeHandTag:
+				for cardTag in card.tags:
+					if cardTag == searchTag:
+						cardsToRemove.append(cardNode)
+		for card in cardsToRemove:
+			card.queue_free()
+			hand.removeCard(card)
 
 
 # Returns true if there is an active event card on the board

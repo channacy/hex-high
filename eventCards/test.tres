@@ -10,8 +10,11 @@ script = ExtResource( 3 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
-removeCategory = [  ]
 removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
@@ -24,8 +27,11 @@ script = ExtResource( 3 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
-removeCategory = [  ]
 removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
@@ -41,7 +47,7 @@ effectText = "test 3 w"
 [resource]
 script = ExtResource( 1 )
 id = "test"
-tags = [  ]
+tags = [ "test" ]
 eventText = "test card"
 face = ExtResource( 4 )
 infinite = false

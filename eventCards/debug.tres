@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=9 format=2]
+[gd_resource type="Resource" load_steps=11 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=2]
@@ -10,8 +10,11 @@ script = ExtResource( 4 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
-removeCategory = [  ]
 removeTag = [ "exam" ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
@@ -24,14 +27,34 @@ script = ExtResource( 4 )
 addId = [  ]
 addTag = [  ]
 removeId = [ "sleep" ]
-removeCategory = [  ]
 removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
 flavorText = "No sleep"
 effectText = "Removes sleep from the deck."
 effectData = SubResource( 3 )
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 2 )
+flavorText = "Remove Test"
+effectText = "Removes all test cards from the hand."
+effectData = SubResource( 5 )
 
 [resource]
 resource_local_to_scene = true
@@ -41,4 +64,4 @@ tags = [ "debug" ]
 eventText = "Debug"
 face = ExtResource( 3 )
 infinite = false
-options = [ SubResource( 2 ), SubResource( 4 ) ]
+options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ) ]

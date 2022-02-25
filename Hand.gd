@@ -10,6 +10,8 @@ var highlighted = 0
 func _ready():
 	addCard("test")
 	addCard("debug")
+	addCard("test")
+	addCard("debug")
 	pass # Replace with function body.
 
 # Adds a card to the hand
@@ -29,7 +31,11 @@ func removeCard(node):
 
 # Updates the positions of the card in the hand
 func updateHand():
+	
 	var num = len(eventCardNodes)
+	for card in eventCardNodes:
+		print(card)
+	
 	for card in num:
 		# Fan the cards out in 20 degree intervals
 		var angle = deg2rad(-(num-1)*10 + card * 20)

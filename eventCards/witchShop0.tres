@@ -7,8 +7,8 @@
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
-addId = [  ]
-addTag = [  ]
+addId = [ "prop2" ]
+addTag = [ "prop" ]
 removeId = [  ]
 removeCategory = [  ]
 removeTag = [  ]

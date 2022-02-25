@@ -10,6 +10,7 @@ script = ExtResource( 4 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
+removeCategory = [  ]
 removeTag = [ "exam" ]
 
 [sub_resource type="Resource" id=2]
@@ -23,6 +24,7 @@ script = ExtResource( 4 )
 addId = [  ]
 addTag = [  ]
 removeId = [ "sleep" ]
+removeCategory = [  ]
 removeTag = [  ]
 
 [sub_resource type="Resource" id=4]
@@ -35,7 +37,7 @@ effectData = SubResource( 3 )
 resource_local_to_scene = true
 script = ExtResource( 1 )
 id = "debug"
-tags = [  ]
+tags = [ "debug" ]
 eventText = "Debug"
 face = ExtResource( 3 )
 infinite = false

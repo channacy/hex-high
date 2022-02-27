@@ -45,15 +45,15 @@ addId = [  ]
 addTag = [  ]
 removeId = [  ]
 removeTag = [  ]
-addHandId = [  ]
+addHandId = [ "study" ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 2 )
-flavorText = "Remove Test"
-effectText = "Removes all test cards from the hand."
+flavorText = "Find library"
+effectText = "Adds study option"
 effectData = SubResource( 5 )
 
 [resource]

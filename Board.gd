@@ -59,7 +59,24 @@ func execute(effectData):
 			for tag in effectData.addTag:  #search through each tag in the array 
 				for cardTag in Global.files[card].tags: #search through each tag in the array of tags
 					if cardTag == tag:  #if the tag in the array of tags that is within the dictionary equals tag in effectData.addTag
-						deck.cards.append(Global.files[card].id) #add it to the deck which is an array of stri
+						deck.cards.append(Global.files[card].id) #add it to the deck which is an array of string
+						
+	#Cards can be added to the hand by tag
+	if len(effectData.addHandTag) > 0:
+		for card in Global.files:
+			for tag in effectData.addHandTag: #checks the tag we want to add from the current option card
+				for cardTag in Global.files[card].tags: #checks tag from each event card
+					if cardTag == tag: #if tag from our option card matches an event card tag
+						hand.addCard(Global.files[card].id) #the event card is added to the hand
+	
+	#Cards can be added to the hand by id
+	if len(effectData.addHandId) > 0:
+		for card in Global.files:
+			for id in effectData.addHandId:
+				if id == Global.files[card].id: #checks if the id we want to add and the event card's id matches
+					hand.addCard(id) #if it does, the event card is added to the hand
+					
+	
 	# Removes cards by id from the hand
 	if len(effectData.removeHandId) > 0:
 		var cardsToRemove = []

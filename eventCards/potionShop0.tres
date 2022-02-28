@@ -1,16 +1,14 @@
-[gd_resource type="Resource" load_steps=7 format=2]
+[gd_resource type="Resource" load_steps=9 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://EffectData.gd" type="Script" id=2]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=4]
 
-<<<<<<< HEAD
-=======
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
-addId = [  ]
-addTag = [  ]
+addId = [ "prop2" ]
+addTag = [ "prop" ]
 removeId = [  ]
 removeTag = [  ]
 addHandId = [  ]
@@ -21,10 +19,9 @@ removeHandTag = [  ]
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
 flavorText = "Accept"
-effectText = "Add \"Matilda's Shop\" "
+effectText = "Add Matilda's shop to the deck"
 effectData = SubResource( 1 )
 
->>>>>>> c17488553cf0e20b65d141ad37a2a9e123d5f201
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
 addId = [  ]
@@ -46,7 +43,7 @@ effectData = SubResource( 3 )
 script = ExtResource( 1 )
 id = "potionShop0"
 tags = [  ]
-eventText = "A job openning at Matilda's Shop"
+eventText = "A job opening at Matilda's potion shop!"
 face = ExtResource( 3 )
 infinite = false
-options = [ SubResource( 4 ) ]
+options = [ SubResource( 2 ), SubResource( 4 ) ]

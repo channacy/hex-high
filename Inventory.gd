@@ -1,31 +1,36 @@
 extends Node2D
 
 var inventoryItems = {}
+var itemImages = {}
+
+export(Resource) var itemData = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	addInventoryItem("Study Books")
-	addInventoryItem("Study Books")
-	addInventoryItem("Gold Coins")
-	addInventoryItem("Mana")
+	addInventoryItem("alchemy")
+	addInventoryItem("alchemy")
+	addInventoryItem("artifice")
+	addInventoryItem("coin")
+	addInventoryItem("alchemy")
+
 	#addInventoryItem("Knowledge")
 	#addInventoryItem("Something Else")
 	pass # Replace with function body.
 
 func addInventoryItem(item):
-	var itemNode = item
+	itemData = Global.items[item]
 	#itemNode.setup("res://Item.tscn", 1)
-	if itemNode in inventoryItems.keys():
-		inventoryItems[itemNode] += 1
+	if item in inventoryItems.keys():
+		inventoryItems[item] += 1
 		print("Got Same Item ============")
 	else:
 		print("Got New Item -------------")
-		inventoryItems[itemNode] = 1
+		inventoryItems[item] = 1
+		itemImages[item] = itemData
 	updateInventoryItems()
 	
 func setupItem(item, numItems):
-	
-	print("Setup an item")
+	print("setup an item")
 	
 func updateInventoryItems():
 	#Essentially removes everything in the inventory (This is so that the positioning updates)
@@ -33,11 +38,12 @@ func updateInventoryItems():
 		child.queue_free()
 	
 	#Re-adds everything back into the inventory
-	var num = len(inventoryItems.keys())
-	for i in num:
-		var itemNode = load("res://Item.tscn").instance
-		itemNode.setup("Something", inventoryItems[itemNode])
-		itemNode.position = Vector2(-(num-1)*50 + i*100, 5)
+	var counter = 0
+	for i in itemImages.keys():
+		var itemNode = load("res://Item.tscn").instance()
+		itemNode.setup(itemImages[i], inventoryItems[i])
+		itemNode.position = Vector2(-(len(inventoryItems.keys())-1)*50 + counter*100, 70)
 		add_child(itemNode)
-		print("Added One Card to Inventory")
+		counter += 1
+		
 

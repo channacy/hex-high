@@ -2,6 +2,7 @@ extends Node
 
 var current_scene = null
 var files = {}
+var items = {}
 
 
 # Gets the current scene
@@ -22,7 +23,18 @@ func _ready():
 			# Adds to a dictionary {'cardID : eventCardData'}
 			files[str(load("res://eventCards/" + file).id)] = load("res://eventCards/" + file)
 
-	print(files)
+
+	dir.open("res://items/")
+	dir.list_dir_begin()
+	
+	while true:
+		var item = dir.get_next()
+		if item == "":
+			break
+		elif not item.begins_with("."):
+			items[str(load("res://items/" + item).id)] = load("res://items/" + item)
+		
+	
 	
 # Switches the active scene to the one given by the path
 func goto_scene(path):

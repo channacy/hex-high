@@ -7,11 +7,14 @@
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
-addId = [  ]
-addTag = [  ]
+addId = [ "prop2" ]
+addTag = [ "prop" ]
 removeId = [  ]
-removeCategory = [  ]
 removeTag = [  ]
+addHandId = [ "prop2" ]
+addHandTag = [ "prop" ]
+removeHandId = [  ]
+removeHandTag = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
@@ -24,8 +27,11 @@ script = ExtResource( 2 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
-removeCategory = [  ]
 removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )

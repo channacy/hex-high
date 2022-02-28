@@ -1,0 +1,49 @@
+[gd_resource type="Resource" load_steps=9 format=2]
+
+[ext_resource path="res://OptionCardData.gd" type="Script" id=1]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
+[ext_resource path="res://EffectData.gd" type="Script" id=3]
+[ext_resource path="res://EventCardData.gd" type="Script" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 3 )
+addId = [ "cardToAdd" ]
+addTag = [ "prop" ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 1 )
+flavorText = "Work"
+effectText = "Add more Resources"
+effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 3 )
+addId = [  ]
+addTag = [  ]
+removeId = [ "cardToAdd" ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 1 )
+flavorText = "Quit"
+effectText = ""
+effectData = SubResource( 4 )
+
+[resource]
+script = ExtResource( 4 )
+id = "prop2"
+tags = [ "prop" ]
+eventText = "TBD"
+face = ExtResource( 2 )
+infinite = false
+options = [ SubResource( 2 ), SubResource( 3 ) ]

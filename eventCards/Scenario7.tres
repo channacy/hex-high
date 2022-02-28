@@ -8,9 +8,10 @@
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
 addId = [  ]
-addCategory = [ "scenarioCard" ]
+addTag = [  ]
 removeId = [  ]
 removeCategory = [  ]
+removeTag = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
@@ -21,9 +22,10 @@ effectData = SubResource( 1 )
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
 addId = [  ]
-addCategory = [  ]
+addTag = [  ]
 removeId = [  ]
 removeCategory = [  ]
+removeTag = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )

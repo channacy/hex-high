@@ -21,8 +21,8 @@ effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
-addId = [  ]
-addTag = [  ]
+addId = [ "prop2" ]
+addTag = [ "prop" ]
 removeId = [  ]
 removeCategory = [  ]
 removeTag = [  ]

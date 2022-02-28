@@ -7,8 +7,8 @@
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
-addId = [ "prop2" ]
-addTag = [ "prop" ]
+addId = [  ]
+addTag = [  ]
 removeId = [  ]
 removeTag = [  ]
 addHandId = [  ]
@@ -19,7 +19,7 @@ removeHandTag = [  ]
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
 flavorText = "Accept"
-effectText = "Add \"Matilda's Potion Shop\" cards to the deck"
+effectText = "Add \"Matilda's Shop\" "
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -43,7 +43,7 @@ effectData = SubResource( 3 )
 script = ExtResource( 1 )
 id = "potionShop0"
 tags = [  ]
-eventText = "A job opening at Matilda's"
+eventText = "A job openning at Matilda's Shop"
 face = ExtResource( 3 )
 infinite = false
 options = [ SubResource( 2 ), SubResource( 4 ) ]

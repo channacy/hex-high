@@ -22,7 +22,6 @@ func _ready():
 			# Adds to a dictionary {'cardID : eventCardData'}
 			files[str(load("res://eventCards/" + file).id)] = load("res://eventCards/" + file)
 
-	
 	print(files)
 	
 # Switches the active scene to the one given by the path

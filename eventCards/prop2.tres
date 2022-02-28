@@ -10,8 +10,11 @@ script = ExtResource( 3 )
 addId = [ "cardToAdd" ]
 addTag = [ "prop" ]
 removeId = [  ]
-removeCategory = [  ]
 removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 1 )
@@ -24,8 +27,11 @@ script = ExtResource( 3 )
 addId = [  ]
 addTag = [  ]
 removeId = [ "cardToAdd" ]
-removeCategory = [ "prop" ]
 removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 1 )

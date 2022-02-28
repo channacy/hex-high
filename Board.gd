@@ -59,7 +59,8 @@ func execute(effectData):
 			for tag in effectData.addTag:  #search through each tag in the array 
 				for cardTag in Global.files[card].tags: #search through each tag in the array of tags
 					if cardTag == tag:  #if the tag in the array of tags that is within the dictionary equals tag in effectData.addTag
-						deck.cards.append(Global.files[card].id) #add it to the deck which is an array of stri
+						deck.cards.append(Global.files[card].id) #add it to the deck which is an array of strings
+						
 	# Removes cards by id from the hand
 	if len(effectData.removeHandId) > 0:
 		var cardsToRemove = []
@@ -84,9 +85,6 @@ func execute(effectData):
 		for card in cardsToRemove:
 			card.queue_free()
 			hand.removeCard(card)
-
-
-
 # Returns true if there is an active event card on the board
 func hasEventCard():
 	return is_instance_valid(eventCardNode)

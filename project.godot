@@ -29,6 +29,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Item.gd"
 }, {
+"base": "Resource",
+"class": "ItemData",
+"language": "GDScript",
+"path": "res://ItemData.gd"
+}, {
 "base": "Area2D",
 "class": "OptionCard",
 "language": "GDScript",
@@ -44,6 +49,7 @@ _global_script_class_icons={
 "EventCard": "",
 "EventCardData": "",
 "Item": "",
+"ItemData": "",
 "OptionCard": "",
 "OptionCardData": ""
 }

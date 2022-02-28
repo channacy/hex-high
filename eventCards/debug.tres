@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=11 format=2]
+[gd_resource type="Resource" load_steps=13 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=2]
@@ -56,6 +56,23 @@ flavorText = "Find library"
 effectText = "Adds study option"
 effectData = SubResource( 5 )
 
+[sub_resource type="Resource" id=7]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [ "debug", "debug" ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 2 )
+flavorText = "Debug More"
+effectText = "Add 2 debug cards"
+effectData = SubResource( 7 )
+
 [resource]
 resource_local_to_scene = true
 script = ExtResource( 1 )
@@ -64,4 +81,4 @@ tags = [ "debug" ]
 eventText = "Debug"
 face = ExtResource( 3 )
 infinite = false
-options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ) ]
+options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ), SubResource( 8 ) ]

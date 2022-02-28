@@ -5,6 +5,26 @@
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=4]
 
+<<<<<<< HEAD
+=======
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 4 )
+flavorText = "Accept"
+effectText = "Add \"Matilda's Shop\" "
+effectData = SubResource( 1 )
+
+>>>>>>> c17488553cf0e20b65d141ad37a2a9e123d5f201
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
 addId = [  ]
@@ -26,7 +46,7 @@ effectData = SubResource( 3 )
 script = ExtResource( 1 )
 id = "potionShop0"
 tags = [  ]
-eventText = "A job opening at Matilda's"
+eventText = "A job openning at Matilda's Shop"
 face = ExtResource( 3 )
 infinite = false
 options = [ SubResource( 4 ) ]

@@ -2,7 +2,6 @@ extends Node2D
 
 var inventoryItems = {}
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	addInventoryItem("Study Books")
@@ -25,19 +24,20 @@ func addInventoryItem(item):
 	updateInventoryItems()
 	
 func setupItem(item, numItems):
-	print("Setup One item")
+	
+	print("Setup an item")
 	
 func updateInventoryItems():
+	#Essentially removes everything in the inventory (This is so that the positioning updates)
 	for child in get_children():
 		child.queue_free()
+	
+	#Re-adds everything back into the inventory
 	var num = len(inventoryItems.keys())
-	print(num)
 	for i in num:
-		var itemNode = load("res://Item.tscn").instance()
+		var itemNode = load("res://Item.tscn").instance
+		itemNode.setup("Something", inventoryItems[itemNode])
 		itemNode.position = Vector2(-(num-1)*50 + i*100, 5)
 		add_child(itemNode)
 		print("Added One Card to Inventory")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

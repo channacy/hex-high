@@ -1,7 +1,9 @@
 extends Resource
 class_name ItemData
 
-var itemImg = load("res://sprites/defaultFront.png")
+export(String) var id = ""
+
+export(Texture) var itemImg = load("res://sprites/defaultFront.png")
 
 export(String) var numOfItems = ""
 

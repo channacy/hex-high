@@ -13,8 +13,6 @@ func _ready():
 	addInventoryItem("coin")
 	addInventoryItem("alchemy")
 
-	#addInventoryItem("Knowledge")
-	#addInventoryItem("Something Else")
 	pass # Replace with function body.
 
 func addInventoryItem(item):

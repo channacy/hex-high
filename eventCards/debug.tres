@@ -103,7 +103,7 @@ artifice = 0
 sorcery = 0
 summon = 0
 textbook = 0
-coin = 0
+coin = 1
 
 [sub_resource type="Resource" id=11]
 script = ExtResource( 2 )

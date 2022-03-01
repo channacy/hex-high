@@ -15,6 +15,7 @@ func loadEvent(eventCardId, faceUp):
 	eventCardNode = load("res://EventCard.tscn").instance()
 	eventCardNode.setup(eventCardId, faceUp)
 	add_child(eventCardNode)
+	
 
 # Executes the effect of the option card selected and clears the board for the next event
 func execute(effectData):

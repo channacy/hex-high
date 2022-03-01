@@ -18,9 +18,9 @@ texture = ExtResource( 1 )
 
 [node name="FlavorContainer" type="MarginContainer" parent="."]
 margin_left = -71.0
-margin_top = -101.0
+margin_top = -100.0
 margin_right = 71.0
-margin_bottom = -26.0
+margin_bottom = -25.0
 mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
@@ -61,6 +61,25 @@ bbcode_enabled = true
 bbcode_text = "[center][color=black]Default effect text[/color][/center]"
 text = "Default effect text"
 fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CostContainer" type="MarginContainer" parent="."]
+margin_left = -52.0
+margin_top = -16.0
+margin_right = 54.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CostText" type="RichTextLabel" parent="CostContainer"]
+margin_right = 106.0
+margin_bottom = 30.0
+bbcode_enabled = true
+bbcode_text = "[center][color=black]Default cost text[/color][/center]"
+text = "Default cost text"
 __meta__ = {
 "_edit_use_anchors_": false
 }

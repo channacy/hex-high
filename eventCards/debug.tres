@@ -1,9 +1,10 @@
-[gd_resource type="Resource" load_steps=15 format=2]
+[gd_resource type="Resource" load_steps=18 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=2]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
 [ext_resource path="res://EffectData.gd" type="Script" id=4]
+[ext_resource path="res://Cost.gd" type="Script" id=5]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 4 )
@@ -20,6 +21,7 @@ removeHandTag = [  ]
 script = ExtResource( 2 )
 flavorText = "Remove exams"
 effectText = "All exam cards are removed from the deck."
+costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -37,6 +39,7 @@ removeHandTag = [  ]
 script = ExtResource( 2 )
 flavorText = "No sleep"
 effectText = "Removes sleep from the deck."
+costText = ""
 effectData = SubResource( 3 )
 
 [sub_resource type="Resource" id=5]
@@ -54,6 +57,7 @@ removeHandTag = [  ]
 script = ExtResource( 2 )
 flavorText = "Find library"
 effectText = "Adds study option"
+costText = ""
 effectData = SubResource( 5 )
 
 [sub_resource type="Resource" id=7]
@@ -71,6 +75,7 @@ removeHandTag = [  ]
 script = ExtResource( 2 )
 flavorText = "Debug More"
 effectText = "Add 2 debug cards"
+costText = ""
 effectData = SubResource( 7 )
 
 [sub_resource type="Resource" id=9]
@@ -88,7 +93,24 @@ removeHandTag = [ "test" ]
 script = ExtResource( 2 )
 flavorText = "Remove Card from Hand"
 effectText = "removes test cards"
+costText = ""
 effectData = SubResource( 9 )
+
+[sub_resource type="Resource" id=12]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 2 )
+flavorText = "Testing Card Costs"
+effectText = ""
+costText = "requires 1 coin"
+cost = SubResource( 12 )
 
 [resource]
 resource_local_to_scene = true
@@ -98,4 +120,4 @@ tags = [ "debug" ]
 eventText = "Debug"
 face = ExtResource( 3 )
 infinite = false
-options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ), SubResource( 8 ), SubResource( 10 ) ]
+options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ), SubResource( 8 ), SubResource( 10 ), SubResource( 11 ) ]

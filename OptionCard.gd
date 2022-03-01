@@ -15,10 +15,12 @@ func setup(data, faceUp):
 		$Sprite.texture = optionData.face
 		$FlavorContainer/FlavorText.bbcode_text = "[center][color=black]" + optionData.flavorText + "[/color][/center]"
 		$EffectContainer/EffectText.bbcode_text = "[center][color=black]" + optionData.effectText + "[/color][/center]"
+		$CostContainer/CostText.bbcode_text = "[center][color=black]" + optionData.costText + "[/color][/center]"
 	else:
 		$Sprite.texture = optionData.back
 		$FlavorContainer/FlavorText.bbcode_text = ""
 		$EffectContainer/EffectText.bbcode_text = ""
+		$CostContainer/CostText.bbcode_text = ""
 
 # Flips the card over, changing its state, sprite, and text
 func flip():
@@ -27,11 +29,13 @@ func flip():
 		$Sprite.texture = optionData.back
 		$FlavorContainer/FlavorText.bbcode_text = ""
 		$EffectContainer/EffectText.bbcode_text = ""
+		$CostContainer/CostText.bbcode_text = ""
 	else:
 		faceUp = true
 		$Sprite.texture = optionData.face
 		$FlavorContainer/FlavorText.bbcode_text = "[center][color=black]" + optionData.flavorText + "[/color][/center]"
 		$EffectContainer/EffectText.bbcode_text = "[center][color=black]" + optionData.effectText + "[/color][/center]"
+		$CostContainer/CostText.bbcode_text = "[center][color=black]" + optionData.costText + "[/color][/center]"
 
 # Called when the option card isclicked
 # If the option card is face up, execute its effect

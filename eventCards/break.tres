@@ -20,6 +20,7 @@ removeHandTag = [  ]
 script = ExtResource( 4 )
 flavorText = "Academia Break is here! Enjoy your rest!"
 effectText = "Add resources"
+costText = ""
 effectData = SubResource( 1 )
 
 [resource]

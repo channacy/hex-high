@@ -20,6 +20,7 @@ removeHandTag = [  ]
 script = ExtResource( 3 )
 flavorText = "Practice Magic"
 effectText = "Increase Resource"
+costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -37,6 +38,7 @@ removeHandTag = [  ]
 script = ExtResource( 3 )
 flavorText = "Read Textbooks"
 effectText = "Increase Resource "
+costText = ""
 effectData = SubResource( 3 )
 
 [resource]

@@ -103,13 +103,14 @@ artifice = 0
 sorcery = 0
 summon = 0
 textbook = 0
-coin = 1
+coin = 0
+mana = 0
 
 [sub_resource type="Resource" id=11]
 script = ExtResource( 2 )
 flavorText = "Testing Card Costs"
 effectText = ""
-costText = "requires 1 coin"
+costText = ""
 cost = SubResource( 12 )
 
 [resource]

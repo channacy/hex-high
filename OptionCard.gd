@@ -60,7 +60,7 @@ func flip():
 # If the option card is face up, execute its effect
 
 func _input_event(viewport, event, shape_idx):
-	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed and faceUp:
+	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed and faceUp and get_node("../").checkCost(optionData.cost):
 			print("test")
 			get_node("../").execute(optionData.effectData)
 			

@@ -17,6 +17,25 @@ func loadEvent(eventCardId, faceUp):
 	add_child(eventCardNode)
 	
 
+func checkCost(cost):
+	var inventory = get_node("../InventoryNode/Inventory")
+	var optionCardData = get_node("res://OptionCardData.gd")
+	if is_instance_valid(optionCardData.cost) == true:
+		if cost.alchemy == 0 and cost.artifice == 0 and cost.summon == 0 and cost.sorcery == 0 and cost.textbook == 0 and cost.coin == 0 and cost.mana == 0:
+			return true
+		elif inventory.inventoryItems["alchemy"] >= cost.alchemy:
+				if inventory.inventoryItems["artifice"] >= cost.artifice:
+					if inventory.inventoryItems["summon"] >= cost.summon:
+						if inventory.inventoryItems["sorcery"] >= cost.sorcery:
+							if inventory.inventoryItems["textbook"] >= cost.textbook:
+								if inventory.inventoryItems["coin"] >= cost.coin:
+									if inventory.inventoryItems["mana"] >= cost.mana:
+										return true
+		else:
+			return false
+	else: 
+		return true
+
 # Executes the effect of the option card selected and clears the board for the next event
 func execute(effectData):
 	for optionCardNode in eventCardNode.optionCards:

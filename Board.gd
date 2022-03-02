@@ -19,9 +19,7 @@ func loadEvent(eventCardId, faceUp):
 
 func checkCost(cost):
 	var inventory = get_node("../InventoryNode/Inventory")
-	if cost.alchemy == 0 and cost.artifice == 0 and cost.summon == 0 and cost.sorcery == 0 and cost.textbook == 0 and cost.coin == 0 and cost.mana == 0:
-		return true
-	elif inventory.inventoryItems["alchemy"] >= cost.alchemy:
+	if inventory.inventoryItems["alchemy"] >= cost.alchemy:
 			if inventory.inventoryItems["artifice"] >= cost.artifice:
 				if inventory.inventoryItems["summon"] >= cost.summon:
 					if inventory.inventoryItems["sorcery"] >= cost.sorcery:

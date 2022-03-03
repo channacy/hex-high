@@ -12,6 +12,7 @@ export(String) var effectText = ""
 
 # Displays which resources are needed to use card
 export(String) var costText = ""
+
 export(Resource) var cost = null
 
 # Effect data

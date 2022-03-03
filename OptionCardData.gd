@@ -17,3 +17,4 @@ export(Resource) var cost = null
 
 # Effect data
 export(Resource) var effectData = null
+

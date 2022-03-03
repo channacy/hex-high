@@ -15,11 +15,16 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 flavorText = "Engineer a simple wooden wand"
 effectText = ""
+costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -32,11 +37,16 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
 flavorText = "Fail"
 effectText = ""
+costText = ""
 effectData = SubResource( 3 )
 
 [sub_resource type="Resource" id=5]
@@ -49,11 +59,16 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 2 )
 flavorText = "Save for Later"
 effectText = ""
+costText = ""
 effectData = SubResource( 5 )
 
 [resource]

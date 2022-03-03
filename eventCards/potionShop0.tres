@@ -15,11 +15,14 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
 flavorText = "Accept"
 effectText = "Add Matilda's shop to the deck"
+costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -32,11 +35,14 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
 flavorText = "Decline"
 effectText = ""
+costText = ""
 effectData = SubResource( 3 )
 
 [resource]

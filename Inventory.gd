@@ -18,6 +18,8 @@ func _ready():
 	addInventoryItem("alchemy")
 	addInventoryItem("artifice")
 	addInventoryItem("alchemy")
+
+
 	addInventoryItem("sorcery")
 	addInventoryItem("summon")
 	addInventoryItem("textbook")
@@ -26,11 +28,22 @@ func _ready():
 	addInventoryItem("mana")
 
 	pass # Replace with function body.
-
+	
 func addInventoryItem(item):
 	itemData = Global.items[item]
 	if item in inventoryItems.keys():
 		inventoryItems[item] += 1
+		#print("Got Same Item ============")
+	else:
+		#print("Got New Item -------------")
+		inventoryItems[item] = 1
+		itemImages[item] = itemData
+	updateInventoryItems()
+	
+func removeInventoryItem(item):
+	itemData = Global.items[item]
+	if item in inventoryItems.keys():
+		inventoryItems[item] -= 1
 		#print("Got Same Item ============")
 	else:
 		#print("Got New Item -------------")

@@ -41,6 +41,7 @@ func _input_event(viewport, event, shape_idx):
 		if !didDraw: 
 			myRandomNum = randomNum.randf_range(0, cards.size())
 			var cardId = cards[myRandomNum]
+			#adds resources based on event cards
 			# Removes the drawn card from the deck if it isn't marked as infinite
 			if !Global.files[cardId].infinite:
 				cards.remove(myRandomNum)
@@ -48,7 +49,7 @@ func _input_event(viewport, event, shape_idx):
 				
 			print("Normal Random Draw:", cardId)
 			board.loadEvent(cardId, false)
-
+			
 
 func deckInsertion(numDraws, cardID):
 	count = counter + numDraws

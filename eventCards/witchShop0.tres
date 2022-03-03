@@ -15,11 +15,16 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [ "coin" ]
+numResources = [ 10 ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 flavorText = "Accept the job"
 effectText = "Add \"Rose's Witch's Essentials\" cards to the deck"
+costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -32,11 +37,16 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
 flavorText = "Decline "
 effectText = ""
+costText = ""
 effectData = SubResource( 3 )
 
 [resource]

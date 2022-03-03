@@ -15,11 +15,16 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
 flavorText = "test"
 effectText = "test 1w"
+costText = ""
 effectData = SubResource( 4 )
 
 [sub_resource type="Resource" id=5]
@@ -32,17 +37,23 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 flavorText = "test 2"
 effectText = "test 2w"
+costText = ""
 effectData = SubResource( 5 )
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
 flavorText = "test 3"
 effectText = "test 3 w"
+costText = ""
 
 [resource]
 script = ExtResource( 1 )

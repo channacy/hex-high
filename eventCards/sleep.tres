@@ -1,22 +1,33 @@
-[gd_resource type="Resource" load_steps=11 format=2]
+[gd_resource type="Resource" load_steps=12 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://EffectData.gd" type="Script" id=2]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=4]
 
+[sub_resource type="Resource" id=7]
+
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
-removeCategory = [  ]
 removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "mana" ]
+numResources = [ 5 ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
 flavorText = "Sleep"
 effectText = ""
+costText = ""
+cost = SubResource( 7 )
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -24,13 +35,21 @@ script = ExtResource( 2 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
-removeCategory = [  ]
 removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
 flavorText = "Nap "
 effectText = ""
+costText = ""
 effectData = SubResource( 3 )
 
 [sub_resource type="Resource" id=5]
@@ -38,13 +57,21 @@ script = ExtResource( 2 )
 addId = [ "prop2" ]
 addTag = [ "prop" ]
 removeId = [  ]
-removeCategory = [  ]
 removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 4 )
 flavorText = "Stay Awake "
 effectText = ""
+costText = ""
 effectData = SubResource( 5 )
 
 [resource]

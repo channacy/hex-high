@@ -16,7 +16,6 @@ func loadEvent(eventCardId, faceUp):
 	eventCardNode.setup(eventCardId, faceUp)
 	add_child(eventCardNode)
 	
-
 func checkCost(cost):
 	var inventory = get_node("../InventoryNode/Inventory")
 	if inventory.inventoryItems["alchemy"] >= cost.alchemy:
@@ -37,7 +36,7 @@ func execute(effectData):
 	eventCardNode.queue_free()
 	var deck = get_node("../Deck/Area2D")
 	var hand = get_node("../Hand")
-	
+	var inventory = get_node("../InventoryNode/Inventory")  
 	# Removes cards by id from the deck
 	if len(effectData.removeId) > 0:
 		var cardsToRemove = []
@@ -116,6 +115,26 @@ func execute(effectData):
 		for card in cardsToRemove:
 			card.queue_free()
 			hand.removeCard(card)
+			
+	#add resources based on option cards
+	if len(effectData.addResources) > 0:
+		for i in range(0, len(effectData.numResources)): 
+			for x in range(0, effectData.numResources[i]):
+				for y in Global.items:
+					if effectData.addResources[i] == Global.items[y].id:
+						inventory.addInventoryItem(effectData.addResources[i])
+						print(effectData.addResources[i]) 
+						
+	#inventory.addInventoryItem("coin")
+	if len(effectData.removeResources) > 0:
+		for i in range(0, len(effectData.numRemoveResources)): 
+			for x in range(0, effectData.numRemoveResources[i]):
+				for y in Global.items:
+					if effectData.removeResources[i] == Global.items[y].id:
+						inventory.removeInventoryItem(effectData.removeResources[i])
+						print(effectData.removeResources[i]) 
+	#print(effectData.addResources)
+	#print(effectData.numResources)
 # Returns true if there is an active event card on the board
 func hasEventCard():
 	return is_instance_valid(eventCardNode)

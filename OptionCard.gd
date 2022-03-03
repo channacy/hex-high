@@ -47,6 +47,8 @@ func _input_event(viewport, event, shape_idx):
 			if get_node("../").checkCost(optionData.cost) == true:
 				print("can use")
 				get_node("../").execute(optionData.effectData)
+			else:
+				print("can't use")
 		else:
 			print("test")
 			get_node("../").execute(optionData.effectData)

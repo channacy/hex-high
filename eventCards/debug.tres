@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=20 format=2]
+[gd_resource type="Resource" load_steps=21 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=2]
@@ -130,15 +130,29 @@ artifice = 0
 sorcery = 0
 summon = 0
 textbook = 0
-coin = 20
+coin = 200
 mana = 0
+
+[sub_resource type="Resource" id=15]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [ "test" ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
 
 [sub_resource type="Resource" id=14]
 script = ExtResource( 2 )
 flavorText = "Can't Afford"
 effectText = ""
-costText = "costs 20 coins"
+costText = "costs 200 coins"
 cost = SubResource( 13 )
+effectData = SubResource( 15 )
 
 [resource]
 resource_local_to_scene = true

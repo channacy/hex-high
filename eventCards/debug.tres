@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=21 format=2]
+[gd_resource type="Resource" load_steps=22 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=2]
@@ -116,12 +116,26 @@ textbook = 0
 coin = 1
 mana = 0
 
+[sub_resource type="Resource" id=16]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [ "test" ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+
 [sub_resource type="Resource" id=11]
 script = ExtResource( 2 )
 flavorText = "Testing Card Costs"
 effectText = ""
 costText = ""
 cost = SubResource( 12 )
+effectData = SubResource( 16 )
 
 [sub_resource type="Resource" id=13]
 script = ExtResource( 5 )

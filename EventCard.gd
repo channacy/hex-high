@@ -75,3 +75,5 @@ func _input_event(viewport, event, shape_idx):
 func _on_EventCard_mouse_exited():
 	if inHand and get_node("../").highlighted == self.z_index:
 			get_node("../").highlighted = 0
+			
+		

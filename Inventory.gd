@@ -12,11 +12,9 @@ func _ready():
 	addInventoryItem("artifice")
 	addInventoryItem("coin")
 	addInventoryItem("alchemy")
-
-	#addInventoryItem("Knowledge")
-	#addInventoryItem("Something Else")
+	
 	pass # Replace with function body.
-
+	
 func addInventoryItem(item):
 	itemData = Global.items[item]
 	#itemNode.setup("res://Item.tscn", 1)
@@ -28,7 +26,7 @@ func addInventoryItem(item):
 		inventoryItems[item] = 1
 		itemImages[item] = itemData
 	updateInventoryItems()
-	
+
 func setupItem(item, numItems):
 	print("setup an item")
 	

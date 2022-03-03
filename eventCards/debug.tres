@@ -15,6 +15,8 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
@@ -32,6 +34,8 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
@@ -49,6 +53,8 @@ addHandId = [ "study" ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 2 )
@@ -66,6 +72,8 @@ addHandId = [ "debug", "debug" ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
 
 [sub_resource type="Resource" id=8]
 script = ExtResource( 2 )
@@ -83,6 +91,8 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [ "test" ]
+addResources = [  ]
+numResources = [  ]
 
 [sub_resource type="Resource" id=10]
 script = ExtResource( 2 )

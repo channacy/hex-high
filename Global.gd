@@ -34,8 +34,6 @@ func _ready():
 		elif not item.begins_with("."):
 			items[str(load("res://items/" + item).id)] = load("res://items/" + item)
 		
-	
-	
 # Switches the active scene to the one given by the path
 func goto_scene(path):
 	call_deferred("_deferred_goto_scene", path)
@@ -48,3 +46,4 @@ func _deferred_goto_scene(path):
 	current_scene = s.instance()
 	get_tree().get_root().add_child(current_scene)
 	get_tree().set_current_scene(current_scene)
+

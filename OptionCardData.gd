@@ -12,3 +12,4 @@ export(String) var effectText = ""
 
 # Effect data
 export(Resource) var effectData = null
+

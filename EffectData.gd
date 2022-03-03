@@ -16,3 +16,9 @@ export(Array, String) var addHandTag = []
 # The list of cards/tags that should be removed from the hand when this card is played
 export(Array, String) var removeHandId = []
 export(Array, String) var removeHandTag = []
+
+#array to hold resources to add when option card is clicked and how many resources are added to inventory
+export(Array, String) var addResources = []
+export(Array, int) var numResources = []
+
+

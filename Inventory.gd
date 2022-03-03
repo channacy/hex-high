@@ -40,6 +40,17 @@ func addInventoryItem(item):
 		itemImages[item] = itemData
 	updateInventoryItems()
 	
+func removeInventoryItem(item):
+	itemData = Global.items[item]
+	if item in inventoryItems.keys():
+		inventoryItems[item] -= 1
+		#print("Got Same Item ============")
+	else:
+		#print("Got New Item -------------")
+		inventoryItems[item] = 1
+		itemImages[item] = itemData
+	updateInventoryItems()
+	
 func updateInventoryItems():
 	#Essentially removes everything in the inventory (This is so that the positioning updates)
 	for child in get_children():

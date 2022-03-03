@@ -21,4 +21,6 @@ export(Array, String) var removeHandTag = []
 export(Array, String) var addResources = []
 export(Array, int) var numResources = []
 
-
+#array to remove resources when certain option card is clicked 
+export(Array, String) var removeResources = []
+export(Array, int) var numRemoveResources = []

@@ -17,6 +17,8 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )

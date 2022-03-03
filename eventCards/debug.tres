@@ -18,6 +18,8 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
@@ -38,6 +40,8 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
@@ -58,6 +62,8 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 2 )
@@ -78,6 +84,8 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=8]
 script = ExtResource( 2 )
@@ -98,6 +106,8 @@ removeHandId = [  ]
 removeHandTag = [ "test" ]
 addResources = [  ]
 numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=10]
 script = ExtResource( 2 )
@@ -116,37 +126,6 @@ textbook = 0
 coin = 1
 mana = 0
 
-[sub_resource type="Resource" id=16]
-script = ExtResource( 4 )
-addId = [  ]
-addTag = [  ]
-removeId = [  ]
-removeTag = [  ]
-addHandId = [  ]
-addHandTag = [  ]
-removeHandId = [ "test" ]
-removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
-
-[sub_resource type="Resource" id=11]
-script = ExtResource( 2 )
-flavorText = "Testing Card Costs"
-effectText = ""
-costText = ""
-cost = SubResource( 12 )
-effectData = SubResource( 16 )
-
-[sub_resource type="Resource" id=13]
-script = ExtResource( 5 )
-alchemy = 0
-artifice = 0
-sorcery = 0
-summon = 0
-textbook = 0
-coin = 200
-mana = 0
-
 [sub_resource type="Resource" id=15]
 script = ExtResource( 4 )
 addId = [  ]
@@ -159,14 +138,49 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 2 )
+flavorText = "Testing Card Costs"
+effectText = ""
+costText = ""
+cost = SubResource( 12 )
+effectData = SubResource( 15 )
+
+[sub_resource type="Resource" id=13]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 20000
+mana = 0
+
+[sub_resource type="Resource" id=16]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [ "test" ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=14]
 script = ExtResource( 2 )
 flavorText = "Can't Afford"
 effectText = ""
-costText = "costs 200 coins"
+costText = "costs 20000 coins"
 cost = SubResource( 13 )
-effectData = SubResource( 15 )
+effectData = SubResource( 16 )
 
 [resource]
 resource_local_to_scene = true

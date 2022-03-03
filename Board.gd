@@ -126,6 +126,13 @@ func execute(effectData):
 						print(effectData.addResources[i]) 
 						
 	#inventory.addInventoryItem("coin")
+	if len(effectData.removeResources) > 0:
+		for i in range(0, len(effectData.numRemoveResources)): 
+			for x in range(0, effectData.numRemoveResources[i]):
+				for y in Global.items:
+					if effectData.removeResources[i] == Global.items[y].id:
+						inventory.removeInventoryItem(effectData.removeResources[i])
+						print(effectData.removeResources[i]) 
 	#print(effectData.addResources)
 	#print(effectData.numResources)
 # Returns true if there is an active event card on the board

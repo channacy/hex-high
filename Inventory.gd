@@ -8,17 +8,15 @@ export(Resource) var itemData = null
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	addInventoryItem("alchemy")
-<<<<<<< HEAD
 	for i in range(100):
 		addInventoryItem("alchemy")
 	for i in range(100):
 		addInventoryItem("artifice")
 	for i in range(100):
 		addInventoryItem("coin")
-=======
+
 	addInventoryItem("alchemy")
 	addInventoryItem("artifice")
->>>>>>> 6734e799f658a4f69b51faf204acce849ea38a13
 	addInventoryItem("alchemy")
 	addInventoryItem("sorcery")
 	addInventoryItem("summon")

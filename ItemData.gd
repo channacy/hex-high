@@ -9,5 +9,3 @@ export(Texture) var itemImg = load("res://sprites/defaultFront.png")
 
 #label for amount of items held
 export(int) var numOfItems = 0
-
-

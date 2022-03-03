@@ -8,27 +8,37 @@ export(Resource) var itemData = null
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	addInventoryItem("alchemy")
+	for i in range(100):
+		addInventoryItem("alchemy")
+	for i in range(100):
+		addInventoryItem("artifice")
+	for i in range(100):
+		addInventoryItem("coin")
+
 	addInventoryItem("alchemy")
 	addInventoryItem("artifice")
-	addInventoryItem("coin")
 	addInventoryItem("alchemy")
-	
+
+
+	addInventoryItem("sorcery")
+	addInventoryItem("summon")
+	addInventoryItem("textbook")
+	addInventoryItem("coin")
+	addInventoryItem("coin")
+	addInventoryItem("mana")
+
 	pass # Replace with function body.
 	
 func addInventoryItem(item):
 	itemData = Global.items[item]
-	#itemNode.setup("res://Item.tscn", 1)
 	if item in inventoryItems.keys():
 		inventoryItems[item] += 1
-		print("Got Same Item ============")
+		#print("Got Same Item ============")
 	else:
-		print("Got New Item -------------")
+		#print("Got New Item -------------")
 		inventoryItems[item] = 1
 		itemImages[item] = itemData
 	updateInventoryItems()
-
-func setupItem(item, numItems):
-	print("setup an item")
 	
 func updateInventoryItems():
 	#Essentially removes everything in the inventory (This is so that the positioning updates)

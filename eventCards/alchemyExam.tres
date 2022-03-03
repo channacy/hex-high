@@ -20,6 +20,7 @@ removeHandTag = [  ]
 script = ExtResource( 2 )
 flavorText = "Brew A Potion"
 effectText = ""
+costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -37,6 +38,7 @@ removeHandTag = [  ]
 script = ExtResource( 2 )
 flavorText = "Fail "
 effectText = ""
+costText = ""
 effectData = SubResource( 3 )
 
 [sub_resource type="Resource" id=5]
@@ -54,6 +56,7 @@ removeHandTag = [  ]
 script = ExtResource( 2 )
 flavorText = "Save for Later"
 effectText = ""
+costText = ""
 effectData = SubResource( 5 )
 
 [resource]

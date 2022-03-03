@@ -14,7 +14,7 @@ func _ready():
 		addInventoryItem("artifice")
 	for i in range(100):
 		addInventoryItem("coin")
-
+	
 	addInventoryItem("alchemy")
 	addInventoryItem("artifice")
 	addInventoryItem("alchemy")

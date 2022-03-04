@@ -70,6 +70,7 @@ margin_left = -52.0
 margin_top = -16.0
 margin_right = 54.0
 margin_bottom = 14.0
+mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -77,6 +78,7 @@ __meta__ = {
 [node name="CostText" type="RichTextLabel" parent="CostContainer"]
 margin_right = 106.0
 margin_bottom = 30.0
+mouse_filter = 2
 bbcode_enabled = true
 bbcode_text = "[center][color=black]Default cost text[/color][/center]"
 text = "Default cost text"

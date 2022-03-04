@@ -18,16 +18,15 @@ func loadEvent(eventCardId, faceUp):
 	
 func checkCost(cost):
 	var inventory = get_node("../InventoryNode/Inventory")
-	if inventory.inventoryItems["alchemy"] >= cost.alchemy:
-			if inventory.inventoryItems["artifice"] >= cost.artifice:
-				if inventory.inventoryItems["summon"] >= cost.summon:
-					if inventory.inventoryItems["sorcery"] >= cost.sorcery:
-						if inventory.inventoryItems["textbook"] >= cost.textbook:
-							if inventory.inventoryItems["coin"] >= cost.coin:
-								if inventory.inventoryItems["mana"] >= cost.mana:
-									return true
-	else: 
-		return false
+	return inventory.inventoryItems["alchemy"] >= cost.alchemy \
+		and inventory.inventoryItems["artifice"] >= cost.artifice \
+		and inventory.inventoryItems["summon"] >= cost.summon \
+		and inventory.inventoryItems["sorcery"] >= cost.sorcery \
+		and inventory.inventoryItems["textbook"] >= cost.textbook \
+		and inventory.inventoryItems["coin"] >= cost.coin \
+		and inventory.inventoryItems["mana"] >= cost.mana \
+		and inventory.inventoryItems["fatigue"] >= cost.fatigue \
+		and inventory.inventoryItems["writeups"] >= cost.writeups
 
 # Executes the effect of the option card selected and clears the board for the next event
 func execute(effectData):
@@ -118,21 +117,25 @@ func execute(effectData):
 			
 	#add resources based on option cards
 	if len(effectData.addResources) > 0:
-		for i in range(0, len(effectData.numResources)): 
-			for x in range(0, effectData.numResources[i]):
-				for y in Global.items:
-					if effectData.addResources[i] == Global.items[y].id:
-						inventory.addInventoryItem(effectData.addResources[i])
-						print(effectData.addResources[i]) 
+		for resource in len(effectData.addResources):
+			inventory.addInventoryItem(effectData.addResources[resource], effectData.numResources[resource])
+		#for i in range(0, len(effectData.numResources)):
+			#for x in range(0, effectData.numResources[i]):
+				#for y in Global.items:
+					#if effectData.addResources[i] == Global.items[y].id:
+						#inventory.addInventoryItem(effectData.addResources[i])
+						#print(effectData.addResources[i])
 						
 	#inventory.addInventoryItem("coin")
 	if len(effectData.removeResources) > 0:
-		for i in range(0, len(effectData.numRemoveResources)): 
-			for x in range(0, effectData.numRemoveResources[i]):
-				for y in Global.items:
-					if effectData.removeResources[i] == Global.items[y].id:
-						inventory.removeInventoryItem(effectData.removeResources[i])
-						print(effectData.removeResources[i]) 
+		for resource in len(effectData.removeResources):
+			inventory.removeInventoryItem(effectData.removeResources[resource], effectData.numRemoveResources[resource])
+		#for i in range(0, len(effectData.numRemoveResources)): 
+			#for x in range(0, effectData.numRemoveResources[i]):
+				#for y in Global.items:
+					#if effectData.removeResources[i] == Global.items[y].id:
+						#inventory.removeInventoryItem(effectData.removeResources[i])
+						#print(effectData.removeResources[i]) 
 	#print(effectData.addResources)
 	#print(effectData.numResources)
 # Returns true if there is an active event card on the board

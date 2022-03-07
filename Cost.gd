@@ -15,3 +15,7 @@ export(int) var textbook = 0
 export(int) var coin = 0
 
 export(int) var mana = 0
+
+export(int) var fatigue = 0
+
+export(int) var writeups = 0

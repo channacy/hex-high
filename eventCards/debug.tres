@@ -116,39 +116,6 @@ effectText = "removes test cards"
 costText = ""
 effectData = SubResource( 9 )
 
-[sub_resource type="Resource" id=12]
-script = ExtResource( 5 )
-alchemy = 0
-artifice = 0
-sorcery = 0
-summon = 0
-textbook = 0
-coin = 1
-mana = 0
-
-[sub_resource type="Resource" id=15]
-script = ExtResource( 4 )
-addId = [  ]
-addTag = [  ]
-removeId = [ "test" ]
-removeTag = [  ]
-addHandId = [  ]
-addHandTag = [  ]
-removeHandId = [  ]
-removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
-removeResources = [  ]
-numRemoveResources = [  ]
-
-[sub_resource type="Resource" id=11]
-script = ExtResource( 2 )
-flavorText = "Testing Card Costs"
-effectText = ""
-costText = ""
-cost = SubResource( 12 )
-effectData = SubResource( 15 )
-
 [sub_resource type="Resource" id=13]
 script = ExtResource( 5 )
 alchemy = 0
@@ -158,6 +125,8 @@ summon = 0
 textbook = 0
 coin = 20000
 mana = 0
+fatigue = 0
+writeups = 0
 
 [sub_resource type="Resource" id=16]
 script = ExtResource( 4 )
@@ -182,6 +151,41 @@ costText = "costs 20000 coins"
 cost = SubResource( 13 )
 effectData = SubResource( 16 )
 
+[sub_resource type="Resource" id=17]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=18]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [ "debugResources" ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
+
+[sub_resource type="Resource" id=19]
+script = ExtResource( 2 )
+flavorText = "Resources Debug"
+effectText = "Inserts 1 \"Resource Debug\" card into the hand."
+costText = ""
+cost = SubResource( 17 )
+effectData = SubResource( 18 )
+
 [resource]
 resource_local_to_scene = true
 script = ExtResource( 1 )
@@ -190,4 +194,4 @@ tags = [ "debug" ]
 eventText = "Debug"
 face = ExtResource( 3 )
 infinite = false
-options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ), SubResource( 8 ), SubResource( 10 ), SubResource( 11 ), SubResource( 14 ) ]
+options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ), SubResource( 8 ), SubResource( 10 ), SubResource( 14 ), SubResource( 19 ) ]

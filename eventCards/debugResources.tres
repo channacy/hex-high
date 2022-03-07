@@ -1,0 +1,86 @@
+[gd_resource type="Resource" load_steps=12 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://Cost.gd" type="Script" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
+[ext_resource path="res://EffectData.gd" type="Script" id=5]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 5 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "alchemy", "artifice", "sorcery", "summon" ]
+numResources = [ 10, 10, 10, 10 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 3 )
+flavorText = "Study"
+effectText = "Grants 10 marks in all subjects."
+costText = ""
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+alchemy = 10
+artifice = 10
+sorcery = 10
+summon = 10
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 5 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [ "alchemy", "artifice", "sorcery", "summon" ]
+numRemoveResources = [ 10, 10, 10, 10 ]
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 3 )
+flavorText = "Unstudy"
+effectText = "Removes 10 marks in all subjects."
+costText = "10 marks in each subject"
+cost = SubResource( 4 )
+effectData = SubResource( 5 )
+
+[resource]
+script = ExtResource( 1 )
+id = "debugResources"
+tags = [  ]
+eventText = "Resource Debug"
+face = ExtResource( 4 )
+infinite = false
+options = [ SubResource( 3 ), SubResource( 6 ) ]

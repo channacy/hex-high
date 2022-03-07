@@ -119,25 +119,15 @@ func execute(effectData):
 	if len(effectData.addResources) > 0:
 		for resource in len(effectData.addResources):
 			inventory.addInventoryItem(effectData.addResources[resource], effectData.numResources[resource])
-		#for i in range(0, len(effectData.numResources)):
-			#for x in range(0, effectData.numResources[i]):
-				#for y in Global.items:
-					#if effectData.addResources[i] == Global.items[y].id:
-						#inventory.addInventoryItem(effectData.addResources[i])
-						#print(effectData.addResources[i])
-						
-	#inventory.addInventoryItem("coin")
+
+	# Removes resources from the inventory
 	if len(effectData.removeResources) > 0:
 		for resource in len(effectData.removeResources):
 			inventory.removeInventoryItem(effectData.removeResources[resource], effectData.numRemoveResources[resource])
-		#for i in range(0, len(effectData.numRemoveResources)): 
-			#for x in range(0, effectData.numRemoveResources[i]):
-				#for y in Global.items:
-					#if effectData.removeResources[i] == Global.items[y].id:
-						#inventory.removeInventoryItem(effectData.removeResources[i])
-						#print(effectData.removeResources[i]) 
-	#print(effectData.addResources)
-	#print(effectData.numResources)
+	
+	# Updates the deck for resource conditionals
+	get_node("../InventoryNode/Inventory").updateResourceConditionals()
+	
 # Returns true if there is an active event card on the board
 func hasEventCard():
 	return is_instance_valid(eventCardNode)

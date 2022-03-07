@@ -1,0 +1,51 @@
+[gd_resource type="Resource" load_steps=9 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
+[ext_resource path="res://Cost.gd" type="Script" id=4]
+[ext_resource path="res://EffectData.gd" type="Script" id=5]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 3
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 5 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [ "writeups" ]
+numRemoveResources = [ 3 ]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+flavorText = "Go to detention"
+effectText = "Discard 10 cards from the top of the deck."
+costText = "Costs 3 writeups"
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
+
+[resource]
+script = ExtResource( 1 )
+id = "writeupsPenalty"
+tags = [  ]
+eventText = "Too many writeups..."
+face = ExtResource( 3 )
+infinite = false
+options = [ SubResource( 3 ) ]

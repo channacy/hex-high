@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=12 format=2]
+[gd_resource type="Resource" load_steps=15 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://Cost.gd" type="Script" id=2]
@@ -76,6 +76,41 @@ costText = "10 marks in each subject"
 cost = SubResource( 4 )
 effectData = SubResource( 5 )
 
+[sub_resource type="Resource" id=7]
+script = ExtResource( 2 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 5 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "fatigue", "writeups" ]
+numResources = [ 5, 5 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+
+[sub_resource type="Resource" id=9]
+script = ExtResource( 3 )
+flavorText = "Bad resources"
+effectText = "Grants 5 fatigue and 5 writeups."
+costText = ""
+cost = SubResource( 7 )
+effectData = SubResource( 8 )
+
 [resource]
 script = ExtResource( 1 )
 id = "debugResources"
@@ -83,4 +118,4 @@ tags = [  ]
 eventText = "Resource Debug"
 face = ExtResource( 4 )
 infinite = false
-options = [ SubResource( 3 ), SubResource( 6 ) ]
+options = [ SubResource( 3 ), SubResource( 6 ), SubResource( 9 ) ]

@@ -15,11 +15,16 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 flavorText = "Summon an insect "
 effectText = ""
+costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -32,11 +37,16 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
 flavorText = "Fail"
 effectText = ""
+costText = ""
 effectData = SubResource( 3 )
 
 [sub_resource type="Resource" id=5]
@@ -49,11 +59,16 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 2 )
 flavorText = "Save for later"
 effectText = ""
+costText = ""
 effectData = SubResource( 5 )
 
 [resource]
@@ -63,4 +78,5 @@ tags = [ "summoning", "exam" ]
 eventText = "Time for your Summoning Exam!"
 face = ExtResource( 1 )
 infinite = false
+startInDeck = true
 options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ) ]

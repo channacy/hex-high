@@ -15,11 +15,16 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
 flavorText = "Brew a Potion to Defend yourself "
 effectText = ""
+costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -32,11 +37,16 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
 flavorText = "Ignore "
 effectText = ""
+costText = ""
 effectData = SubResource( 3 )
 
 [resource]
@@ -46,4 +56,5 @@ tags = [ "scenario", "virus" ]
 eventText = "mysterious virus is spreading throughout Ethereal and is known for depleting a witch’s mana thus restricting his/her magical powers. "
 face = ExtResource( 2 )
 infinite = false
+startInDeck = true
 options = [ SubResource( 2 ), SubResource( 4 ) ]

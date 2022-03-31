@@ -81,4 +81,5 @@ tags = [ "sleep", "schoolEvent" ]
 eventText = "Maybe I should go to bed..."
 face = ExtResource( 3 )
 infinite = true
+startInDeck = true
 options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ) ]

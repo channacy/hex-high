@@ -78,4 +78,5 @@ tags = [ "exam", "alchemy " ]
 eventText = "Time for your alchemy exam!"
 face = ExtResource( 1 )
 infinite = false
+startInDeck = true
 options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ) ]

@@ -78,4 +78,5 @@ tags = [ "artiface", "exam" ]
 eventText = "Time for your Artiface Exam!"
 face = ExtResource( 1 )
 infinite = false
+startInDeck = true
 options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ) ]

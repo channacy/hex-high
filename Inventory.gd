@@ -9,6 +9,7 @@ export(Resource) var itemData = null
 func _ready():
 	
 	for item in Global.items:
+		print(item)
 		inventoryItems[item] = 0
 		itemImages[item] = Global.items[item]
 	updateInventoryItems()

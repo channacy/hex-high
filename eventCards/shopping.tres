@@ -17,11 +17,14 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
 flavorText = "Buy a textbook "
 effectText = "Add Resource"
+costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -36,11 +39,14 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
 flavorText = "Buy a potion "
 effectText = "Add Resource"
+costText = ""
 effectData = SubResource( 3 )
 
 [resource]
@@ -50,4 +56,5 @@ tags = [ "schoolEvent", "shopping" ]
 eventText = "The travelling merchant is in town!"
 face = ExtResource( 2 )
 infinite = true
+startInDeck = true
 options = [ SubResource( 2 ), SubResource( 4 ) ]

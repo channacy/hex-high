@@ -15,8 +15,10 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "coin" ]
+numResources = [ 10 ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
@@ -37,6 +39,8 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
@@ -52,4 +56,5 @@ tags = [  ]
 eventText = "A job opening at Matilda's potion shop!"
 face = ExtResource( 3 )
 infinite = false
+startInDeck = true
 options = [ SubResource( 2 ), SubResource( 4 ) ]

@@ -56,4 +56,5 @@ tags = [ "acceptWork1", "declineWork1" ]
 eventText = "A job opening at Rose's"
 face = ExtResource( 1 )
 infinite = false
+startInDeck = true
 options = [ SubResource( 2 ), SubResource( 4 ) ]

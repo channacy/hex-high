@@ -2,12 +2,10 @@ extends Area2D
 
 var board = null
 var counter = null
-var count = null
-var cardInsert = null
 var arrOfInsertions = {}
 var insertKeys = []
 # array of event cards from folder called eventCards
-var cards = ["potionShop0", "witchShop0", "scenario0", "sleep", "study", "tuition", "shopping", "alchemyExam", "artificeExam", "sorceryExam", "summoningExam", "scenario1", "scenario2", "scenario3", "scenario4", "scenario5", "scenario6", "scenario7", "break", "freeTime"]
+var cards = []
 var randomNum = RandomNumberGenerator.new()
 var myRandomNum = 0
 
@@ -16,24 +14,18 @@ var resourceConditionals = {}
 
 # Finds the board in the hierarchy and saves it for later use
 func _ready():
+	cards = Global.startingDeck
+	print(cards)
 	counter = 0
 	randomNum.randomize()
 	board = get_node("../../Board")
-	addGuaranteed(5, "potionShop0")
-	addGuaranteed(10, "potionShop0")
-	addGuaranteed(15, "potionShop0")
 
 # If left click the deck sprite, runs action.
 # In this case, when you click the deck, it will use the loadEvent fucntion from the Board.gd script
 func _input_event(viewport, event, shape_idx):
-	
-	if event is InputEventMouseButton \
-	and not board.hasEventCard() \
-	and event.button_index == BUTTON_LEFT \
-	and event.is_pressed():
-		print(cards)
+	if event is InputEventMouseButton and not board.hasEventCard() and event.button_index == BUTTON_LEFT and event.is_pressed():
 		counter += 1
-		print(counter)
+		print(counter, "card draw")
 		var didDraw = false
 		if !insertKeys.empty():
 			for i in insertKeys:
@@ -57,7 +49,7 @@ func _input_event(viewport, event, shape_idx):
 
 # Adds a card to the list of guaranteed draws
 func addGuaranteed(numDraws, cardID):
-	count = counter + numDraws
+	var count = counter + numDraws
 	# Handles cards being inserted at the same counter index as a guaranteed card that already exists
 	# The card being inserted is pushed back to the next available index
 	while insertKeys.find(count, 0) != -1:

@@ -56,4 +56,5 @@ tags = [ "prop" ]
 eventText = "TBD"
 face = ExtResource( 2 )
 infinite = false
+startInDeck = false
 options = [ SubResource( 2 ), SubResource( 3 ) ]

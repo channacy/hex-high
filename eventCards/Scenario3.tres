@@ -15,11 +15,16 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 flavorText = "Accept"
 effectText = ""
+costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -32,11 +37,16 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
 flavorText = "Decline"
 effectText = ""
+costText = ""
 effectData = SubResource( 3 )
 
 [resource]
@@ -46,4 +56,5 @@ tags = [ "scenario", "expedition" ]
 eventText = "You must complete a mini expedition to the mysterious Ancient Forest and complete a small task of finding a magical artifact. "
 face = ExtResource( 1 )
 infinite = false
+startInDeck = true
 options = [ SubResource( 2 ), SubResource( 4 ) ]

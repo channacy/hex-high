@@ -34,4 +34,5 @@ tags = [ "schoolEventCard", "academiaBreak" ]
 eventText = "Academia Break is here!"
 face = ExtResource( 2 )
 infinite = true
+startInDeck = true
 options = [ SubResource( 2 ) ]

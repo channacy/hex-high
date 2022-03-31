@@ -56,4 +56,5 @@ tags = [ "tutiton", "schoolEvent" ]
 eventText = "Tuition Day"
 face = ExtResource( 3 )
 infinite = true
+startInDeck = true
 options = [ SubResource( 2 ), SubResource( 4 ) ]

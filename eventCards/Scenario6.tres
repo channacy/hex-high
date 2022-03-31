@@ -17,11 +17,14 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 flavorText = "Join the auction"
 effectText = "Decrease Resources"
+costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
@@ -36,11 +39,14 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
 flavorText = "Decline to join"
 effectText = ""
+costText = ""
 effectData = SubResource( 3 )
 
 [resource]
@@ -50,4 +56,5 @@ tags = [ "scenario", "auction" ]
 eventText = "A popular witch auction is being held and a very rare potion is one of the items being currently sold"
 face = ExtResource( 1 )
 infinite = false
+startInDeck = true
 options = [ SubResource( 2 ), SubResource( 4 ) ]

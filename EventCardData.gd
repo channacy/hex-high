@@ -15,5 +15,8 @@ var back = load("res://sprites/eventBack.jpg")
 # If true, do not discard after drawn from the deck
 export(bool) var infinite = false
 
+# If true, will be an available card in the deck at the start of the game
+export(bool) var startInDeck = false
+
 # Option cards
 export(Array, Resource) var options = []

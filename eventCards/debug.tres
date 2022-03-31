@@ -89,8 +89,8 @@ numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=8]
 script = ExtResource( 2 )
-flavorText = "Debug More"
-effectText = "Add 2 debug cards"
+flavorText = "Cast More"
+effectText = "Add 2 cast a spell cards"
 costText = ""
 effectData = SubResource( 7 )
 
@@ -123,7 +123,7 @@ artifice = 0
 sorcery = 0
 summon = 0
 textbook = 0
-coin = 20000
+coin = 20
 mana = 0
 fatigue = 0
 writeups = 0
@@ -140,14 +140,14 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
-removeResources = [  ]
-numRemoveResources = [  ]
+removeResources = [ "coin" ]
+numRemoveResources = [ 20 ]
 
 [sub_resource type="Resource" id=14]
 script = ExtResource( 2 )
-flavorText = "Can't Afford"
+flavorText = "Costs 20 Gold"
 effectText = ""
-costText = "costs 20000 coins"
+costText = "costs 20 coins"
 cost = SubResource( 13 )
 effectData = SubResource( 16 )
 
@@ -180,8 +180,8 @@ numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=19]
 script = ExtResource( 2 )
-flavorText = "Resources Debug"
-effectText = "Inserts 1 \"Resource Debug\" card into the hand."
+flavorText = "Resources Spells"
+effectText = "Inserts 1 \"Resource Spells\" card into the hand."
 costText = ""
 cost = SubResource( 17 )
 effectData = SubResource( 18 )
@@ -191,7 +191,8 @@ resource_local_to_scene = true
 script = ExtResource( 1 )
 id = "debug"
 tags = [ "debug" ]
-eventText = "Debug"
+eventText = "Cast a Spell"
 face = ExtResource( 3 )
 infinite = false
+startInDeck = false
 options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ), SubResource( 8 ), SubResource( 10 ), SubResource( 14 ), SubResource( 19 ) ]

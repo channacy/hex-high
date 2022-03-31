@@ -2,6 +2,7 @@ extends Node
 
 var current_scene = null
 var files = {}
+var startingDeck = []
 var items = {}
 
 
@@ -21,8 +22,10 @@ func _ready():
 			break
 		elif not file.begins_with("."):
 			# Adds to a dictionary {'cardID : eventCardData'}
-			files[str(load("res://eventCards/" + file).id)] = load("res://eventCards/" + file)
-
+			var x = load("res://eventCards/" + file)
+			files[str(x.id)] = x
+			if x.startInDeck:
+				startingDeck.append(str(x.id))
 
 	dir.open("res://items/")
 	dir.list_dir_begin()

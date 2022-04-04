@@ -17,14 +17,14 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [ "mana" ]
-numResources = [ 5 ]
+addResources = [  ]
+numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
-flavorText = "Sleep"
+flavorText = "Go to Sleep"
 effectText = ""
 costText = ""
 cost = SubResource( 7 )

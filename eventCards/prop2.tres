@@ -7,35 +7,35 @@
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
-addId = [ "cardToAdd" ]
-addTag = [ "prop" ]
+addId = [  ]
+addTag = [  ]
 removeId = [  ]
 removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [ "coin", "mana" ]
-numResources = [ 4, 5 ]
+addResources = [ "coin", "fatigue" ]
+numResources = [ 10, 5 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 1 )
 flavorText = "Work"
-effectText = "Add more Resources"
-costText = ""
+effectText = "+10 coins, +5 Fatigue"
+costText = " "
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 3 )
-addId = [  ]
+addId = [ "witchShop0" ]
 addTag = [  ]
-removeId = [ "cardToAdd" ]
+removeId = [ "prop2" ]
 removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]
-removeHandId = [  ]
+removeHandId = [ "prop2" ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
@@ -53,7 +53,7 @@ effectData = SubResource( 4 )
 script = ExtResource( 4 )
 id = "prop2"
 tags = [ "prop" ]
-eventText = "Time to work! "
+eventText = "Time to work at Matilda's Shop!"
 face = ExtResource( 2 )
 infinite = false
 startInDeck = false

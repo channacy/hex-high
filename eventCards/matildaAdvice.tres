@@ -1,0 +1,38 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
+[ext_resource path="res://EffectData.gd" type="Script" id=3]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 3 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "textbook" ]
+numResources = [ 0 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+flavorText = "Accept her wisdom "
+effectText = "+ 1 Textbook"
+costText = ""
+effectData = SubResource( 1 )
+
+[resource]
+script = ExtResource( 1 )
+id = "matildaAdvice"
+tags = [ "matilda " ]
+eventText = "Matilda shares some knowledge about her old days as a young witch who brewed potions for legendary figures. "
+face = ExtResource( 4 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 2 ) ]

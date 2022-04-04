@@ -9,7 +9,7 @@
 script = ExtResource( 2 )
 addId = [ "prop2" ]
 addTag = [ "prop" ]
-removeId = [  ]
+removeId = [ "witchShop0" ]
 removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]

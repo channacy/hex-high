@@ -1,12 +1,12 @@
 [gd_resource type="Resource" load_steps=9 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
-[ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
-[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
-[ext_resource path="res://EffectData.gd" type="Script" id=4]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
+[ext_resource path="res://EffectData.gd" type="Script" id=3]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 4 )
+script = ExtResource( 3 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
@@ -15,27 +15,27 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "coin", "fatigue" ]
+numResources = [ 30, 15 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
-script = ExtResource( 3 )
-flavorText = "Practice Magic"
-effectText = "Increase Resource"
+script = ExtResource( 2 )
+flavorText = "Work "
+effectText = "+30 coins, +15 fatigue"
 costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
-script = ExtResource( 4 )
-addId = [  ]
+script = ExtResource( 3 )
+addId = [ "potionShop0" ]
 addTag = [  ]
-removeId = [  ]
+removeId = [ "prop1" ]
 removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]
-removeHandId = [  ]
+removeHandId = [ "prop1" ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
@@ -43,18 +43,18 @@ removeResources = [  ]
 numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=4]
-script = ExtResource( 3 )
-flavorText = "Read Textbooks"
-effectText = "Increase Resource "
+script = ExtResource( 2 )
+flavorText = "Quit Job"
+effectText = ""
 costText = ""
 effectData = SubResource( 3 )
 
 [resource]
 script = ExtResource( 1 )
-id = "freeTime"
-tags = [ "schoolEvent" ]
-eventText = "Free Time!"
-face = ExtResource( 2 )
+id = "prop1"
+tags = [  ]
+eventText = "Work at Rose's Esssentials!"
+face = ExtResource( 4 )
 infinite = true
 startInDeck = false
 options = [ SubResource( 2 ), SubResource( 4 ) ]

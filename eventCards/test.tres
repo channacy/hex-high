@@ -62,4 +62,5 @@ tags = [ "test" ]
 eventText = "test card"
 face = ExtResource( 4 )
 infinite = false
+startInDeck = false
 options = [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ) ]

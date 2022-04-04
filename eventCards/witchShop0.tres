@@ -7,16 +7,16 @@
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
-addId = [ "prop2" ]
-addTag = [ "prop" ]
-removeId = [  ]
+addId = [ "prop1" ]
+addTag = [  ]
+removeId = [ "potionShop0" ]
 removeTag = [  ]
-addHandId = [  ]
+addHandId = [ "prop1" ]
 addHandTag = [  ]
-removeHandId = [  ]
+removeHandId = [ "potionShop0" ]
 removeHandTag = [  ]
-addResources = [ "coin" ]
-numResources = [ 10 ]
+addResources = [  ]
+numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
 
@@ -29,7 +29,7 @@ effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
-addId = [  ]
+addId = [ "" ]
 addTag = [  ]
 removeId = [  ]
 removeTag = [  ]

@@ -1,14 +1,14 @@
 [gd_resource type="Resource" load_steps=9 format=2]
 
-[ext_resource path="res://OptionCardData.gd" type="Script" id=1]
-[ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
-[ext_resource path="res://EffectData.gd" type="Script" id=3]
-[ext_resource path="res://EventCardData.gd" type="Script" id=4]
+[ext_resource path="res://EffectData.gd" type="Script" id=1]
+[ext_resource path="res://EventCardData.gd" type="Script" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 addId = [  ]
-addTag = [  ]
+addTag = [ "matilda" ]
 removeId = [  ]
 removeTag = [  ]
 addHandId = [  ]
@@ -21,16 +21,16 @@ removeResources = [  ]
 numRemoveResources = [  ]
 
 [sub_resource type="Resource" id=2]
-script = ExtResource( 1 )
+script = ExtResource( 3 )
 flavorText = "Work"
 effectText = "+10 coins, +5 Fatigue"
 costText = " "
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=4]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 addId = [ "witchShop0" ]
-addTag = [  ]
+addTag = [ "matilda" ]
 removeId = [ "prop2" ]
 removeTag = [  ]
 addHandId = [  ]
@@ -43,18 +43,18 @@ removeResources = [ "coin" ]
 numRemoveResources = [ 10 ]
 
 [sub_resource type="Resource" id=3]
-script = ExtResource( 1 )
+script = ExtResource( 3 )
 flavorText = "Quit"
 effectText = ""
 costText = ""
 effectData = SubResource( 4 )
 
 [resource]
-script = ExtResource( 4 )
-id = "prop2"
-tags = [ "prop" ]
+script = ExtResource( 2 )
+id = "matildaEvent3"
+tags = [ "matilda" ]
 eventText = "Time to work at Matilda's Shop!"
-face = ExtResource( 2 )
+face = ExtResource( 4 )
 infinite = false
 startInDeck = false
 options = [ SubResource( 2 ), SubResource( 3 ) ]

@@ -8,4 +8,5 @@ id = "test1"
 tags = [  ]
 eventText = ""
 infinite = false
+startInDeck = false
 options = [  ]

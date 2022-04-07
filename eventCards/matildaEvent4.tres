@@ -1,0 +1,60 @@
+[gd_resource type="Resource" load_steps=9 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://EffectData.gd" type="Script" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [ "matilda" ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "fatigue" ]
+numResources = [ 5 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+flavorText = "Clean up the mess and act like nothing happened"
+effectText = "+5 Fatigue"
+costText = ""
+effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [ "matilda" ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [ "coin" ]
+numRemoveResources = [ 10 ]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 3 )
+flavorText = "Tell your boss, Matilda."
+effectText = "- 10 coins"
+costText = ""
+effectData = SubResource( 4 )
+
+[resource]
+script = ExtResource( 1 )
+id = "matildaEvent4"
+tags = [ "matilda" ]
+eventText = "While working, you bump a shelf and accidentally spill a potion labeled “lethal.”"
+face = ExtResource( 4 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 2 ), SubResource( 3 ) ]

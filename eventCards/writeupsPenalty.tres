@@ -48,4 +48,5 @@ tags = [  ]
 eventText = "Too many writeups..."
 face = ExtResource( 3 )
 infinite = false
+startInDeck = false
 options = [ SubResource( 3 ) ]

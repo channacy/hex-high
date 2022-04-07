@@ -19,6 +19,8 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
@@ -41,6 +43,8 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 3 )

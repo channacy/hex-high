@@ -125,6 +125,13 @@ func execute(effectData):
 		for resource in len(effectData.removeResources):
 			inventory.removeInventoryItem(effectData.removeResources[resource], effectData.numRemoveResources[resource])
 	
+	#Add guarenteed card to deck
+	if len(effectData.numGuaranteeCardDraws) > 0:
+		print("EffectData for Guarantee Card Draw")
+		for i in range(len(effectData.numGuaranteeCardDraws)):
+			deck.addGuaranteed(effectData.numGuaranteeCardDraws[i], effectData.guaranteeCardID[i])
+	
+	
 	# Updates the deck for resource conditionals
 	get_node("../InventoryNode/Inventory").updateResourceConditionals()
 	

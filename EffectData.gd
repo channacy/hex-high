@@ -24,3 +24,7 @@ export(Array, int) var numResources = []
 #array to remove resources when certain option card is clicked 
 export(Array, String) var removeResources = []
 export(Array, int) var numRemoveResources = []
+
+#array for guarantee card draws function
+export(Array, int) var numGuaranteeCardDraws = []
+export(Array, String) var guaranteeCardID

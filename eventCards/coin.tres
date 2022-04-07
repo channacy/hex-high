@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=10 format=2]
+[gd_resource type="Resource" load_steps=12 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
@@ -41,11 +41,40 @@ costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
 
+[sub_resource type="Resource" id=5]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 3 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
+
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
 flavorText = "Leave it there"
 effectText = ""
 costText = ""
+cost = SubResource( 5 )
+effectData = SubResource( 6 )
 
 [resource]
 script = ExtResource( 1 )

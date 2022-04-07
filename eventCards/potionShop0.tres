@@ -19,8 +19,8 @@ addResources = [ "coin" ]
 numResources = [ 10 ]
 removeResources = [  ]
 numRemoveResources = [  ]
-numGuaranteeCardDraws = [ 1 ]
-guaranteeCardID = [ "potionShop0" ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )

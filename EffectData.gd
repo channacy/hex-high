@@ -27,4 +27,4 @@ export(Array, int) var numRemoveResources = []
 
 #array for guarantee card draws function
 export(Array, int) var numGuaranteeCardDraws = []
-export(Array, String) var guaranteeCardID
+export(Array, String) var guaranteeCardID = []

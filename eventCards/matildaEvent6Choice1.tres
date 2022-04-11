@@ -36,5 +36,5 @@ tags = [  ]
 eventText = "The group of witches are delighted by your hospitality and offer to give you some gifts as a means of gratitude. "
 face = ExtResource( 2 )
 infinite = false
-startInDeck = true
+startInDeck = false
 options = [ SubResource( 2 ) ]

@@ -31,10 +31,10 @@ effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 3 )
-id = "matildaEvent6Choice1"
+id = "matildaEvent6Choice2"
 tags = [  ]
 eventText = "The witch appreciates your gratitude and gives you a surprising gift."
 face = ExtResource( 2 )
 infinite = false
-startInDeck = true
+startInDeck = false
 options = [ SubResource( 2 ) ]

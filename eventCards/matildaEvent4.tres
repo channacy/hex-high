@@ -9,7 +9,7 @@
 script = ExtResource( 2 )
 addId = [  ]
 addTag = [ "matilda" ]
-removeId = [  ]
+removeId = [ "potionShop0" ]
 removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]
@@ -19,6 +19,8 @@ addResources = [ "fatigue" ]
 numResources = [ 5 ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
@@ -31,7 +33,7 @@ effectData = SubResource( 1 )
 script = ExtResource( 2 )
 addId = [  ]
 addTag = [ "matilda" ]
-removeId = [  ]
+removeId = [ "potionShop0" ]
 removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]
@@ -41,6 +43,8 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [ "coin" ]
 numRemoveResources = [ 10 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )

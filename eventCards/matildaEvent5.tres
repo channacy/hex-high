@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=8 format=2]
+[gd_resource type="Resource" load_steps=9 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://EffectData.gd" type="Script" id=2]
@@ -7,8 +7,32 @@
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
-addId = [  ]
+addId = [ "matildaEvent5Chioce1" ]
 addTag = [ "matilda" ]
+removeId = [ "potionShop0" ]
+removeTag = [  ]
+addHandId = [ "matildaEvent5Chioce1" ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [ "coin" ]
+numRemoveResources = [ 20 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+flavorText = "Claim the box, afterall it is free."
+effectText = ""
+costText = ""
+effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [  ]
 removeId = [  ]
 removeTag = [  ]
 addHandId = [  ]
@@ -17,21 +41,17 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
-removeResources = [ "coin" ]
-numRemoveResources = [ 20 ]
-
-[sub_resource type="Resource" id=2]
-script = ExtResource( 3 )
-flavorText = "Open the box. "
-effectText = ""
-costText = ""
-effectData = SubResource( 1 )
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
 flavorText = "No, politely decline."
 effectText = ""
 costText = ""
+effectData = SubResource( 4 )
 
 [resource]
 script = ExtResource( 1 )

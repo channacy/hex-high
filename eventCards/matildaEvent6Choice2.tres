@@ -15,8 +15,8 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [ "textbook" ]
-numResources = [ 1 ]
+addResources = [ "fatigue" ]
+numResources = [ 10 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
@@ -24,8 +24,8 @@ guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 1 )
-flavorText = "Accept your gift."
-effectText = ""
+flavorText = "Accept your fate."
+effectText = "+10 fatigue"
 costText = ""
 effectData = SubResource( 1 )
 
@@ -33,7 +33,7 @@ effectData = SubResource( 1 )
 script = ExtResource( 3 )
 id = "matildaEvent6Choice2"
 tags = [  ]
-eventText = "The witch appreciates your gratitude and gives you a surprising gift."
+eventText = "The witches become furious and strikes you with a curse."
 face = ExtResource( 2 )
 infinite = false
 startInDeck = false

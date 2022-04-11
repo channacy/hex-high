@@ -7,11 +7,11 @@
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
-addId = [ "matildaEvent6Choice1" ]
+addId = [  ]
 addTag = [ "matilda" ]
-removeId = [  ]
+removeId = [ "potionShop0" ]
 removeTag = [  ]
-addHandId = [ "matildaEvent6Choice1" ]
+addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
@@ -19,8 +19,8 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
-numGuaranteeCardDraws = [  ]
-guaranteeCardID = [  ]
+numGuaranteeCardDraws = [ 1 ]
+guaranteeCardID = [ "matildaEvent6Choice1" ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
@@ -31,9 +31,9 @@ effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
-addId = [ "matildaEvent6Choice2" ]
+addId = [  ]
 addTag = [ "matilda" ]
-removeId = [  ]
+removeId = [ "potionShop0" ]
 removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]
@@ -43,8 +43,8 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
-numGuaranteeCardDraws = [  ]
-guaranteeCardID = [  ]
+numGuaranteeCardDraws = [ 1 ]
+guaranteeCardID = [ "matildaEvent6Choice2" ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 3 )

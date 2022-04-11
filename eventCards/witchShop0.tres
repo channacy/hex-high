@@ -7,9 +7,9 @@
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
-addId = [ "prop1" ]
-addTag = [  ]
-removeId = [ "potionShop0" ]
+addId = [  ]
+addTag = [ "rose" ]
+removeId = [ "potionShop0", "witchShop0" ]
 removeTag = [  ]
 addHandId = [ "prop1" ]
 addHandTag = [  ]
@@ -19,6 +19,8 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
@@ -29,7 +31,7 @@ effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
-addId = [ "" ]
+addId = [ "witchShop0" ]
 addTag = [  ]
 removeId = [  ]
 removeTag = [  ]
@@ -41,6 +43,8 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
@@ -53,7 +57,7 @@ effectData = SubResource( 3 )
 script = ExtResource( 4 )
 id = "witchShop0"
 tags = [ "acceptWork1", "declineWork1" ]
-eventText = "A job opening at Rose's"
+eventText = "A job opening at Rose's Essentials"
 face = ExtResource( 1 )
 infinite = false
 startInDeck = true

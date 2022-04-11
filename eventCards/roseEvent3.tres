@@ -1,0 +1,64 @@
+[gd_resource type="Resource" load_steps=9 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
+[ext_resource path="res://EffectData.gd" type="Script" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [ "rose" ]
+removeId = [ "witchShop0" ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [ 1 ]
+guaranteeCardID = [ "roseEvent3Choice1" ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+flavorText = "You accept responsibility "
+effectText = "???"
+costText = ""
+effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [ "rose" ]
+removeId = [ "witchShop0" ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [ 1 ]
+guaranteeCardID = [ "roseEvent3Choice2" ]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+flavorText = "You try to glue the artiface back together."
+effectText = ""
+costText = ""
+effectData = SubResource( 4 )
+
+[resource]
+script = ExtResource( 1 )
+id = "roseEvent3"
+tags = [ "rose" ]
+eventText = "While trying to find a magic wand for a customer, you accidentally step onto an artifice that is a rune which cracks to pieces. "
+face = ExtResource( 3 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 2 ), SubResource( 3 ) ]

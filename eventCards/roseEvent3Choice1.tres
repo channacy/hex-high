@@ -1,39 +1,39 @@
 [gd_resource type="Resource" load_steps=7 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
-[ext_resource path="res://EffectData.gd" type="Script" id=2]
-[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
+[ext_resource path="res://EffectData.gd" type="Script" id=3]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 addId = [  ]
-addTag = [ "matilda" ]
-removeId = [  ]
+addTag = [ "rose" ]
+removeId = [ "witchShop0" ]
 removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [ "coin" ]
-numResources = [ 10 ]
-removeResources = [  ]
-numRemoveResources = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [ "coin" ]
+numRemoveResources = [ 10 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=2]
-script = ExtResource( 3 )
-flavorText = "Accept her gift."
-effectText = "+10 Coins"
+script = ExtResource( 2 )
+flavorText = "Be a good worker. "
+effectText = "- 10 coins"
 costText = ""
 effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 1 )
-id = "matildaEvent1"
-tags = [ "matilda" ]
-eventText = "For your hard work, Matilda rewards you by giving you a bonus.  "
+id = "roseEvent3Choice1"
+tags = [  ]
+eventText = "Rose forgives you and lets you maintain your job at the exchange of 10 coins. "
 face = ExtResource( 4 )
 infinite = false
 startInDeck = false

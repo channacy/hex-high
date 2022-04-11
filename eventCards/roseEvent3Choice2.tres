@@ -1,0 +1,88 @@
+[gd_resource type="Resource" load_steps=11 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
+[ext_resource path="res://EffectData.gd" type="Script" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [ "rose" ]
+removeId = [ "witchShop0" ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "artifice" ]
+numResources = [ 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+flavorText = "Get better at using an artifice"
+effectText = "+1 artifice skill"
+costText = ""
+effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [ "rose" ]
+removeId = [ "witchShop0" ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "summon" ]
+numResources = [ 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+flavorText = "Get better at summoning."
+effectText = "+1 summon skill"
+costText = ""
+effectData = SubResource( 3 )
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [ "rose" ]
+removeId = [ "witchShop0" ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "sorcery" ]
+numResources = [ 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 2 )
+flavorText = "Get better at the art of sorcery."
+effectText = "+1 sorcery skill"
+costText = ""
+effectData = SubResource( 5 )
+
+[resource]
+script = ExtResource( 1 )
+id = "roseEvent3Choice2"
+tags = [  ]
+eventText = "Unfortunately, the broken artifice could not be glued together despite your attempts. However, ghost like figure appears before you and is able to grant 3 certain wishes:"
+face = ExtResource( 3 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ) ]

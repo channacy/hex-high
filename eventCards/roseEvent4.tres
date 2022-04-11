@@ -1,37 +1,37 @@
 [gd_resource type="Resource" load_steps=9 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
-[ext_resource path="res://EffectData.gd" type="Script" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
-[ext_resource path="res://OptionCardData.gd" type="Script" id=4]
+[ext_resource path="res://EffectData.gd" type="Script" id=4]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 2 )
+script = ExtResource( 4 )
 addId = [  ]
-addTag = [ "matilda" ]
-removeId = [ "witchShop0" ]
+addTag = [ "rose" ]
+removeId = [  ]
 removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [ "coin" ]
-numResources = [ 1 ]
+addResources = [ "coin", "fatigue" ]
+numResources = [ 45, 20 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=2]
-script = ExtResource( 4 )
-flavorText = "Accept"
-effectText = "A gift of gratitude: +1 coin"
+script = ExtResource( 2 )
+flavorText = "Work, work, and work"
+effectText = "+ 45 coin, +20fatigue"
 costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
-script = ExtResource( 2 )
-addId = [ "potionShop0" ]
+script = ExtResource( 4 )
+addId = [  ]
 addTag = [  ]
 removeId = [  ]
 removeTag = [  ]
@@ -47,18 +47,18 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=4]
-script = ExtResource( 4 )
-flavorText = "Decline"
+script = ExtResource( 2 )
+flavorText = "Take a well-deserved break."
 effectText = ""
 costText = ""
 effectData = SubResource( 3 )
 
 [resource]
 script = ExtResource( 1 )
-id = "potionShop0"
-tags = [  ]
-eventText = "A job opening at Matilda's potion shop!"
+id = "roseEvent4"
+tags = [ "rose" ]
+eventText = "Rose requests you work overtime...You are in need of some more coins, what do you do?"
 face = ExtResource( 3 )
 infinite = false
-startInDeck = true
+startInDeck = false
 options = [ SubResource( 2 ), SubResource( 4 ) ]

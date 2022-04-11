@@ -1,0 +1,40 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
+[ext_resource path="res://EffectData.gd" type="Script" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [ "rose" ]
+removeId = [ "witchShop0" ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "coin", "fatigue" ]
+numResources = [ 30, 15 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+flavorText = "Work at Rose's Essentials"
+effectText = ""
+costText = "+30 coins, +15 fatigue"
+effectData = SubResource( 1 )
+
+[resource]
+script = ExtResource( 1 )
+id = "roseEvent1"
+tags = [ "rose" ]
+eventText = "Time for your shift!"
+face = ExtResource( 3 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 2 ) ]

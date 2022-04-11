@@ -2,59 +2,63 @@
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=2]
-[ext_resource path="res://EffectData.gd" type="Script" id=3]
-[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
+[ext_resource path="res://EffectData.gd" type="Script" id=4]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 3 )
+script = ExtResource( 4 )
 addId = [  ]
-addTag = [  ]
-removeId = [  ]
+addTag = [ "rose" ]
+removeId = [ "witchShop0" ]
 removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [ "coin", "fatigue" ]
-numResources = [ 30, 15 ]
-removeResources = [  ]
-numRemoveResources = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [ "coin" ]
+numRemoveResources = [ 8 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
-flavorText = "Work "
-effectText = "+30 coins, +15 fatigue"
+flavorText = "Be a good citizen and pay taxes."
+effectText = "- 8 coins"
 costText = ""
 effectData = SubResource( 1 )
 
 [sub_resource type="Resource" id=3]
-script = ExtResource( 3 )
-addId = [ "potionShop0" ]
-addTag = [  ]
-removeId = [ "prop1" ]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [ "rose" ]
+removeId = [ "witchShop0" ]
 removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]
-removeHandId = [ "prop1" ]
+removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "fatigue" ]
+numResources = [ 8 ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
-flavorText = "Quit Job"
-effectText = ""
+flavorText = "Accept your debt."
+effectText = "+8 fatigue"
 costText = ""
 effectData = SubResource( 3 )
 
 [resource]
 script = ExtResource( 1 )
-id = "prop1"
-tags = [  ]
-eventText = "Work at Rose's Esssentials!"
-face = ExtResource( 4 )
-infinite = true
+id = "roseEvent2"
+tags = [ "rose" ]
+eventText = "Happy Tax Day!"
+face = ExtResource( 3 )
+infinite = false
 startInDeck = false
 options = [ SubResource( 2 ), SubResource( 4 ) ]

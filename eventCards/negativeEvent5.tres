@@ -1,0 +1,112 @@
+[gd_resource type="Resource" load_steps=13 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://EffectData.gd" type="Script" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "writeups" ]
+numResources = [ 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+flavorText = "potion blew up"
+effectText = ""
+costText = ""
+effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "writeups" ]
+numResources = [ 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 3 )
+flavorText = "artifact fizzled out"
+effectText = ""
+costText = ""
+effectData = SubResource( 3 )
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "writeups" ]
+numResources = [ 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 3 )
+flavorText = "cast the wrong spell"
+effectText = ""
+costText = ""
+effectData = SubResource( 5 )
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "writeups" ]
+numResources = [ 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 3 )
+flavorText = "familiar wreaks havoc on the classroom"
+effectText = ""
+costText = ""
+effectData = SubResource( 7 )
+
+[resource]
+script = ExtResource( 1 )
+id = "negativeEvent5"
+tags = [  ]
+eventText = "You flunked a project. "
+face = ExtResource( 4 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ), SubResource( 8 ) ]

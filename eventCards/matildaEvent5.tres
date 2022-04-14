@@ -18,7 +18,11 @@ removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
 removeResources = [ "coin" ]
+<<<<<<< Updated upstream
 numRemoveResources = [ 20 ]
+=======
+numRemoveResources = [ 10 ]
+>>>>>>> Stashed changes
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 

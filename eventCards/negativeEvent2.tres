@@ -1,0 +1,32 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://EffectData.gd" type="Script" id=2]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "coin" ]
+numResources = [ 5 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[resource]
+script = ExtResource( 1 )
+id = "negativeEvent2"
+tags = [  ]
+eventText = "You drop your wallet while rushing to classes. "
+face = ExtResource( 3 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 1 ) ]

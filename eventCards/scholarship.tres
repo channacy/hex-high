@@ -1,0 +1,40 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://EffectData.gd" type="Script" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "coin" ]
+numResources = [ 50 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+flavorText = "Accept your offer!"
+effectText = "+50 coins"
+costText = ""
+effectData = SubResource( 1 )
+
+[resource]
+script = ExtResource( 1 )
+id = "scholarship"
+tags = [  ]
+eventText = "You are awarded the Hex High presidential scholarship for your hard work and efforts!"
+face = ExtResource( 4 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 2 ) ]

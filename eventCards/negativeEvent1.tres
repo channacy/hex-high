@@ -1,0 +1,32 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://EffectData.gd" type="Script" id=2]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [ "alchemy", "artifice", "sorcery", "summon" ]
+numRemoveResources = [ 2, 2, 2, 2 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[resource]
+script = ExtResource( 1 )
+id = "negativeEvent1"
+tags = [  ]
+eventText = "You arrive at Witch Academia but then you come to realize you lost your homework."
+face = ExtResource( 3 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 1 ) ]

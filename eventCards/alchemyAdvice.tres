@@ -32,6 +32,8 @@ addResources = [ "alchemy" ]
 numResources = [ 2 ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 4 )

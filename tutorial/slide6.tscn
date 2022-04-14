@@ -1,0 +1,64 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Background.tscn" type="PackedScene" id=1]
+[ext_resource path="res://sprites/slide6.png" type="Texture" id=2]
+[ext_resource path="res://tutorial/skip.gd" type="Script" id=3]
+[ext_resource path="res://tutorial/forward6.gd" type="Script" id=4]
+[ext_resource path="res://tutorial/back6.gd" type="Script" id=5]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" parent="." instance=ExtResource( 1 )]
+texture = ExtResource( 2 )
+
+[node name="back" type="Button" parent="."]
+anchor_left = 0.037
+anchor_top = 0.487
+anchor_right = 0.037
+anchor_bottom = 0.487
+margin_left = -12.888
+margin_top = -77.2
+margin_right = 11.112
+margin_bottom = 77.8
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="forward" type="Button" parent="."]
+anchor_left = 0.967
+anchor_top = 0.482
+anchor_right = 0.967
+anchor_bottom = 0.482
+margin_left = -12.2081
+margin_top = -77.2
+margin_right = 11.7919
+margin_bottom = 77.8
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="skip" type="Button" parent="."]
+anchor_left = 0.877
+anchor_top = 0.041
+anchor_right = 0.877
+anchor_bottom = 0.041
+margin_left = -88.048
+margin_top = -14.6
+margin_right = 88.952
+margin_bottom = 14.4
+text = "Skip Tutorial"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="back" to="back" method="_on_back_pressed"]
+[connection signal="pressed" from="forward" to="forward" method="_on_forward_pressed"]
+[connection signal="pressed" from="skip" to="skip" method="_on_skip_pressed"]

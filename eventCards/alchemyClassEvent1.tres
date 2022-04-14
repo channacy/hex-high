@@ -1,0 +1,102 @@
+[gd_resource type="Resource" load_steps=13 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://Cost.gd" type="Script" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
+[ext_resource path="res://EffectData.gd" type="Script" id=5]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+alchemy = 10
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 5 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [ 1 ]
+guaranteeCardID = [ "alchemyClassEvent1Choice1" ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+flavorText = "You attempt to use your alchemy knowledge to try to revert your friend back into human form. "
+effectText = "Required: 10 Alchemy Knowledge"
+costText = ""
+cost = SubResource( 1 )
+effectData = SubResource( 3 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 5 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [ 1 ]
+guaranteeCardID = [ "alchemyClassEvent1Choice2" ]
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 3 )
+flavorText = "You ask for help from another classmate. "
+effectText = ""
+costText = ""
+effectData = SubResource( 4 )
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 5 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [ 1 ]
+guaranteeCardID = [ "alchemyClassEvent1Choice3" ]
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 3 )
+flavorText = "You did not like your lab partner anyways. Pretend it didn't happen. "
+effectText = ""
+costText = ""
+effectData = SubResource( 6 )
+
+[resource]
+script = ExtResource( 1 )
+id = "alchemyClassEvent"
+tags = [ "alchemyClassEvent" ]
+eventText = "During alchemy lab, you accidentally turn your lab partner into a frog. What do you do?"
+face = ExtResource( 4 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 2 ), SubResource( 5 ), SubResource( 7 ) ]

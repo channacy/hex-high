@@ -15,15 +15,17 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "fatigue", "alchemy", "artifice", "sorcery", "summon" ]
+numResources = [ 20, 5, 5, 5, 5 ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
 flavorText = "Review Notes"
-effectText = "Add resources"
+effectText = "+20 fatigue, +20 knowledge(total)"
 costText = ""
 effectData = SubResource( 1 )
 
@@ -37,15 +39,17 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "fatigue", "alchemy", "artifice", "sorcery", "summon" ]
+numResources = [ 30, 10, 10, 10, 10 ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
 flavorText = "Study with textbook "
-effectText = ""
+effectText = "+30 fatigue, +40 knowledge(total)"
 costText = ""
 effectData = SubResource( 3 )
 
@@ -63,10 +67,12 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 4 )
-flavorText = "Do something else"
+flavorText = "Be lazy and procrastinate."
 effectText = ""
 costText = ""
 effectData = SubResource( 5 )
@@ -75,7 +81,7 @@ effectData = SubResource( 5 )
 script = ExtResource( 1 )
 id = "study"
 tags = [ "study", "schoolEvent" ]
-eventText = "Time to study"
+eventText = "Time to study!"
 face = ExtResource( 3 )
 infinite = true
 startInDeck = true

@@ -1,0 +1,78 @@
+[gd_resource type="Resource" load_steps=11 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
+[ext_resource path="res://EffectData.gd" type="Script" id=4]
+[ext_resource path="res://Cost.gd" type="Script" id=5]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "artifice", "summon", "alchemy", "sorcery" ]
+numResources = [ 1, 1, 1, 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+flavorText = "Grades are more important, continue studying."
+effectText = "+1 knowledge for alchemy, summoning, sorcery, artifice"
+costText = ""
+effectData = SubResource( 2 )
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 10
+writeups = 0
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [ "fatigue" ]
+numRemoveResources = [ 10 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 2 )
+flavorText = "Go and have fun!"
+effectText = "- 10 fatigue"
+costText = ""
+cost = SubResource( 3 )
+effectData = SubResource( 4 )
+
+[resource]
+script = ExtResource( 1 )
+id = "social"
+tags = [ "" ]
+eventText = "You are busy studying the art of magic casting and feel heavily exhausted. You know you have an upcoming quiz but your classmates have invited you to watch the  annual Hex High Quidditch games. "
+face = ExtResource( 3 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 1 ), SubResource( 5 ) ]

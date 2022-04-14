@@ -32,6 +32,8 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [ "fatigue" ]
 numRemoveResources = [ 2 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )

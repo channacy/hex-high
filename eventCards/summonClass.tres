@@ -1,0 +1,64 @@
+[gd_resource type="Resource" load_steps=9 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
+[ext_resource path="res://EffectData.gd" type="Script" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "summon" ]
+numResources = [ 5 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+flavorText = "Go to class"
+effectText = "+5 summoning knowledge"
+costText = ""
+effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "writeups" ]
+numResources = [ 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+flavorText = "Ditch class for a day :)"
+effectText = "+1 writeups"
+costText = ""
+effectData = SubResource( 3 )
+
+[resource]
+script = ExtResource( 1 )
+id = "summonClass"
+tags = [  ]
+eventText = "Summoning Class is in session!"
+face = ExtResource( 3 )
+infinite = true
+startInDeck = true
+options = [ SubResource( 2 ), SubResource( 4 ) ]

@@ -7,7 +7,7 @@
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
-addId = [ "matildaEvent5Chioce1" ]
+addId = [  ]
 addTag = [ "matilda" ]
 removeId = [ "potionShop0" ]
 removeTag = [  ]
@@ -18,7 +18,11 @@ removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
 removeResources = [ "coin" ]
+<<<<<<< Updated upstream
 numRemoveResources = [ 20 ]
+=======
+numRemoveResources = [ 10 ]
+>>>>>>> Stashed changes
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 

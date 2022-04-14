@@ -1,0 +1,62 @@
+[gd_resource type="Resource" load_steps=8 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
+[ext_resource path="res://EffectData.gd" type="Script" id=3]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 3 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "sorcery" ]
+numResources = [ 5 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+flavorText = "Attend your favorite class!"
+effectText = "+5 sorcery"
+costText = ""
+effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 3 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "writeups" ]
+numResources = [ 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+flavorText = "Attend it another day :)"
+effectText = "+1 writeup"
+costText = ""
+effectData = SubResource( 3 )
+
+[resource]
+script = ExtResource( 1 )
+id = "sorceryClass"
+tags = [  ]
+eventText = "Sorcery class is in session!"
+infinite = false
+startInDeck = false
+options = [ SubResource( 2 ), SubResource( 4 ) ]

@@ -1,39 +1,61 @@
-[gd_resource type="Resource" load_steps=9 format=2]
+[gd_resource type="Resource" load_steps=12 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://EffectData.gd" type="Script" id=2]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=3]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
+[ext_resource path="res://Cost.gd" type="Script" id=5]
 
 [sub_resource type="Resource" id=1]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 addId = [  ]
-addTag = [ "matilda" ]
+addTag = [  ]
 removeId = [ "potionShop0" ]
 removeTag = [  ]
-addHandId = [ "matildaEvent5Chioce1" ]
+addHandId = [ "matildaEvent5Choice1" ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
-removeResources = [ "coin" ]
-<<<<<<< Updated upstream
-numRemoveResources = [ 20 ]
-=======
-numRemoveResources = [ 10 ]
->>>>>>> Stashed changes
+removeResources = [  ]
+numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 
-[sub_resource type="Resource" id=2]
+[sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
-flavorText = "Claim the box, afterall it is free."
+flavorText = "Claim the box"
 effectText = ""
 costText = ""
-effectData = SubResource( 1 )
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
 
 [sub_resource type="Resource" id=4]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=5]
 script = ExtResource( 2 )
 addId = [  ]
 addTag = [  ]
@@ -50,19 +72,20 @@ numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 
-[sub_resource type="Resource" id=3]
+[sub_resource type="Resource" id=6]
 script = ExtResource( 3 )
-flavorText = "No, politely decline."
+flavorText = "Politely decline"
 effectText = ""
 costText = ""
-effectData = SubResource( 4 )
+cost = SubResource( 4 )
+effectData = SubResource( 5 )
 
 [resource]
 script = ExtResource( 1 )
 id = "matildaEvent5"
 tags = [ "matilda" ]
-eventText = "A customer walks into the shop one dark night and offers you a mysterious Pandora Box. "
+eventText = "A customer walks into the shop one dark night and offers you a mysterious Pandora Box."
 face = ExtResource( 4 )
 infinite = false
 startInDeck = false
-options = [ SubResource( 2 ), SubResource( 3 ) ]
+options = [ SubResource( 3 ), SubResource( 6 ) ]

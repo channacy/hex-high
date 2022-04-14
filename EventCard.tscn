@@ -41,5 +41,13 @@ __meta__ = {
 "_editor_description_": ""
 }
 
+[node name="FlipFirstHalf" type="Tween" parent="."]
+
+[node name="FlipSwapFace" type="Tween" parent="."]
+
+[node name="FlipSecondHalf" type="Tween" parent="."]
+
+[node name="SpawnOptions" type="Tween" parent="."]
+
 [connection signal="area_entered" from="." to="." method="_on_EventCard_area_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_EventCard_mouse_exited"]

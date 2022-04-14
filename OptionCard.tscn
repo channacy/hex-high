@@ -85,3 +85,9 @@ text = "Default cost text"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="FlipFirstHalf" type="Tween" parent="."]
+
+[node name="FlipSwapFace" type="Tween" parent="."]
+
+[node name="FlipSecondHalf" type="Tween" parent="."]

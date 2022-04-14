@@ -27,9 +27,23 @@ func setup(dataId, faceUp):
 	else:
 		$Sprite.texture = cardData.back
 		$EventContainer/EventText.bbcode_text = ""
+		
+	$FlipFirstHalf.interpolate_property(self, "scale",
+		Vector2(1, 1), Vector2(0, 1), 0.3,
+		Tween.TRANS_CUBIC, Tween.EASE_IN)
+	$FlipSwapFace.interpolate_callback(self, 0.3, "swap_face")
+	$FlipSecondHalf.interpolate_property(self, "scale",
+		Vector2(0, 1), Vector2(1, 1), 0.3,
+		Tween.TRANS_CUBIC, Tween.EASE_OUT)
 
 # Flips the card over, changing its state and sprite
 func flip():
+	$FlipFirstHalf.start()
+	$FlipSwapFace.start()
+
+# Changes the sprite on the card
+func swap_face():
+	$FlipSecondHalf.start()
 	if faceUp:
 		faceUp = false
 		$Sprite.texture = cardData.back
@@ -46,11 +60,13 @@ func spawn_options():
 	var num = len(cardData.options)
 	for option in num:
 		var optionCardNode = load("res://OptionCard.tscn").instance()
-		optionCardNode.setup(cardData.options[option], true)
+		optionCardNode.setup(cardData.options[option], false)
 		optionCardNode.name += " " + str(option)
 		optionCards.append(optionCardNode)
 		optionCardNode.position = Vector2(-(num-1)*80 + option*160, 0)
 		get_node("../").add_child(optionCardNode)
+		$SpawnOptions.interpolate_callback(optionCardNode, option*0.1, "flip")
+		$SpawnOptions.start()
 
 # Called when the card is clicked
 # If the card is face up and the option cards haven't been revealed yet, reveal them

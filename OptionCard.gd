@@ -21,9 +21,23 @@ func setup(data, faceUp):
 		$FlavorContainer/FlavorText.bbcode_text = ""
 		$EffectContainer/EffectText.bbcode_text = ""
 		$CostContainer/CostText.bbcode_text = ""
+		
+	$FlipFirstHalf.interpolate_property(self, "scale",
+		Vector2(1, 1), Vector2(0, 1), 0.3,
+		Tween.TRANS_CUBIC, Tween.EASE_IN)
+	$FlipSwapFace.interpolate_callback(self, 0.3, "swap_face")
+	$FlipSecondHalf.interpolate_property(self, "scale",
+		Vector2(0, 1), Vector2(1, 1), 0.3,
+		Tween.TRANS_CUBIC, Tween.EASE_OUT)
 
 # Flips the card over, changing its state, sprite, and text
 func flip():
+	$FlipFirstHalf.start()
+	$FlipSwapFace.start()
+
+# Changes the sprite on the card
+func swap_face():
+	$FlipSecondHalf.start()
 	if faceUp:
 		faceUp = false
 		$Sprite.texture = optionData.back
@@ -36,7 +50,6 @@ func flip():
 		$FlavorContainer/FlavorText.bbcode_text = "[center][color=black]" + optionData.flavorText + "[/color][/center]"
 		$EffectContainer/EffectText.bbcode_text = "[center][color=black]" + optionData.effectText + "[/color][/center]"
 		$CostContainer/CostText.bbcode_text = "[center][color=black]" + optionData.costText + "[/color][/center]"
-
 			
 # Called when the option card isclicked
 # If the option card is face up, execute its effect

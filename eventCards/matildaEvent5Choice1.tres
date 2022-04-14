@@ -1,12 +1,12 @@
 [gd_resource type="Resource" load_steps=7 format=2]
 
-[ext_resource path="res://EventCardData.gd" type="Script" id=1]
-[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
-[ext_resource path="res://EffectData.gd" type="Script" id=3]
+[ext_resource path="res://EffectData.gd" type="Script" id=1]
+[ext_resource path="res://EventCardData.gd" type="Script" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 addId = [  ]
 addTag = [ "matilda" ]
 removeId = [ "potionShop0" ]
@@ -23,15 +23,15 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=2]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 flavorText = "The box unleashes a bright blinding light, and you realize you are missing some gold coins and are struck with very low energy. "
 effectText = "+10 fatigue, -50 coin"
 costText = ""
 effectData = SubResource( 1 )
 
 [resource]
-script = ExtResource( 1 )
-id = "matildaEvent5Chioce1"
+script = ExtResource( 2 )
+id = "matildaEvent5Choice1"
 tags = [  ]
 eventText = "Open the mystery box"
 face = ExtResource( 4 )

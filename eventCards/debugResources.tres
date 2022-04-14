@@ -32,6 +32,8 @@ addResources = [ "alchemy", "artifice", "sorcery", "summon" ]
 numResources = [ 10, 10, 10, 10 ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
@@ -67,6 +69,8 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [ "alchemy", "artifice", "sorcery", "summon" ]
 numRemoveResources = [ 10, 10, 10, 10 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 3 )
@@ -102,6 +106,8 @@ addResources = [ "fatigue", "writeups" ]
 numResources = [ 5, 5 ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=9]
 script = ExtResource( 3 )

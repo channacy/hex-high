@@ -8,7 +8,7 @@
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
 addId = [  ]
-addTag = [  ]
+addTag = [ "alchemyClassEvent" ]
 removeId = [  ]
 removeTag = [  ]
 addHandId = [  ]

@@ -65,6 +65,8 @@ func spawn_options():
 		optionCards.append(optionCardNode)
 		optionCardNode.position = Vector2(-(num-1)*80 + option*160, 0)
 		get_node("../").add_child(optionCardNode)
+		
+		# Animates the spawning of option cards
 		$SpawnOptions.interpolate_callback(optionCardNode, option*0.1, "flip")
 		$SpawnOptions.start()
 

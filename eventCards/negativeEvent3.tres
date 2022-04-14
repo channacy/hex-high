@@ -1,10 +1,24 @@
-[gd_resource type="Resource" load_steps=5 format=2]
+[gd_resource type="Resource" load_steps=9 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://EffectData.gd" type="Script" id=2]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
+[ext_resource path="res://Cost.gd" type="Script" id=4]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=5]
 
 [sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 addId = [  ]
 addTag = [  ]
@@ -21,6 +35,14 @@ numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 
+[sub_resource type="Resource" id=3]
+script = ExtResource( 5 )
+flavorText = "You have to sleep all day"
+effectText = ""
+costText = ""
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
+
 [resource]
 script = ExtResource( 1 )
 id = "negativeEvent3"
@@ -29,4 +51,4 @@ eventText = "You contracted a minor illness that causes you to be bedridden for 
 face = ExtResource( 3 )
 infinite = false
 startInDeck = false
-options = [ SubResource( 1 ) ]
+options = [ SubResource( 3 ) ]

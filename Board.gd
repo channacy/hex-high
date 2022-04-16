@@ -14,10 +14,11 @@ func loadEvent(eventCardId, faceUp, fromDeck):
 	eventCardNode = load("res://EventCard.tscn").instance()
 	eventCardNode.setup(eventCardId, faceUp)
 	add_child(eventCardNode)
-	if fromDeck:
+	if fromDeck: # if in the deck, spawn in the deck
 		pass # TODO deck animation
-	else:
+	else: # if not from deck, spawn in hand
 		eventCardNode.global_position = get_node("../Hand").rect_global_position + Vector2(0, -20)
+	# animate from spawn location to board
 	eventCardNode.move(Vector2(0, 0), 0)
 	
 func checkCost(cost):

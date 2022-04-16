@@ -70,6 +70,22 @@ func spawn_options():
 		$SpawnOptions.interpolate_callback(optionCardNode, option*0.1, "flip")
 		$SpawnOptions.start()
 
+# Moves a card from one LOCAL position/rotation to another over 0.3 seconds
+func move(position, rotation):
+	if $Move.is_active():
+		$Move.stop(self)
+	if $Rotate.is_active():
+		$Rotate.stop(self)
+	$Move.interpolate_property(self, "position",
+		self.position, position, 0.3,
+		Tween.TRANS_CUBIC, Tween.EASE_OUT)
+	$Rotate.interpolate_property(self, "rotation_degrees",
+		self.rotation_degrees, rotation, 0.3,
+		Tween.TRANS_CUBIC, Tween.EASE_OUT)
+	$Move.start()
+	$Rotate.start()
+	
+
 # Called when the card is clicked
 # If the card is face up and the option cards haven't been revealed yet, reveal them
 # If the card is face down, flip it over
@@ -78,7 +94,7 @@ func _input_event(viewport, event, shape_idx):
 		if faceUp:
 			if inHand:
 				if not get_node("../../Board").hasEventCard() and get_node("../").highlighted == self.z_index:
-					get_node("../../Board").loadEvent(cardData.id, true)
+					get_node("../../Board").loadEvent(cardData.id, true, false)
 					self.queue_free()
 					get_node("../").removeCard(self)
 			elif not optionsRevealed:

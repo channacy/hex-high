@@ -15,7 +15,7 @@ func loadEvent(eventCardId, faceUp, fromDeck):
 	eventCardNode.setup(eventCardId, faceUp)
 	add_child(eventCardNode)
 	if fromDeck: # if in the deck, spawn in the deck
-		pass # TODO deck animation
+		eventCardNode.global_position = get_node("../Deck").rect_global_position + Vector2(0,-20) # TODO deck animation
 	else: # if not from deck, spawn in hand
 		eventCardNode.global_position = get_node("../Hand").rect_global_position + Vector2(0, -20)
 	# animate from spawn location to board

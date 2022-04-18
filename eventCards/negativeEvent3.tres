@@ -42,6 +42,8 @@ effectText = ""
 costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
+endGame = false
+typeOfEnding = ""
 
 [resource]
 script = ExtResource( 1 )

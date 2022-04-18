@@ -131,6 +131,14 @@ func execute(effectData):
 		for i in range(len(effectData.numGuaranteeCardDraws)):
 			deck.addGuaranteed(effectData.numGuaranteeCardDraws[i], effectData.guaranteeCardID[i])
 	
+	if effectData.endGame:
+		print("Game has ENDED!")
+		if effectData.typeOfEnding == "win":
+			print("You Win")
+			Global.goto_scene("res://tutorial/slide6.tscn")
+		elif effectData.typeOfEnding == "lose":
+			print("You Lost")
+			Global.goto_scene("res://Menu.tscn")
 	
 	# Updates the deck for resource conditionals
 	get_node("../InventoryNode/Inventory").updateResourceConditionals()

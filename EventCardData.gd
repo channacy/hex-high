@@ -20,3 +20,4 @@ export(bool) var startInDeck = false
 
 # Option cards
 export(Array, Resource) var options = []
+

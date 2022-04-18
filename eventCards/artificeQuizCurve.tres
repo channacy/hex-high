@@ -52,3 +52,5 @@ face = ExtResource( 5 )
 infinite = false
 startInDeck = false
 options = [ SubResource( 2 ) ]
+endGame = false
+typeOfEnding = ""

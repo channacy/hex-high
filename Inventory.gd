@@ -102,3 +102,12 @@ func updateResourceConditionals():
 		while deck.cards.find('trade2') != -1:
 			deck.cards.erase('trade2')
 		
+	#add trade3
+	if inventoryItems["coin"] >= 2:
+		deck.cards.append("trade3")
+	#remove trade2
+	if inventoryItems["coin"] < 2:
+		while deck.cards.find('trade3') != -1:
+			deck.cards.erase('trade3')
+		
+	

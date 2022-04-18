@@ -1,12 +1,12 @@
 [gd_resource type="Resource" load_steps=7 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
-[ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
-[ext_resource path="res://EffectData.gd" type="Script" id=3]
-[ext_resource path="res://OptionCardData.gd" type="Script" id=4]
+[ext_resource path="res://EffectData.gd" type="Script" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 3 )
+script = ExtResource( 2 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
@@ -15,26 +15,26 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
-removeResources = [ "fatigue" ]
-numRemoveResources = [ 1 ]
+addResources = [ "coin" ]
+numResources = [ 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 
 [sub_resource type="Resource" id=2]
-script = ExtResource( 4 )
-flavorText = "You received some extra boost of energy, but was it worth it?"
-effectText = "-1 fatigue"
+script = ExtResource( 3 )
+flavorText = "Accept"
+effectText = "+1 coin"
 costText = ""
 effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 1 )
-id = "trade1potion"
+id = "trade3choice1"
 tags = [  ]
-eventText = "Drink the potion..."
-face = ExtResource( 2 )
+eventText = "You won something..."
+face = ExtResource( 4 )
 infinite = false
 startInDeck = false
 options = [ SubResource( 2 ) ]

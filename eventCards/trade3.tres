@@ -1,0 +1,78 @@
+[gd_resource type="Resource" load_steps=11 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
+[ext_resource path="res://EffectData.gd" type="Script" id=3]
+[ext_resource path="res://Cost.gd" type="Script" id=4]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=5]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [ "coin" ]
+numRemoveResources = [ 2 ]
+numGuaranteeCardDraws = [ 1 ]
+guaranteeCardID = [ "trade3choice1" ]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 5 )
+flavorText = "Insert 2 coins"
+effectText = "-2 coins"
+costText = "Required: 2 coins"
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 3 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 5 )
+flavorText = "It is not worth the risk. "
+effectText = ""
+costText = ""
+effectData = SubResource( 5 )
+
+[resource]
+script = ExtResource( 1 )
+id = "trade3"
+tags = [  ]
+eventText = "A random vending coin machine! "
+face = ExtResource( 2 )
+infinite = false
+startInDeck = true
+options = [ SubResource( 3 ), SubResource( 4 ) ]

@@ -34,7 +34,7 @@ func _input_event(viewport, event, shape_idx):
 		if !insertKeys.empty():
 			for i in insertKeys:
 				if i == counter:
-					board.loadEvent(arrOfInsertions.get(i), false)
+					board.loadEvent(arrOfInsertions.get(i), false, true)
 					print("Card Inserted:",arrOfInsertions.get(i))
 					didDraw = true
 					insertKeys.erase(i)
@@ -49,7 +49,7 @@ func _input_event(viewport, event, shape_idx):
 				print(cardId, "removed from deck")
 				
 			print("Normal Random Draw:", cardId)
-			board.loadEvent(cardId, false)
+			board.loadEvent(cardId, false, true)
 
 # Adds a card to the list of guaranteed draws
 func addGuaranteed(numDraws, cardID):

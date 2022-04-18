@@ -22,6 +22,7 @@ func addCard(id):
 	eventCardNode.inHand = true
 	eventCardNodes.append(eventCardNode)
 	add_child(eventCardNode)
+	eventCardNode.global_position = get_node("../Board").rect_global_position
 	updateHand()
 
 # Removes a card from the hand
@@ -44,8 +45,7 @@ func updateHand():
 		if num > 5:
 			angle = deg2rad(-(num-1)*(50.0/num) + card * (100.0/num))
 		
-		eventCardNodes[card].position = Vector2(sin(angle)*240, -cos(angle)*240 + 160)
-		eventCardNodes[card].rotation = angle
+		eventCardNodes[card].move(Vector2(sin(angle)*240, -cos(angle)*240 + 160), rad2deg(angle))
 		eventCardNodes[card].z_index = card
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

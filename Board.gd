@@ -5,16 +5,21 @@ var eventCardNode = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	#loadEvent("test", false)
 	print_tree()
 
 # Creates an event card node and initializes it
-func loadEvent(eventCardId, faceUp):
+func loadEvent(eventCardId, faceUp, fromDeck):
 	if is_instance_valid(eventCardNode):
 		eventCardNode.queue_free()
 	eventCardNode = load("res://EventCard.tscn").instance()
 	eventCardNode.setup(eventCardId, faceUp)
 	add_child(eventCardNode)
+	if fromDeck: # if in the deck, spawn in the deck
+		eventCardNode.global_position = get_node("../Deck").rect_global_position + Vector2(0,-20) # TODO deck animation
+	else: # if not from deck, spawn in hand
+		eventCardNode.global_position = get_node("../Hand").rect_global_position + Vector2(0, -20)
+	# animate from spawn location to board
+	eventCardNode.move(Vector2(0, 0), 0)
 	
 func checkCost(cost):
 	var inventory = get_node("../InventoryNode/Inventory")

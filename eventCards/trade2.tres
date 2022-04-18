@@ -1,0 +1,152 @@
+[gd_resource type="Resource" load_steps=17 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
+[ext_resource path="res://EffectData.gd" type="Script" id=4]
+[ext_resource path="res://Cost.gd" type="Script" id=5]
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 15
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "textbook" ]
+numResources = [ 1 ]
+removeResources = [ "coin" ]
+numRemoveResources = [ 15 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 3 )
+flavorText = "Buy a new textbook."
+effectText = "+1 textbook, -15 coin"
+costText = "Required: 15 coin"
+cost = SubResource( 2 )
+effectData = SubResource( 3 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 5
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [ "coin", "fatigue" ]
+numRemoveResources = [ 5, 2 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 3 )
+flavorText = "You are hungry and want some bread."
+effectText = "-2 fatigue, -5 coin"
+costText = "Required: 5 coin"
+cost = SubResource( 4 )
+effectData = SubResource( 5 )
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 15
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=9]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "summon" ]
+numResources = [ 5 ]
+removeResources = [ "coin" ]
+numRemoveResources = [ 15 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 3 )
+flavorText = "Buy a ticket to see a famous witch perform summoning tricks."
+effectText = "+3 summoning knowledge, -15 coin"
+costText = "Required: 15 coin"
+cost = SubResource( 8 )
+effectData = SubResource( 9 )
+
+[sub_resource type="Resource" id=10]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 3 )
+flavorText = "Come back to the vendor later. "
+effectText = ""
+costText = ""
+effectData = SubResource( 10 )
+
+[resource]
+script = ExtResource( 1 )
+id = "trade2"
+tags = [  ]
+eventText = "You are passing by a vendor and in some desperate need of supplies before the next class is in session."
+face = ExtResource( 2 )
+infinite = false
+startInDeck = true
+options = [ SubResource( 1 ), SubResource( 6 ), SubResource( 7 ), SubResource( 11 ) ]

@@ -69,6 +69,7 @@ func updateResourceConditionals():
 	if inventoryItems["writeups"] < 5:
 		while deck.cards.find("writeupsPenalty") != -1:
 			deck.cards.erase("writeupsPenalty")
+			
 	#add scholarship
 	if inventoryItems["alchemy"] >= 25 and inventoryItems["summon"] >= 25 and inventoryItems["sorcery"] >= 25 and inventoryItems["artifice"] >= 25:
 		deck.cards.append("scholarship")
@@ -84,3 +85,20 @@ func updateResourceConditionals():
 	if inventoryItems["fatigue"] < 10:
 		while deck.cards.find("social") != -1:
 			deck.cards.erase("social")
+			
+	#add trade1
+	if inventoryItems["coin"] >= 10:
+		deck.cards.append("trade1")
+	#remove trade1
+	if inventoryItems["coin"] < 10:
+		while deck.cards.find('trade1') != -1:
+			deck.cards.erase('trade1')
+		
+	#add trade2
+	if inventoryItems["coin"] >= 15:
+		deck.cards.append("trade2")
+	#remove trade2
+	if inventoryItems["coin"] < 15:
+		while deck.cards.find('trade2') != -1:
+			deck.cards.erase('trade2')
+		

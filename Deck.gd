@@ -19,6 +19,7 @@ func _ready():
 	#Random Number Generator
 	randomNum.randomize()
 	board = get_node("../../Board")
+	#addGuaranteed(1, "alchemyQuiz0")
 	addGuaranteed(1, "devCardResources")
 	addGuaranteed(1, "finalExam")
 	addGuaranteed(1, "finalExam")

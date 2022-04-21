@@ -19,7 +19,6 @@ func _ready():
 	#Random Number Generator
 	randomNum.randomize()
 	board = get_node("../../Board")
-	
 
 # If left click the deck sprite, runs action.
 # In this case, when you click the deck, it will use the loadEvent fucntion from the Board.gd script

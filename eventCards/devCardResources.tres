@@ -1,0 +1,85 @@
+[gd_resource type="Resource" load_steps=9 format=2]
+
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=1]
+[ext_resource path="res://EventCardData.gd" type="Script" id=2]
+[ext_resource path="res://EffectData.gd" type="Script" id=3]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 3 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+<<<<<<< HEAD:eventCards/Scenario1.tres
+removeHandTag = [ "coin" ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [ "1" ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+=======
+removeHandTag = [  ]
+addResources = [ "alchemy", "artifice", "summon", "sorcery" ]
+numResources = [ 40, 40, 40, 40 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+>>>>>>> 98d09c9216c330f8c95dee64cc902638adf90588:eventCards/devCardResources.tres
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 4 )
+flavorText = "Gain 40 All Knowledge"
+effectText = ""
+costText = ""
+effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 3 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+<<<<<<< HEAD:eventCards/Scenario1.tres
+removeResources = [ "textbook" ]
+numRemoveResources = [ 1 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+=======
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+>>>>>>> 98d09c9216c330f8c95dee64cc902638adf90588:eventCards/devCardResources.tres
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 4 )
+flavorText = "Don't Gain Resources"
+effectText = ""
+costText = ""
+effectData = SubResource( 4 )
+
+[resource]
+script = ExtResource( 2 )
+id = "devCardResources"
+tags = [  ]
+eventText = "DEV CARD Gain Resources"
+face = ExtResource( 1 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 2 ), SubResource( 3 ) ]

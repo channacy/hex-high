@@ -21,6 +21,8 @@ removeResources = [ "1" ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
@@ -45,6 +47,8 @@ removeResources = [ "textbook" ]
 numRemoveResources = [ 1 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )

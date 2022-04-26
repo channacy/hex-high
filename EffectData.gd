@@ -28,3 +28,9 @@ export(Array, int) var numRemoveResources = []
 #array for guarantee card draws function
 export(Array, int) var numGuaranteeCardDraws = []
 export(Array, String) var guaranteeCardID = []
+
+# Ends the game based on ending type
+# String ID for the type of ending
+# Types: win, lose
+export(bool) var endGame = false
+export(String) var typeOfEnding = ""

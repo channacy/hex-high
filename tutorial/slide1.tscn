@@ -10,9 +10,6 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_pivot_offset = Vector2( -588, -85 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Background" parent="." instance=ExtResource( 1 )]
 texture = ExtResource( 2 )
@@ -42,9 +39,6 @@ margin_top = -77.2
 margin_right = 11.112
 margin_bottom = 77.8
 script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="forward" type="Button" parent="."]
 anchor_left = 0.967

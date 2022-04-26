@@ -21,6 +21,8 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [ 1 ]
 guaranteeCardID = [ "matildaEvent6Choice1" ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
@@ -45,6 +47,8 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [ 1 ]
 guaranteeCardID = [ "matildaEvent6Choice2" ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 3 )

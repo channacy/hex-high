@@ -34,6 +34,8 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
@@ -71,6 +73,8 @@ removeResources = [ "coin" ]
 numRemoveResources = [ 10 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )

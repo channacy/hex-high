@@ -1,9 +1,22 @@
-[gd_resource type="Resource" load_steps=7 format=2]
+[gd_resource type="Resource" load_steps=9 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=2]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
 [ext_resource path="res://EffectData.gd" type="Script" id=4]
+[ext_resource path="res://Cost.gd" type="Script" id=5]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 4 )
@@ -21,17 +34,19 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 flavorText = "Work at Rose's Essentials"
 effectText = ""
 costText = "+30 coins, +15 fatigue"
+cost = SubResource( 3 )
 effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 1 )
-id = "roseEvent1"
 tags = [ "rose" ]
 eventText = "Time for your shift!"
 face = ExtResource( 3 )

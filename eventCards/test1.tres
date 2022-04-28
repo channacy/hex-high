@@ -4,9 +4,8 @@
 
 [resource]
 script = ExtResource( 1 )
-id = "test1"
 tags = [  ]
-eventText = ""
+eventText = "test card 2"
 infinite = false
 startInDeck = false
 options = [  ]

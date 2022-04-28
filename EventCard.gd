@@ -19,6 +19,7 @@ var optionsRevealed = false
 # Loads the data from resources by id - this needs to be called every time an EventCard is created
 func setup(dataId, faceUp):
 	self.faceUp = faceUp
+	print(Global.files)
 	cardData = Global.files[dataId]
 	#load("res://eventCards/" + dataId + ".tres")
 	if faceUp:

@@ -21,6 +21,8 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
@@ -45,6 +47,8 @@ removeResources = [ "coin" ]
 numRemoveResources = [ 10 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
@@ -55,7 +59,6 @@ effectData = SubResource( 4 )
 
 [resource]
 script = ExtResource( 2 )
-id = "matildaEvent3"
 tags = [ "matilda" ]
 eventText = "Time to work at Matilda's Shop!"
 face = ExtResource( 4 )

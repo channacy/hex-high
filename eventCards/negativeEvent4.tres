@@ -34,6 +34,8 @@ removeResources = [ "mana" ]
 numRemoveResources = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 5 )
@@ -45,7 +47,6 @@ effectData = SubResource( 2 )
 
 [resource]
 script = ExtResource( 1 )
-id = "negativeEvent4"
 tags = [  ]
 eventText = "A classmate in your alchemy class accidentally points his wand at you which leads you to suffer unknown negative consequences. "
 face = ExtResource( 3 )

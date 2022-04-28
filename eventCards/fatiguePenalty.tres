@@ -34,6 +34,8 @@ removeResources = [ "fatigue" ]
 numRemoveResources = [ 2 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
@@ -52,5 +54,3 @@ face = ExtResource( 3 )
 infinite = false
 startInDeck = false
 options = [ SubResource( 3 ) ]
-endGame = false
-typeOfEnding = ""

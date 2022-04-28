@@ -2,7 +2,7 @@ extends Resource
 class_name EventCardData
 
 # Event card id and identifying tags
-export(String) var id = ""
+var id = ""
 export(Array, String) var tags = []
 
 # Event card text

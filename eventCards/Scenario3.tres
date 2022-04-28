@@ -1,9 +1,22 @@
-[gd_resource type="Resource" load_steps=9 format=2]
+[gd_resource type="Resource" load_steps=12 format=2]
 
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=1]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=2]
 [ext_resource path="res://EffectData.gd" type="Script" id=3]
 [ext_resource path="res://EventCardData.gd" type="Script" id=4]
+[ext_resource path="res://Cost.gd" type="Script" id=5]
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
@@ -15,17 +28,34 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "artifice" ]
+numResources = [ 1 ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 flavorText = "Accept"
 effectText = ""
 costText = ""
+cost = SubResource( 5 )
 effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
@@ -39,14 +69,19 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
-removeResources = [  ]
-numRemoveResources = [  ]
+removeResources = [ "artifice" ]
+numRemoveResources = [ 1 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
 flavorText = "Decline"
 effectText = ""
 costText = ""
+cost = SubResource( 6 )
 effectData = SubResource( 3 )
 
 [resource]

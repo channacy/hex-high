@@ -26,12 +26,12 @@ typeOfEnding = ""
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
-flavorText = "Gain 40 All Knowledge"
+flavorText = "Gain all 40 knowledge "
 effectText = ""
 costText = ""
 effectData = SubResource( 1 )
 
-[sub_resource type="Resource" id=4]
+[sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
 addId = [  ]
 addTag = [  ]
@@ -50,19 +50,19 @@ guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
 
-[sub_resource type="Resource" id=3]
+[sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
 flavorText = "Don't Gain Resources"
 effectText = ""
 costText = ""
-effectData = SubResource( 4 )
+effectData = SubResource( 3 )
 
 [resource]
 script = ExtResource( 2 )
 id = "devCardResources"
 tags = [  ]
-eventText = "DEV CARD Gain Resources"
+eventText = "DEV card gain resources"
 face = ExtResource( 1 )
 infinite = false
 startInDeck = false
-options = [ SubResource( 2 ), SubResource( 3 ) ]
+options = [ SubResource( 2 ), SubResource( 4 ) ]

@@ -86,7 +86,6 @@ effectData = SubResource( 5 )
 
 [resource]
 script = ExtResource( 1 )
-id = "matildaEvent5"
 tags = [ "matilda" ]
 eventText = "A customer walks into the shop one dark night and offers you a mysterious Pandora Box."
 face = ExtResource( 4 )

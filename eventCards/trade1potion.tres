@@ -21,6 +21,8 @@ removeResources = [ "fatigue" ]
 numRemoveResources = [ 1 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
@@ -31,7 +33,6 @@ effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 1 )
-id = "trade1potion"
 tags = [  ]
 eventText = "Drink the potion..."
 face = ExtResource( 2 )

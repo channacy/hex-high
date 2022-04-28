@@ -8,7 +8,7 @@
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
-alchemy = 10
+alchemy = 0
 artifice = 0
 sorcery = 0
 summon = 0
@@ -18,7 +18,7 @@ mana = 0
 fatigue = 0
 writeups = 0
 
-[sub_resource type="Resource" id=3]
+[sub_resource type="Resource" id=2]
 script = ExtResource( 5 )
 addId = [  ]
 addTag = [  ]
@@ -36,20 +36,17 @@ numGuaranteeCardDraws = [ 1 ]
 guaranteeCardID = [ "alchemyClassEvent1Choice1" ]
 endGame = false
 typeOfEnding = ""
-<<<<<<< Updated upstream
-=======
 numDiscardCard = 0
->>>>>>> Stashed changes
 
-[sub_resource type="Resource" id=2]
+[sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
 flavorText = "You attempt to use your alchemy knowledge to try to revert your friend back into human form. "
-effectText = "Required: 10 Alchemy Knowledge"
+effectText = ""
 costText = ""
 cost = SubResource( 1 )
-effectData = SubResource( 3 )
+effectData = SubResource( 2 )
 
-[sub_resource type="Resource" id=8]
+[sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
 alchemy = 0
 artifice = 0
@@ -61,7 +58,7 @@ mana = 0
 fatigue = 0
 writeups = 0
 
-[sub_resource type="Resource" id=4]
+[sub_resource type="Resource" id=5]
 script = ExtResource( 5 )
 addId = [  ]
 addTag = [  ]
@@ -75,24 +72,21 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
-numGuaranteeCardDraws = [ 1 ]
+numGuaranteeCardDraws = [ 0 ]
 guaranteeCardID = [ "alchemyClassEvent1Choice2" ]
 endGame = false
 typeOfEnding = ""
-<<<<<<< Updated upstream
-=======
 numDiscardCard = 0
->>>>>>> Stashed changes
 
-[sub_resource type="Resource" id=5]
+[sub_resource type="Resource" id=6]
 script = ExtResource( 3 )
 flavorText = "You ask for help from another classmate. "
 effectText = ""
 costText = ""
-cost = SubResource( 8 )
-effectData = SubResource( 4 )
+cost = SubResource( 4 )
+effectData = SubResource( 5 )
 
-[sub_resource type="Resource" id=9]
+[sub_resource type="Resource" id=7]
 script = ExtResource( 2 )
 alchemy = 0
 artifice = 0
@@ -104,7 +98,7 @@ mana = 0
 fatigue = 0
 writeups = 0
 
-[sub_resource type="Resource" id=6]
+[sub_resource type="Resource" id=8]
 script = ExtResource( 5 )
 addId = [  ]
 addTag = [  ]
@@ -118,28 +112,25 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
-numGuaranteeCardDraws = [ 1 ]
+numGuaranteeCardDraws = [ 0 ]
 guaranteeCardID = [ "alchemyClassEvent1Choice3" ]
 endGame = false
 typeOfEnding = ""
-<<<<<<< Updated upstream
-=======
 numDiscardCard = 0
->>>>>>> Stashed changes
 
-[sub_resource type="Resource" id=7]
+[sub_resource type="Resource" id=9]
 script = ExtResource( 3 )
 flavorText = "You did not like your lab partner anyways. Pretend it didn't happen. "
 effectText = ""
 costText = ""
-cost = SubResource( 9 )
-effectData = SubResource( 6 )
+cost = SubResource( 7 )
+effectData = SubResource( 8 )
 
 [resource]
 script = ExtResource( 1 )
-tags = [ "alchemyClassEvent" ]
-eventText = "During alchemy lab, you accidentally turn your lab partner into a frog. What do you do?"
+tags = [  ]
+eventText = "Your lab partner accidentally turns into a frog during alchemy class"
 face = ExtResource( 4 )
 infinite = false
 startInDeck = false
-options = [ SubResource( 2 ), SubResource( 5 ), SubResource( 7 ) ]
+options = [ SubResource( 3 ), SubResource( 6 ), SubResource( 9 ) ]

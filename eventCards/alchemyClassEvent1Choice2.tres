@@ -36,6 +36,7 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 4 )
@@ -75,6 +76,7 @@ numGuaranteeCardDraws = [ 0 ]
 guaranteeCardID = [ "alchemyClassEvent1Choice3" ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=5]
 script = ExtResource( 4 )

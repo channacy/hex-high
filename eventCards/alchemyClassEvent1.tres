@@ -36,6 +36,10 @@ numGuaranteeCardDraws = [ 1 ]
 guaranteeCardID = [ "alchemyClassEvent1Choice1" ]
 endGame = false
 typeOfEnding = ""
+<<<<<<< Updated upstream
+=======
+numDiscardCard = 0
+>>>>>>> Stashed changes
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
@@ -75,6 +79,10 @@ numGuaranteeCardDraws = [ 1 ]
 guaranteeCardID = [ "alchemyClassEvent1Choice2" ]
 endGame = false
 typeOfEnding = ""
+<<<<<<< Updated upstream
+=======
+numDiscardCard = 0
+>>>>>>> Stashed changes
 
 [sub_resource type="Resource" id=5]
 script = ExtResource( 3 )
@@ -114,6 +122,10 @@ numGuaranteeCardDraws = [ 1 ]
 guaranteeCardID = [ "alchemyClassEvent1Choice3" ]
 endGame = false
 typeOfEnding = ""
+<<<<<<< Updated upstream
+=======
+numDiscardCard = 0
+>>>>>>> Stashed changes
 
 [sub_resource type="Resource" id=7]
 script = ExtResource( 3 )

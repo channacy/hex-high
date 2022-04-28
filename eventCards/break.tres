@@ -32,6 +32,10 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [ "fatigue" ]
 numRemoveResources = [ 2 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
@@ -67,6 +71,10 @@ addResources = [ "sorcery" ]
 numResources = [ 5 ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 4 )
@@ -78,7 +86,6 @@ effectData = SubResource( 5 )
 
 [resource]
 script = ExtResource( 1 )
-id = "break"
 tags = [ "schoolEventCard", "academiaBreak" ]
 eventText = "A bit of free time"
 face = ExtResource( 2 )

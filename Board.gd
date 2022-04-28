@@ -148,6 +148,8 @@ func execute(effectData):
 	# Updates the deck for resource conditionals
 	get_node("../InventoryNode/Inventory").updateResourceConditionals()
 	
+	if effectData.numDiscardCard > 0:
+		deck.counter = deck.counter + effectData.numDiscardCard
 # Returns true if there is an active event card on the board
 func hasEventCard():
 	return is_instance_valid(eventCardNode)

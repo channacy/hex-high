@@ -32,6 +32,10 @@ addResources = [ "alchemy" ]
 numResources = [ 4 ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 4 )
@@ -43,7 +47,6 @@ effectData = SubResource( 2 )
 
 [resource]
 script = ExtResource( 1 )
-id = "alchemyProfessorAdvice"
 tags = [  ]
 eventText = "Headmage Galena's Advice"
 face = ExtResource( 2 )

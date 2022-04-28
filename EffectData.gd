@@ -34,3 +34,6 @@ export(Array, String) var guaranteeCardID = []
 # Types: win, lose
 export(bool) var endGame = false
 export(String) var typeOfEnding = ""
+
+#number of cards on top of deck to discard
+export var numDiscardCard = 0 

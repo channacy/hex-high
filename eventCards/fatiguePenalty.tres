@@ -47,7 +47,6 @@ effectData = SubResource( 2 )
 
 [resource]
 script = ExtResource( 1 )
-id = "fatiguePenalty"
 tags = [  ]
 eventText = "Too much fatigue..."
 face = ExtResource( 3 )

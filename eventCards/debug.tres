@@ -1,10 +1,22 @@
-[gd_resource type="Resource" load_steps=22 format=2]
+[gd_resource type="Resource" load_steps=27 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=2]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
 [ext_resource path="res://EffectData.gd" type="Script" id=4]
 [ext_resource path="res://Cost.gd" type="Script" id=5]
+
+[sub_resource type="Resource" id=20]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 4 )
@@ -20,13 +32,30 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 flavorText = "Remove exams"
 effectText = "All exam cards are removed from the deck."
 costText = ""
+cost = SubResource( 20 )
 effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=21]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 4 )
@@ -42,13 +71,30 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
 flavorText = "No sleep"
 effectText = "Removes sleep from the deck."
 costText = ""
+cost = SubResource( 21 )
 effectData = SubResource( 3 )
+
+[sub_resource type="Resource" id=22]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
 
 [sub_resource type="Resource" id=5]
 script = ExtResource( 4 )
@@ -64,13 +110,30 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 2 )
 flavorText = "Find library"
 effectText = "Adds study option"
 costText = ""
+cost = SubResource( 22 )
 effectData = SubResource( 5 )
+
+[sub_resource type="Resource" id=23]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
 
 [sub_resource type="Resource" id=7]
 script = ExtResource( 4 )
@@ -86,13 +149,30 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=8]
 script = ExtResource( 2 )
 flavorText = "Cast More"
 effectText = "Add 2 cast a spell cards"
 costText = ""
+cost = SubResource( 23 )
 effectData = SubResource( 7 )
+
+[sub_resource type="Resource" id=24]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
 
 [sub_resource type="Resource" id=9]
 script = ExtResource( 4 )
@@ -108,12 +188,17 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=10]
 script = ExtResource( 2 )
 flavorText = "Remove Card from Hand"
 effectText = "removes test cards"
 costText = ""
+cost = SubResource( 24 )
 effectData = SubResource( 9 )
 
 [sub_resource type="Resource" id=13]
@@ -142,6 +227,10 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [ "coin" ]
 numRemoveResources = [ 20 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=14]
 script = ExtResource( 2 )
@@ -177,6 +266,10 @@ addResources = [  ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=19]
 script = ExtResource( 2 )
@@ -189,7 +282,6 @@ effectData = SubResource( 18 )
 [resource]
 resource_local_to_scene = true
 script = ExtResource( 1 )
-id = "debug"
 tags = [ "debug" ]
 eventText = "Cast a Spell"
 face = ExtResource( 3 )

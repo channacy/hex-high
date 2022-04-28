@@ -1,10 +1,22 @@
-[gd_resource type="Resource" load_steps=11 format=2]
+[gd_resource type="Resource" load_steps=12 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=2]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
 [ext_resource path="res://EffectData.gd" type="Script" id=4]
 [ext_resource path="res://Cost.gd" type="Script" id=5]
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
@@ -22,12 +34,15 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
 flavorText = "Grades are more important, continue studying."
 effectText = "+1 knowledge for alchemy, summoning, sorcery, artifice"
 costText = ""
+cost = SubResource( 6 )
 effectData = SubResource( 2 )
 
 [sub_resource type="Resource" id=3]
@@ -58,6 +73,8 @@ removeResources = [ "fatigue" ]
 numRemoveResources = [ 10 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
 
 [sub_resource type="Resource" id=5]
 script = ExtResource( 2 )
@@ -69,7 +86,6 @@ effectData = SubResource( 4 )
 
 [resource]
 script = ExtResource( 1 )
-id = "social"
 tags = [ "" ]
 eventText = "You are busy studying the art of magic casting and feel heavily exhausted. You know you have an upcoming quiz but your classmates have invited you to watch the  annual Hex High Quidditch games. "
 face = ExtResource( 3 )

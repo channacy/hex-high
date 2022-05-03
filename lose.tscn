@@ -1,7 +1,10 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://sprites/lose.webm" type="VideoStream" id=1]
-[ext_resource path="res://return.gd" type="Script" id=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Button
+"
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -26,7 +29,7 @@ margin_top = -17.6
 margin_right = 112.0
 margin_bottom = 19.4
 text = "Return to Main Menu"
-script = ExtResource( 2 )
+script = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

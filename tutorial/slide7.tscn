@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://sprites/slide7.png" type="Texture" id=1]
 [ext_resource path="res://Background.tscn" type="PackedScene" id=2]
 [ext_resource path="res://tutorial/skip.gd" type="Script" id=3]
-[ext_resource path="res://tutorial/forward7.gd" type="Script" id=4]
-[ext_resource path="res://tutorial/back7.gd" type="Script" id=5]
+[ext_resource path="res://tutorial/navigation.gd" type="Script" id=4]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -16,7 +15,7 @@ __meta__ = {
 [node name="Background" parent="." instance=ExtResource( 2 )]
 texture = ExtResource( 1 )
 
-[node name="back" type="Button" parent="."]
+[node name="back7" type="Button" parent="."]
 anchor_left = 0.037
 anchor_top = 0.487
 anchor_right = 0.037
@@ -25,12 +24,12 @@ margin_left = -12.888
 margin_top = -77.2
 margin_right = 11.112
 margin_bottom = 77.8
-script = ExtResource( 5 )
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="forward" type="Button" parent="."]
+[node name="forward7" type="Button" parent="."]
 anchor_left = 0.967
 anchor_top = 0.482
 anchor_right = 0.967
@@ -59,6 +58,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="back" to="back" method="_on_back_pressed"]
-[connection signal="pressed" from="forward" to="forward" method="_on_forward_pressed"]
+[connection signal="pressed" from="back7" to="back7" method="_on_back7_pressed"]
+[connection signal="pressed" from="forward7" to="forward7" method="_on_forward7_pressed"]
 [connection signal="pressed" from="skip" to="skip" method="_on_skip_pressed"]

@@ -9,6 +9,9 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_pivot_offset = Vector2( -588, -85 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Background" parent="." instance=ExtResource( 1 )]
 texture = ExtResource( 2 )

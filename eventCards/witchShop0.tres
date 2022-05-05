@@ -36,11 +36,12 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
-flavorText = "Accept the job"
-effectText = "Add \"Rose's Witch's Essentials\" cards to the deck"
+flavorText = "Apply"
+effectText = "Add \"Rose's Witch Essentials\" cards to the deck"
 costText = ""
 cost = SubResource( 5 )
 effectData = SubResource( 1 )
@@ -75,10 +76,11 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
-flavorText = "Decline "
+flavorText = "Maybe another time"
 effectText = ""
 costText = ""
 cost = SubResource( 6 )

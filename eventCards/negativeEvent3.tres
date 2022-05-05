@@ -29,25 +29,25 @@ addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [ "fatigue" ]
-numResources = [ 10 ]
+numResources = [ 1 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 5 )
 flavorText = "You have to sleep all day"
-effectText = ""
+effectText = "+1 fatigue"
 costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
-endGame = false
-typeOfEnding = ""
 
 [resource]
 script = ExtResource( 1 )
-id = "negativeEvent3"
 tags = [  ]
 eventText = "You contracted a minor illness that causes you to be bedridden for a few days but you feel confident you will fully recover."
 face = ExtResource( 3 )

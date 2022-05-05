@@ -29,18 +29,19 @@ addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [ "coin", "fatigue" ]
-numResources = [ 45, 20 ]
+numResources = [ 45, 3 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 flavorText = "Work, work, and work"
-effectText = "+ 45 coin, +20fatigue"
+effectText = "+45 coins, +3 fatigue"
 costText = ""
 cost = SubResource( 5 )
 effectData = SubResource( 1 )
@@ -75,10 +76,11 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
-flavorText = "Take a well-deserved break."
+flavorText = "I don't think I have the energy..."
 effectText = ""
 costText = ""
 cost = SubResource( 6 )
@@ -87,7 +89,7 @@ effectData = SubResource( 3 )
 [resource]
 script = ExtResource( 1 )
 tags = [ "rose" ]
-eventText = "Rose requests you work overtime...You are in need of some more coins, what do you do?"
+eventText = "Rose requests you work overtime..."
 face = ExtResource( 3 )
 infinite = false
 startInDeck = false

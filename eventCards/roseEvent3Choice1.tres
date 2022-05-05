@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=9 format=2]
+[gd_resource type="Resource" load_steps=12 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=2]
@@ -13,7 +13,7 @@ artifice = 0
 sorcery = 0
 summon = 0
 textbook = 0
-coin = 0
+coin = 10
 mana = 0
 fatigue = 0
 writeups = 0
@@ -36,20 +36,61 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
-flavorText = "Be a good worker. "
-effectText = "- 10 coins"
+flavorText = "No problem "
+effectText = "-10 coins"
 costText = ""
 cost = SubResource( 3 )
 effectData = SubResource( 1 )
 
+[sub_resource type="Resource" id=4]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 3 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [ "rose" ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 2 )
+flavorText = "I can't afford it..."
+effectText = "Remove \"Rose's Witch Essentials\" cards from the deck"
+costText = ""
+cost = SubResource( 4 )
+effectData = SubResource( 5 )
+
 [resource]
 script = ExtResource( 1 )
 tags = [  ]
-eventText = "Rose forgives you and lets you maintain your job at the exchange of 10 coins. "
+eventText = "Rose forgives you and lets you keep working as long as you pay for the damage."
 face = ExtResource( 4 )
 infinite = false
 startInDeck = false
-options = [ SubResource( 2 ) ]
+options = [ SubResource( 2 ), SubResource( 6 ) ]

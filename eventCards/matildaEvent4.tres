@@ -6,45 +6,6 @@
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
 [ext_resource path="res://Cost.gd" type="Script" id=5]
 
-[sub_resource type="Resource" id=5]
-script = ExtResource( 5 )
-alchemy = 0
-artifice = 0
-sorcery = 0
-summon = 0
-textbook = 0
-coin = 0
-mana = 0
-fatigue = 0
-writeups = 0
-
-[sub_resource type="Resource" id=1]
-script = ExtResource( 2 )
-addId = [  ]
-addTag = [ "matilda" ]
-removeId = [ "potionShop0" ]
-removeTag = [  ]
-addHandId = [  ]
-addHandTag = [  ]
-removeHandId = [  ]
-removeHandTag = [  ]
-addResources = [ "fatigue" ]
-numResources = [ 5 ]
-removeResources = [  ]
-numRemoveResources = [  ]
-numGuaranteeCardDraws = [  ]
-guaranteeCardID = [  ]
-endGame = false
-typeOfEnding = ""
-
-[sub_resource type="Resource" id=2]
-script = ExtResource( 3 )
-flavorText = "Clean up the mess and act like nothing happened"
-effectText = "+5 Fatigue"
-costText = ""
-cost = SubResource( 5 )
-effectData = SubResource( 1 )
-
 [sub_resource type="Resource" id=6]
 script = ExtResource( 5 )
 alchemy = 0
@@ -75,14 +36,55 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
-flavorText = "Tell your boss, Matilda."
+flavorText = "Tell your boss"
 effectText = "- 10 coins"
 costText = ""
 cost = SubResource( 6 )
 effectData = SubResource( 4 )
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [ "matilda" ]
+removeId = [ "potionShop0" ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "fatigue" ]
+numResources = [ 5 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+flavorText = "Clean up the mess yourself"
+effectText = "+1 Fatigue"
+costText = ""
+cost = SubResource( 5 )
+effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 1 )
@@ -91,4 +93,4 @@ eventText = "While working, you bump a shelf and accidentally spill a potion lab
 face = ExtResource( 4 )
 infinite = false
 startInDeck = false
-options = [ SubResource( 2 ), SubResource( 3 ) ]
+options = [ SubResource( 3 ), SubResource( 2 ) ]

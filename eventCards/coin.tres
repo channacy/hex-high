@@ -34,6 +34,9 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 4 )
@@ -71,6 +74,9 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
@@ -82,12 +88,9 @@ effectData = SubResource( 6 )
 
 [resource]
 script = ExtResource( 1 )
-id = "coin"
 tags = [  ]
 eventText = "Some gold on the ground!"
 face = ExtResource( 2 )
 infinite = true
 startInDeck = true
 options = [ SubResource( 3 ), SubResource( 4 ) ]
-endGame = false
-typeOfEnding = ""

@@ -29,18 +29,19 @@ addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [ "fatigue" ]
-numResources = [ 3 ]
+numResources = [ 1 ]
 removeResources = [ "mana" ]
-numRemoveResources = [ 0 ]
+numRemoveResources = [ 5 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 5 )
 flavorText = "Magic gone wrong"
-effectText = ""
+effectText = "+1 fatigue, -5 mana"
 costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
@@ -48,7 +49,7 @@ effectData = SubResource( 2 )
 [resource]
 script = ExtResource( 1 )
 tags = [  ]
-eventText = "A classmate in your alchemy class accidentally points his wand at you which leads you to suffer unknown negative consequences. "
+eventText = ""
 face = ExtResource( 3 )
 infinite = false
 startInDeck = false

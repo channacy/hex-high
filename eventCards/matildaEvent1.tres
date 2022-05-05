@@ -36,6 +36,7 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
@@ -48,7 +49,7 @@ effectData = SubResource( 1 )
 [resource]
 script = ExtResource( 1 )
 tags = [ "matilda" ]
-eventText = "For your hard work, Matilda rewards you by giving you a bonus.  "
+eventText = "For your hard work, Matilda rewards you by giving you a bonus."
 face = ExtResource( 4 )
 infinite = false
 startInDeck = false

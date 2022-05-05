@@ -36,12 +36,13 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = true
 typeOfEnding = "win"
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=9]
 script = ExtResource( 2 )
 flavorText = "Pass the Exam!"
-effectText = ""
-costText = "40 Knowledge of ALL magic"
+effectText = "Win the game"
+costText = "40 marks in all subjects"
 cost = SubResource( 7 )
 effectData = SubResource( 8 )
 
@@ -75,18 +76,18 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = true
 typeOfEnding = "lose"
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
-flavorText = "Fail the Exam!"
-effectText = ""
-costText = "Didn't study enough..."
+flavorText = "I didn't study enough..."
+effectText = "Lose the game"
+costText = ""
 cost = SubResource( 3 )
 effectData = SubResource( 6 )
 
 [resource]
 script = ExtResource( 1 )
-id = "finalExam"
 tags = [  ]
 eventText = "Time for the Final Exam!"
 face = ExtResource( 3 )

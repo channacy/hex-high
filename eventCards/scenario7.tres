@@ -70,17 +70,14 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
-<<<<<<< Updated upstream
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [ 0 ]
 guaranteeCardID = [ "" ]
-=======
 removeResources = [ "alchemy" ]
 numRemoveResources = [ 2 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
->>>>>>> Stashed changes
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0

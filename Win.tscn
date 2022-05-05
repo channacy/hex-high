@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://sprites/win.webm" type="VideoStream" id=1]
+[ext_resource path="res://sprites/win.ogv" type="VideoStream" id=1]
 [ext_resource path="res://tutorial/navigation.gd" type="Script" id=2]
 
 [node name="Control" type="Control"]

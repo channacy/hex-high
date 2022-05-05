@@ -34,13 +34,11 @@ removeResources = [ "fatigue" ]
 numRemoveResources = [ 2 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
-<<<<<<< HEAD
-numDiscardCard = 0
-=======
 numDiscardCard = 10
->>>>>>> f44ecc797d8dc68875caee3b7a760bf4705f1c13
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
@@ -53,7 +51,7 @@ effectData = SubResource( 2 )
 [resource]
 script = ExtResource( 1 )
 tags = [  ]
-eventText = "Too much fatigue..."
+eventText = "Too much fatigue"
 face = ExtResource( 3 )
 infinite = false
 startInDeck = false

@@ -140,10 +140,10 @@ func execute(effectData):
 		print("Game has ENDED!")
 		if effectData.typeOfEnding == "win":
 			print("You Win")
-			Global.goto_scene("res://Win.tscn")
+			Global.goto_scene("res://tutorial/Win.tscn")
 		elif effectData.typeOfEnding == "lose":
 			print("You Lost")
-			Global.goto_scene("res://Lose.tscn")
+			Global.goto_scene("res://tutorial/Lose.tscn")
 	
 	# Updates the deck for resource conditionals
 	get_node("../InventoryNode/Inventory").updateResourceConditionals()

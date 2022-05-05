@@ -19,8 +19,13 @@ func _ready():
 	#Random Number Generator
 	randomNum.randomize()
 	board = get_node("../../Board")
+<<<<<<< Updated upstream
 	addGuaranteed(1, "magicTheoryClub1")
 	
+=======
+	
+
+>>>>>>> Stashed changes
 # If left click the deck sprite, runs action.
 # In this case, when you click the deck, it will use the loadEvent fucntion from the Board.gd script
 func _input_event(viewport, event, shape_idx):

@@ -31,16 +31,17 @@ removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
 removeResources = [ "fatigue" ]
-numRemoveResources = [ 1 ]
+numRemoveResources = [ 4 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
-flavorText = "You received some extra boost of energy, but was it worth it?"
-effectText = "-1 fatigue"
+flavorText = "That tasted terrible..."
+effectText = "-4 fatigue"
 costText = ""
 cost = SubResource( 3 )
 effectData = SubResource( 1 )
@@ -48,7 +49,7 @@ effectData = SubResource( 1 )
 [resource]
 script = ExtResource( 1 )
 tags = [  ]
-eventText = "Drink the potion..."
+eventText = "Drink the potion"
 face = ExtResource( 2 )
 infinite = false
 startInDeck = false

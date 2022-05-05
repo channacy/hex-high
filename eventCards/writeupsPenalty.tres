@@ -34,18 +34,20 @@ removeResources = [ "writeups" ]
 numRemoveResources = [ 3 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 10
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
 flavorText = "Go to detention"
-effectText = "Discard 10 cards from the top of the deck."
-costText = "Costs 3 writeups"
+effectText = "-3 writeups, discard 10 cards from the top of the deck."
+costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
 
 [resource]
 script = ExtResource( 1 )
-id = "writeupsPenalty"
 tags = [  ]
 eventText = "Too many writeups..."
 face = ExtResource( 3 )

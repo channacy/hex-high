@@ -29,18 +29,19 @@ addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [ "fatigue" ]
-numResources = [ 10 ]
+numResources = [ 2 ]
 removeResources = [ "coin" ]
-numRemoveResources = [ 50 ]
+numRemoveResources = [ 30 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
-flavorText = "The box unleashes a bright blinding light, and you realize you are missing some gold coins and are struck with very low energy. "
-effectText = "+10 fatigue, -50 coin"
+flavorText = "Maybe I should have kept that closed..."
+effectText = "+2 fatigue, -30 coins"
 costText = ""
 cost = SubResource( 3 )
 effectData = SubResource( 1 )

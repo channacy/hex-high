@@ -29,18 +29,19 @@ addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [ "fatigue" ]
-numResources = [ 10 ]
+numResources = [ 1 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 1 )
 flavorText = "Accept your fate."
-effectText = "+10 fatigue"
+effectText = "+1 fatigue"
 costText = ""
 cost = SubResource( 3 )
 effectData = SubResource( 1 )
@@ -48,7 +49,7 @@ effectData = SubResource( 1 )
 [resource]
 script = ExtResource( 3 )
 tags = [  ]
-eventText = "The witches become furious and strikes you with a curse."
+eventText = "The witches become furious and strike you with a curse."
 face = ExtResource( 2 )
 infinite = false
 startInDeck = false

@@ -28,19 +28,20 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [ "coin" ]
-numResources = [ 1 ]
+addResources = [  ]
+numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
-flavorText = "Accept"
-effectText = "+1 coin"
+flavorText = "Apply"
+effectText = "Adds \"Matilda's Potion Shop\" cards to the deck."
 costText = ""
 cost = SubResource( 5 )
 effectData = SubResource( 1 )
@@ -75,10 +76,11 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
-flavorText = "Decline"
+flavorText = "Maybe another time"
 effectText = ""
 costText = ""
 cost = SubResource( 6 )

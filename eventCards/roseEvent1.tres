@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=9 format=2]
+[gd_resource type="Resource" load_steps=12 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=2]
@@ -29,27 +29,68 @@ addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [ "coin", "fatigue" ]
-numResources = [ 30, 15 ]
+numResources = [ 10, 1 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
-flavorText = "Work at Rose's Essentials"
-effectText = ""
-costText = "+30 coins, +15 fatigue"
+flavorText = "Work"
+effectText = "+10 coins, +1 fatigue"
+costText = ""
 cost = SubResource( 3 )
 effectData = SubResource( 1 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [ "potionShop0", "witchShop0" ]
+removeId = [  ]
+removeTag = [ "rose" ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 2 )
+flavorText = "Quit"
+effectText = "Removes \"Rose's Witch Essentials\" cards from the deck"
+costText = ""
+cost = SubResource( 4 )
+effectData = SubResource( 5 )
 
 [resource]
 script = ExtResource( 1 )
 tags = [ "rose" ]
-eventText = "Time for your shift!"
+eventText = "Your shift at Rose's is starting!"
 face = ExtResource( 3 )
 infinite = false
 startInDeck = false
-options = [ SubResource( 2 ) ]
+options = [ SubResource( 2 ), SubResource( 6 ) ]

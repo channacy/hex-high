@@ -29,18 +29,19 @@ addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [ "coin", "fatigue" ]
-numResources = [ 10, 5 ]
+numResources = [ 10, 1 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
 flavorText = "Work"
-effectText = "+10 coins, +5 Fatigue"
+effectText = "+10 coins, +1 fatigue"
 costText = " "
 cost = SubResource( 5 )
 effectData = SubResource( 1 )
@@ -61,7 +62,7 @@ writeups = 0
 script = ExtResource( 1 )
 addId = [ "potionShop0", "witchShop0" ]
 addTag = [  ]
-removeId = [ "" ]
+removeId = [  ]
 removeTag = [ "matilda" ]
 addHandId = [  ]
 addHandTag = [  ]
@@ -75,11 +76,12 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
 flavorText = "Quit"
-effectText = ""
+effectText = "Removes \"Matilda's Potion Shop\" cards from the deck"
 costText = ""
 cost = SubResource( 6 )
 effectData = SubResource( 4 )
@@ -87,7 +89,7 @@ effectData = SubResource( 4 )
 [resource]
 script = ExtResource( 2 )
 tags = [ "matilda" ]
-eventText = "Time to work at Matilda's Shop!"
+eventText = "Your shift at Matilda's is starting!"
 face = ExtResource( 4 )
 infinite = false
 startInDeck = false

@@ -13,7 +13,7 @@ artifice = 0
 sorcery = 0
 summon = 0
 textbook = 0
-coin = 0
+coin = 2
 mana = 0
 fatigue = 0
 writeups = 0
@@ -36,12 +36,13 @@ numGuaranteeCardDraws = [ 1 ]
 guaranteeCardID = [ "trade3choice1" ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 5 )
-flavorText = "Insert 2 coins"
-effectText = "-2 coins"
-costText = "Required: 2 coins"
+flavorText = "Buy something"
+effectText = "Receive... something..."
+costText = "2 coins"
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
 
@@ -75,10 +76,11 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 5 )
-flavorText = "It is not worth the risk. "
+flavorText = "No thanks..."
 effectText = ""
 costText = ""
 cost = SubResource( 6 )
@@ -87,7 +89,7 @@ effectData = SubResource( 5 )
 [resource]
 script = ExtResource( 1 )
 tags = [  ]
-eventText = "A random vending coin machine! "
+eventText = "A strange unlabeled vending machine"
 face = ExtResource( 2 )
 infinite = false
 startInDeck = true

@@ -60,5 +60,5 @@ func _on_HomeButton_pressed():
 	Global.goto_scene("res://Menu.tscn")
 
 func _on_Button_pressed():
-	Global.goto_scene("res://Menu.tscn")
+	Global.goto_scene("res://tutorial/GoodEnding1.tscn")
 

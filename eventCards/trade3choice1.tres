@@ -36,10 +36,11 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
-flavorText = "Accept"
+flavorText = "Huh..?"
 effectText = "+1 coin"
 costText = ""
 cost = SubResource( 3 )

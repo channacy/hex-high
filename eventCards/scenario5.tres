@@ -32,14 +32,15 @@ addResources = [ "textbook" ]
 numResources = [ 1 ]
 removeResources = [  ]
 numRemoveResources = [  ]
-numGuaranteeCardDraws = [  ]
-guaranteeCardID = [  ]
+numGuaranteeCardDraws = [ 0 ]
+guaranteeCardID = [ "Scenario5Event1" ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
-flavorText = "Join"
+flavorText = "Join the competition!"
 effectText = ""
 costText = ""
 cost = SubResource( 5 )
@@ -69,16 +70,17 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
-removeResources = [ "textbook" ]
-numRemoveResources = [ 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 3 )
-flavorText = "Decline"
+flavorText = "Olympiad makes me nervous "
 effectText = ""
 costText = ""
 cost = SubResource( 6 )

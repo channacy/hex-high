@@ -31,21 +31,23 @@ removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
 removeResources = [ "alchemy", "artifice", "sorcery", "summon" ]
-numRemoveResources = [ 2, 2, 2, 2 ]
+numRemoveResources = [ 1, 1, 1, 1 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
 flavorText = "You dropped it"
-effectText = ""
+effectText = "-1 mark in all subjects"
 costText = ""
 cost = SubResource( 3 )
 effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 1 )
-id = "negativeEvent1"
 tags = [  ]
 eventText = "You arrive at Witch Academia but then you come to realize you lost your homework."
 face = ExtResource( 3 )

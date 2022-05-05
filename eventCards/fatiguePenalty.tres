@@ -15,7 +15,7 @@ summon = 0
 textbook = 0
 coin = 0
 mana = 0
-fatigue = 2
+fatigue = 0
 writeups = 0
 
 [sub_resource type="Resource" id=2]
@@ -36,13 +36,17 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+<<<<<<< HEAD
 numDiscardCard = 0
+=======
+numDiscardCard = 10
+>>>>>>> f44ecc797d8dc68875caee3b7a760bf4705f1c13
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
 flavorText = "Fall asleep"
-effectText = "Discard 10 cards from the top of the deck."
-costText = "Costs 2 fatigue"
+effectText = "-2 fatigue, discard 10 cards from the top of the deck"
+costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
 

@@ -1,121 +1,10 @@
-[gd_resource type="Resource" load_steps=18 format=2]
+[gd_resource type="Resource" load_steps=12 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://EffectData.gd" type="Script" id=2]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=3]
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
 [ext_resource path="res://Cost.gd" type="Script" id=5]
-
-[sub_resource type="Resource" id=10]
-script = ExtResource( 5 )
-alchemy = 0
-artifice = 0
-sorcery = 0
-summon = 0
-textbook = 0
-coin = 0
-mana = 0
-fatigue = 0
-writeups = 0
-
-[sub_resource type="Resource" id=11]
-script = ExtResource( 2 )
-addId = [  ]
-addTag = [  ]
-removeId = [  ]
-removeTag = [  ]
-addHandId = [  ]
-addHandTag = [  ]
-removeHandId = [  ]
-removeHandTag = [  ]
-addResources = [ "writeups" ]
-numResources = [ 1 ]
-removeResources = [  ]
-numRemoveResources = [  ]
-numGuaranteeCardDraws = [  ]
-guaranteeCardID = [  ]
-
-[sub_resource type="Resource" id=9]
-script = ExtResource( 3 )
-flavorText = "potion blew up"
-effectText = ""
-costText = ""
-cost = SubResource( 10 )
-effectData = SubResource( 11 )
-
-[sub_resource type="Resource" id=12]
-script = ExtResource( 5 )
-alchemy = 0
-artifice = 0
-sorcery = 0
-summon = 0
-textbook = 0
-coin = 0
-mana = 0
-fatigue = 0
-writeups = 0
-
-[sub_resource type="Resource" id=3]
-script = ExtResource( 2 )
-addId = [  ]
-addTag = [  ]
-removeId = [  ]
-removeTag = [  ]
-addHandId = [  ]
-addHandTag = [  ]
-removeHandId = [  ]
-removeHandTag = [  ]
-addResources = [ "writeups" ]
-numResources = [ 1 ]
-removeResources = [  ]
-numRemoveResources = [  ]
-numGuaranteeCardDraws = [  ]
-guaranteeCardID = [  ]
-
-[sub_resource type="Resource" id=4]
-script = ExtResource( 3 )
-flavorText = "artifact fizzled out"
-effectText = ""
-costText = ""
-cost = SubResource( 12 )
-effectData = SubResource( 3 )
-
-[sub_resource type="Resource" id=13]
-script = ExtResource( 5 )
-alchemy = 0
-artifice = 0
-sorcery = 0
-summon = 0
-textbook = 0
-coin = 0
-mana = 0
-fatigue = 0
-writeups = 0
-
-[sub_resource type="Resource" id=5]
-script = ExtResource( 2 )
-addId = [  ]
-addTag = [  ]
-removeId = [  ]
-removeTag = [  ]
-addHandId = [  ]
-addHandTag = [  ]
-removeHandId = [  ]
-removeHandTag = [  ]
-addResources = [ "writeups" ]
-numResources = [ 1 ]
-removeResources = [  ]
-numRemoveResources = [  ]
-numGuaranteeCardDraws = [  ]
-guaranteeCardID = [  ]
-
-[sub_resource type="Resource" id=6]
-script = ExtResource( 3 )
-flavorText = "cast the wrong spell"
-effectText = ""
-costText = ""
-cost = SubResource( 13 )
-effectData = SubResource( 5 )
 
 [sub_resource type="Resource" id=14]
 script = ExtResource( 5 )
@@ -145,21 +34,63 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=8]
 script = ExtResource( 3 )
-flavorText = "familiar wreaks havoc on the classroom"
-effectText = ""
+flavorText = "Turn it in late"
+effectText = "+1 writeup"
 costText = ""
 cost = SubResource( 14 )
 effectData = SubResource( 7 )
 
+[sub_resource type="Resource" id=15]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=16]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "fatigue" ]
+numResources = [ 2 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
+
+[sub_resource type="Resource" id=17]
+script = ExtResource( 3 )
+flavorText = "Rush to fix it"
+effectText = "+2 fatigue"
+costText = ""
+cost = SubResource( 15 )
+effectData = SubResource( 16 )
+
 [resource]
 script = ExtResource( 1 )
-id = "negativeEvent5"
 tags = [  ]
-eventText = "You flunked a project. "
+eventText = "During a lab, you accidentally wreck your project!"
 face = ExtResource( 4 )
 infinite = false
 startInDeck = false
-options = [ SubResource( 9 ), SubResource( 4 ), SubResource( 6 ), SubResource( 8 ) ]
+options = [ SubResource( 8 ), SubResource( 17 ) ]

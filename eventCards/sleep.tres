@@ -30,17 +30,18 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
-removeResources = [  ]
-numRemoveResources = [  ]
+removeResources = [ "fatigue" ]
+numRemoveResources = [ 5 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 2
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
-flavorText = "Go to Sleep"
-effectText = ""
+flavorText = "Snooze"
+effectText = "-5 fatigue, discard 2 cards from the deck"
 costText = ""
 cost = SubResource( 10 )
 effectData = SubResource( 1 )
@@ -69,17 +70,18 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
-removeResources = [  ]
-numRemoveResources = [  ]
+removeResources = [ "fatigue" ]
+numRemoveResources = [ 2 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
-flavorText = "Nap "
-effectText = ""
+flavorText = "Sleep"
+effectText = "-2 fatigue"
 costText = ""
 cost = SubResource( 8 )
 effectData = SubResource( 3 )
@@ -98,34 +100,34 @@ writeups = 0
 
 [sub_resource type="Resource" id=5]
 script = ExtResource( 2 )
-addId = [ "prop2" ]
-addTag = [ "prop" ]
+addId = [  ]
+addTag = [  ]
 removeId = [  ]
 removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "fatigue", "alchemy", "artifice", "sorcery", "summon" ]
+numResources = [ 1, 2, 2, 2, 2 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 4 )
-flavorText = "Stay Awake "
-effectText = ""
+flavorText = "Not before a little studying..."
+effectText = "+1 fatigue, +2 marks in all subjects"
 costText = ""
 cost = SubResource( 9 )
 effectData = SubResource( 5 )
 
 [resource]
 script = ExtResource( 1 )
-id = "sleep"
 tags = [ "sleep", "schoolEvent" ]
 eventText = "Maybe I should go to bed..."
 face = ExtResource( 3 )

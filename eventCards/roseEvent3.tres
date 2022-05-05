@@ -40,8 +40,8 @@ numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
-flavorText = "You accept responsibility "
-effectText = "???"
+flavorText = "Accept responsibility"
+effectText = "Tell Rose"
 costText = ""
 cost = SubResource( 5 )
 effectData = SubResource( 1 )
@@ -81,7 +81,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
 flavorText = "You try to glue the artiface back together."
-effectText = ""
+effectText = "Rose doesn't have to know about this..."
 costText = ""
 cost = SubResource( 6 )
 effectData = SubResource( 4 )
@@ -89,7 +89,7 @@ effectData = SubResource( 4 )
 [resource]
 script = ExtResource( 1 )
 tags = [ "rose" ]
-eventText = "While trying to find a magic wand for a customer, you accidentally step onto an artifice that is a rune which cracks to pieces. "
+eventText = "While trying to find a magic wand for a customer, you accidentally step onto an artifice that is a rune which cracks to pieces."
 face = ExtResource( 3 )
 infinite = false
 startInDeck = false

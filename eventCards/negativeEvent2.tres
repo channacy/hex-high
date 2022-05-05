@@ -31,21 +31,23 @@ removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
 removeResources = [ "coin" ]
-numRemoveResources = [ 1 ]
+numRemoveResources = [ 15 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
 flavorText = "It's gone forever"
-effectText = ""
+effectText = "-15 coins"
 costText = ""
 cost = SubResource( 3 )
 effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 1 )
-id = "negativeEvent2"
 tags = [  ]
 eventText = "You drop your wallet while rushing to classes. "
 face = ExtResource( 3 )

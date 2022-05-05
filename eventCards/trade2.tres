@@ -13,7 +13,7 @@ artifice = 0
 sorcery = 0
 summon = 0
 textbook = 0
-coin = 15
+coin = 30
 mana = 0
 fatigue = 0
 writeups = 0
@@ -31,17 +31,18 @@ removeHandTag = [  ]
 addResources = [ "textbook" ]
 numResources = [ 1 ]
 removeResources = [ "coin" ]
-numRemoveResources = [ 15 ]
+numRemoveResources = [ 30 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
-flavorText = "Buy a new textbook."
-effectText = "+1 textbook, -15 coin"
-costText = "Required: 15 coin"
+flavorText = "Buy a textbook"
+effectText = "+1 textbook"
+costText = "30 coins"
 cost = SubResource( 2 )
 effectData = SubResource( 3 )
 
@@ -75,12 +76,13 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 3 )
-flavorText = "You are hungry and want some bread."
-effectText = "-2 fatigue, -5 coin"
-costText = "Required: 5 coin"
+flavorText = "Buy a snack"
+effectText = "-2 fatigue"
+costText = "5 coins"
 cost = SubResource( 4 )
 effectData = SubResource( 5 )
 
@@ -107,19 +109,20 @@ addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [ "summon" ]
-numResources = [ 5 ]
+numResources = [ 4 ]
 removeResources = [ "coin" ]
 numRemoveResources = [ 15 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=7]
 script = ExtResource( 3 )
-flavorText = "Buy a ticket to see a famous witch perform summoning tricks."
-effectText = "+3 summoning knowledge, -15 coin"
-costText = "Required: 15 coin"
+flavorText = "Watch a summoning demonstration"
+effectText = "+4 summoning marks"
+costText = "15 coins"
 cost = SubResource( 8 )
 effectData = SubResource( 9 )
 
@@ -153,10 +156,11 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=11]
 script = ExtResource( 3 )
-flavorText = "Come back to the vendor later. "
+flavorText = "Don't buy anything"
 effectText = ""
 costText = ""
 cost = SubResource( 12 )
@@ -165,7 +169,7 @@ effectData = SubResource( 10 )
 [resource]
 script = ExtResource( 1 )
 tags = [  ]
-eventText = "You are passing by a vendor and in some desperate need of supplies before the next class is in session."
+eventText = "You pass by a market on your way to class. "
 face = ExtResource( 2 )
 infinite = false
 startInDeck = true

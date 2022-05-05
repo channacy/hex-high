@@ -32,18 +32,22 @@ addResources = [ "textbook" ]
 numResources = [ 1 ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 4 )
 flavorText = "Thanks mom!"
-effectText = "Receive 1 textbook."
+effectText = "+1 textbook"
 costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
 
 [resource]
 script = ExtResource( 1 )
-id = "present"
 tags = [  ]
 eventText = "A present from Mom!"
 face = ExtResource( 2 )

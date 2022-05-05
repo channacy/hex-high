@@ -36,6 +36,7 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
@@ -75,6 +76,7 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
@@ -86,7 +88,6 @@ effectData = SubResource( 3 )
 
 [resource]
 script = ExtResource( 4 )
-id = "scenario2"
 tags = [ "scenario", "classmate" ]
 eventText = "our classmate accidentally spills a magical potion all over themselves and accidentally turns into a frog! "
 face = ExtResource( 1 )

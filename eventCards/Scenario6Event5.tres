@@ -1,0 +1,56 @@
+[gd_resource type="Resource" load_steps=9 format=2]
+
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://Cost.gd" type="Script" id=2]
+[ext_resource path="res://EffectData.gd" type="Script" id=3]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=5]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "alchemy", "artifice", "sorcery", "summon" ]
+numResources = [ 2, 2, 2, 2 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 5 )
+flavorText = "You feel smarter all of a sudden"
+effectText = "+2 alchemy, artifice, sorcery, summon"
+costText = ""
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
+
+[resource]
+script = ExtResource( 1 )
+tags = [  ]
+eventText = "Drink the potion you bought .."
+face = ExtResource( 4 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 3 ) ]

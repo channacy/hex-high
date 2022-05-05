@@ -1,9 +1,10 @@
-[gd_resource type="Resource" load_steps=8 format=2]
+[gd_resource type="Resource" load_steps=9 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://Cost.gd" type="Script" id=2]
 [ext_resource path="res://EffectData.gd" type="Script" id=3]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=4]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=5]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
@@ -49,6 +50,7 @@ effectData = SubResource( 2 )
 script = ExtResource( 1 )
 tags = [  ]
 eventText = "Drink the potion"
+face = ExtResource( 5 )
 infinite = false
 startInDeck = false
 options = [ SubResource( 3 ) ]

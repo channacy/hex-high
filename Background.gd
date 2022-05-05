@@ -27,3 +27,7 @@ func _on_Background_resized():
 		$Control/Sprite.scale.y = (get_viewport().size.x * bg) / $Control/Sprite.texture.get_height()
 		$Control/Sprite.scale.x = get_viewport().size.x / $Control/Sprite.texture.get_width()
 	pass # Replace with function body.
+
+
+func _on_skip_pressed():
+	pass # Replace with function body.

@@ -54,6 +54,8 @@ func _on_back8_pressed():
 func _on_back9_pressed():
 	Global.goto_scene("res://tutorial/slide8.tscn")
 
+func _on_skip_pressed():
+	Global.goto_scene("res://Gameplay.tscn")
 
 #home buttons on ending screens
 func _on_HomeButton_pressed():

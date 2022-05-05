@@ -1,11 +1,13 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
 tags = [  ]
 eventText = "test card 2"
+face = ExtResource( 2 )
 infinite = false
 startInDeck = false
 options = [  ]

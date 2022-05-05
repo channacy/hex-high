@@ -8,7 +8,7 @@ var highlighted = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	addCard("alchemyClassEvent1")
+	#addCard("alchemyClassEvent1")
 	addCard("test")
 	addCard("potionShop0")
 	addCard("debug")

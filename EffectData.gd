@@ -29,6 +29,11 @@ export(Array, int) var numRemoveResources = []
 export(Array, int) var numGuaranteeCardDraws = []
 export(Array, String) var guaranteeCardID = []
 
+#bool and array of int to have randomness in option cards
+#zero index will be the lower range, one index will be the upper range 
+export(bool) var createRandomNum = false
+export(Array, int) var rangeForRandom = [] 
+
 # Ends the game based on ending type
 # String ID for the type of ending
 # Types: win, lose

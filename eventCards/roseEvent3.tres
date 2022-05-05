@@ -36,6 +36,7 @@ numGuaranteeCardDraws = [ 1 ]
 guaranteeCardID = [ "roseEvent3Choice1" ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
@@ -75,6 +76,7 @@ numGuaranteeCardDraws = [ 1 ]
 guaranteeCardID = [ "roseEvent3Choice2" ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )

@@ -37,10 +37,18 @@ func checkCost(cost):
 func execute(effectData):
 	for optionCardNode in eventCardNode.optionCards:
 		optionCardNode.queue_free()
+	
 	eventCardNode.queue_free()
 	var deck = get_node("../Deck/Area2D")
 	var hand = get_node("../Hand")
 	var inventory = get_node("../InventoryNode/Inventory")  
+	var randomNumber = 0
+	
+	#Create random number
+	if effectData.createRandomNum:
+		randomNumber = randi() % (effectData.rangeForRandom[1] - effectData.rangeForRandom[0]) + effectData.rangeForRandom[1]
+		print("Random Number is ... ", randomNumber)
+	
 	# Removes cards by id from the deck
 	if len(effectData.removeId) > 0:
 		var cardsToRemove = []
@@ -130,11 +138,15 @@ func execute(effectData):
 		for resource in len(effectData.removeResources):
 			inventory.removeInventoryItem(effectData.removeResources[resource], effectData.numRemoveResources[resource])
 	
-	#Add guarenteed card to deck
+	#Add guarenteed card to deck (WITH RANDOMNESS IMPLEMENTED)
 	if len(effectData.numGuaranteeCardDraws) > 0:
 		print("EffectData for Guarantee Card Draw")
 		for i in range(len(effectData.numGuaranteeCardDraws)):
-			deck.addGuaranteed(effectData.numGuaranteeCardDraws[i], effectData.guaranteeCardID[i])
+			if effectData.numGuaranteeCardDraws[i] == -999:
+				print("Used random number to guarantee a card")
+				deck.addGuaranteed(randomNumber, effectData.guaranteeCardID[i])
+			else:
+				deck.addGuaranteed(effectData.numGuaranteeCardDraws[i], effectData.guaranteeCardID[i])
 	
 	if effectData.endGame:
 		print("Game has ENDED!")

@@ -1,13 +1,13 @@
 [gd_resource type="Resource" load_steps=12 format=2]
 
 [ext_resource path="res://sprites/eventFront.png" type="Texture" id=1]
-[ext_resource path="res://EventCardData.gd" type="Script" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
 [ext_resource path="res://EffectData.gd" type="Script" id=3]
-[ext_resource path="res://OptionCardData.gd" type="Script" id=4]
-[ext_resource path="res://Cost.gd" type="Script" id=5]
+[ext_resource path="res://Cost.gd" type="Script" id=4]
+[ext_resource path="res://EventCardData.gd" type="Script" id=5]
 
-[sub_resource type="Resource" id=5]
-script = ExtResource( 5 )
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
 alchemy = 0
 artifice = 0
 sorcery = 0
@@ -18,7 +18,7 @@ mana = 0
 fatigue = 0
 writeups = 0
 
-[sub_resource type="Resource" id=1]
+[sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
 addId = [  ]
 addTag = [  ]
@@ -28,26 +28,28 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [ "alchemy", "artifice", "summon", "sorcery" ]
-numResources = [ 40, 40, 40, 40 ]
+addResources = [  ]
+numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
-numGuaranteeCardDraws = [  ]
-guaranteeCardID = [  ]
+numGuaranteeCardDraws = [ -999 ]
+guaranteeCardID = [ "magicTheoryClub1" ]
+createRandomNum = true
+rangeForRandom = [ 5, 10 ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
 
-[sub_resource type="Resource" id=2]
-script = ExtResource( 4 )
-flavorText = "Gain all 40 knowledge "
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+flavorText = "Join Magic Theory Club!"
 effectText = ""
 costText = ""
-cost = SubResource( 5 )
-effectData = SubResource( 1 )
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
 
-[sub_resource type="Resource" id=6]
-script = ExtResource( 5 )
+[sub_resource type="Resource" id=4]
+script = ExtResource( 4 )
 alchemy = 0
 artifice = 0
 sorcery = 0
@@ -58,7 +60,7 @@ mana = 0
 fatigue = 0
 writeups = 0
 
-[sub_resource type="Resource" id=3]
+[sub_resource type="Resource" id=5]
 script = ExtResource( 3 )
 addId = [  ]
 addTag = [  ]
@@ -74,23 +76,25 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
 
-[sub_resource type="Resource" id=4]
-script = ExtResource( 4 )
-flavorText = "Don't Gain Resources"
+[sub_resource type="Resource" id=6]
+script = ExtResource( 2 )
+flavorText = "Don't Join the Magic Theory Club"
 effectText = ""
 costText = ""
-cost = SubResource( 6 )
-effectData = SubResource( 3 )
+cost = SubResource( 4 )
+effectData = SubResource( 5 )
 
 [resource]
-script = ExtResource( 2 )
-tags = [  ]
-eventText = "DEV card gain resources"
+script = ExtResource( 5 )
+tags = [ "club" ]
+eventText = "An Officer for the Magic Theory Club offers you to join"
 face = ExtResource( 1 )
 infinite = false
 startInDeck = false
-options = [ SubResource( 2 ), SubResource( 4 ) ]
+options = [ SubResource( 3 ), SubResource( 6 ) ]

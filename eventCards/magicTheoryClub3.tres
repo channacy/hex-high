@@ -1,0 +1,100 @@
+[gd_resource type="Resource" load_steps=12 format=2]
+
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=1]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=2]
+[ext_resource path="res://EffectData.gd" type="Script" id=3]
+[ext_resource path="res://Cost.gd" type="Script" id=4]
+[ext_resource path="res://EventCardData.gd" type="Script" id=5]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "sorcery", "fatigue" ]
+numResources = [ 15, 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [ -999 ]
+guaranteeCardID = [ "magicTheoryClub4" ]
+createRandomNum = true
+rangeForRandom = [ 5, 10 ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+flavorText = "Attend the 3rd Magic Theory Club Meeting!"
+effectText = "Gain 15 Sorcery"
+costText = "Gain 1 Fatigue"
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 4 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 3 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [ -999 ]
+guaranteeCardID = [ "magicTheoryClub3" ]
+createRandomNum = true
+rangeForRandom = [ 5, 10 ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 2 )
+flavorText = "Don't attend the 2nd Meeting"
+effectText = ""
+costText = ""
+cost = SubResource( 4 )
+effectData = SubResource( 5 )
+
+[resource]
+script = ExtResource( 5 )
+tags = [  ]
+eventText = "The 3rd Magic Theory Club meeting is today! The 4th Magic Theory Club Meeting will be within 10 card draws"
+face = ExtResource( 1 )
+infinite = false
+startInDeck = false
+options = [ SubResource( 3 ), SubResource( 6 ) ]

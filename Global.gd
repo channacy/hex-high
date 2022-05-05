@@ -4,10 +4,14 @@ var current_scene = null
 var files = {}
 var startingDeck = []
 var items = {}
+var groups = {}
+var tempGroupArray = []
+var random = RandomNumberGenerator.new()
 
 
 # Gets the current scene
 func _ready():
+	randomize()
 	var root = get_tree().get_root()
 	current_scene = root.get_child(root.get_child_count() - 1)
 	#Files dictionary of the id : eventCard
@@ -31,6 +35,14 @@ func _ready():
 			if !validate_card(file, x):
 				continue
 			
+			# randomly adds club scouting card to start in deck
+			if !x.tags.empty():
+				if "club" in x.tags:
+					random.randomize()
+					if random.randi_range(0, 1) % 2 == 0:
+						x.startInDeck = true
+			
+			# if card has startInDeck set to true, add to the starting deck
 			files[str(x.id)] = x
 			if x.startInDeck:
 				startingDeck.append(str(x.id))

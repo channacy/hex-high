@@ -36,6 +36,7 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = true
 typeOfEnding = "win"
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=9]
 script = ExtResource( 2 )
@@ -75,6 +76,7 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = true
 typeOfEnding = "lose"
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
@@ -86,7 +88,6 @@ effectData = SubResource( 6 )
 
 [resource]
 script = ExtResource( 1 )
-id = "finalExam"
 tags = [  ]
 eventText = "Time for the Final Exam!"
 face = ExtResource( 3 )

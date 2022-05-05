@@ -36,6 +36,7 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
@@ -75,6 +76,7 @@ numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
@@ -86,7 +88,6 @@ effectData = SubResource( 3 )
 
 [resource]
 script = ExtResource( 1 )
-id = "scenario4"
 tags = [ "scenario", "virus" ]
 eventText = "mysterious virus is spreading throughout Ethereal and is known for depleting a witch’s mana thus restricting his/her magical powers. "
 face = ExtResource( 2 )

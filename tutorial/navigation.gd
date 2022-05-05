@@ -1,5 +1,6 @@
 extends Button
 
+#forward buttons on tutorial slides
 func _on_forward_pressed():
 	Global.goto_scene("res://tutorial/slide2.tscn")
 	
@@ -25,6 +26,7 @@ func _on_forward8_pressed():
 	Global.goto_scene("res://tutorial/slide9.tscn")
 	
 	
+#back buttons on tutorial slides
 func _on_back_pressed():
 	Global.goto_scene("res://Menu.tscn")
 
@@ -52,5 +54,11 @@ func _on_back8_pressed():
 func _on_back9_pressed():
 	Global.goto_scene("res://tutorial/slide8.tscn")
 
+
+#home buttons on ending screens
 func _on_HomeButton_pressed():
 	Global.goto_scene("res://Menu.tscn")
+
+func _on_Button_pressed():
+	Global.goto_scene("res://Menu.tscn")
+

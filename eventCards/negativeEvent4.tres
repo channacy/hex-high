@@ -49,7 +49,7 @@ effectData = SubResource( 2 )
 [resource]
 script = ExtResource( 1 )
 tags = [  ]
-eventText = ""
+eventText = "Uh-oh"
 face = ExtResource( 3 )
 infinite = false
 startInDeck = false

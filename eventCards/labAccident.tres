@@ -1,0 +1,100 @@
+[gd_resource type="Resource" load_steps=12 format=2]
+
+[ext_resource path="res://EffectData.gd" type="Script" id=1]
+[ext_resource path="res://EventCardData.gd" type="Script" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
+[ext_resource path="res://Cost.gd" type="Script" id=4]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=5]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 1 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "writeups" ]
+numResources = [ 1 ]
+removeResources = [ "artifice" ]
+numRemoveResources = [ 3 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 3 )
+flavorText = "What could possibly go wrong?"
+effectText = ""
+costText = "+1 writeup, -3 artifice marks"
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 4 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 1 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "fatigue", "artifice" ]
+numResources = [ 2, 3 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 3 )
+flavorText = "Work hard to fix it"
+effectText = ""
+costText = "+3 fatigue, +3 artifice marks"
+cost = SubResource( 4 )
+effectData = SubResource( 5 )
+
+[resource]
+script = ExtResource( 2 )
+tags = [  ]
+eventText = "Whatever you made in artifice lab looks like it's about to explode..."
+face = ExtResource( 5 )
+infinite = false
+startInDeck = true
+options = [ SubResource( 3 ), SubResource( 6 ) ]

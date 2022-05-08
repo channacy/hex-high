@@ -16,9 +16,11 @@ var resourceConditionals = {}
 func _ready():
 	cards = Global.startingDeck
 	counter = 0
-	#Random Number Generator
+	# Random Number Generator
 	randomNum.randomize()
 	board = get_node("../../Board")
+	# addGuaranteed(1, "popQuiz")
+
 
 # If left click the deck sprite, runs action.
 # In this case, when you click the deck, it will use the loadEvent fucntion from the Board.gd script

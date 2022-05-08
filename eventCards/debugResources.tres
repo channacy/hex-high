@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=15 format=2]
+[gd_resource type="Resource" load_steps=18 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://Cost.gd" type="Script" id=2]
@@ -34,6 +34,8 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
@@ -74,6 +76,8 @@ removeResources = [ "alchemy", "artifice", "sorcery", "summon" ]
 numRemoveResources = [ 10, 10, 10, 10 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
@@ -114,6 +118,8 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
@@ -126,6 +132,48 @@ costText = ""
 cost = SubResource( 7 )
 effectData = SubResource( 8 )
 
+[sub_resource type="Resource" id=10]
+script = ExtResource( 2 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 5 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "coin", "textbook" ]
+numResources = [ 999, 10 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
+
+[sub_resource type="Resource" id=12]
+script = ExtResource( 3 )
+flavorText = "Be rich"
+effectText = "+999 coins, +10 textbooks"
+costText = ""
+cost = SubResource( 10 )
+effectData = SubResource( 11 )
+
 [resource]
 script = ExtResource( 1 )
 tags = [  ]
@@ -133,4 +181,4 @@ eventText = "Resource Spells"
 face = ExtResource( 4 )
 infinite = false
 startInDeck = false
-options = [ SubResource( 3 ), SubResource( 6 ), SubResource( 9 ) ]
+options = [ SubResource( 3 ), SubResource( 6 ), SubResource( 9 ), SubResource( 12 ) ]

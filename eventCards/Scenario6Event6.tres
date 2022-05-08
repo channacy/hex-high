@@ -34,6 +34,8 @@ removeResources = [ "fatigue" ]
 numRemoveResources = [ 2 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
@@ -41,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=3]
 script = ExtResource( 4 )
 flavorText = "You feel less tired"
-effectText = ""
+effectText = "-2 fatigue"
 costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )

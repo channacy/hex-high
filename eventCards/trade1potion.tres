@@ -34,6 +34,8 @@ removeResources = [ "fatigue" ]
 numRemoveResources = [ 4 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
@@ -49,7 +51,7 @@ effectData = SubResource( 1 )
 [resource]
 script = ExtResource( 1 )
 tags = [  ]
-eventText = "Drink the potion"
+eventText = "Tradesman's potion"
 face = ExtResource( 2 )
 infinite = false
 startInDeck = false

@@ -34,6 +34,8 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
@@ -49,7 +51,7 @@ effectData = SubResource( 1 )
 [resource]
 script = ExtResource( 1 )
 tags = [  ]
-eventText = "You won something..."
+eventText = "Vending machine package"
 face = ExtResource( 4 )
 infinite = false
 startInDeck = false

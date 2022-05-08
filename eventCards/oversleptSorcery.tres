@@ -1,10 +1,10 @@
 [gd_resource type="Resource" load_steps=12 format=2]
 
-[ext_resource path="res://EventCardData.gd" type="Script" id=1]
-[ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
-[ext_resource path="res://EffectData.gd" type="Script" id=3]
+[ext_resource path="res://EffectData.gd" type="Script" id=1]
+[ext_resource path="res://EventCardData.gd" type="Script" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
 [ext_resource path="res://Cost.gd" type="Script" id=4]
-[ext_resource path="res://OptionCardData.gd" type="Script" id=5]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=5]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 4 )
@@ -13,25 +13,25 @@ artifice = 0
 sorcery = 0
 summon = 0
 textbook = 0
-coin = 2
+coin = 0
 mana = 0
 fatigue = 0
 writeups = 0
 
 [sub_resource type="Resource" id=2]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
 removeTag = [  ]
-addHandId = [ "trade3choice1" ]
+addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
-removeResources = [ "coin" ]
-numRemoveResources = [ 2 ]
+addResources = [ "writeups" ]
+numResources = [ 1 ]
+removeResources = [ "fatigue", "sorcery" ]
+numRemoveResources = [ 1, 2 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 createRandomNum = false
@@ -41,14 +41,14 @@ typeOfEnding = ""
 numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
-script = ExtResource( 5 )
-flavorText = "Buy something"
-effectText = "Receive... something..."
-costText = "2 coins"
+script = ExtResource( 3 )
+flavorText = "I'm tired..."
+effectText = "+1 writeup, -1 fatigue, -2 sorcery marks"
+costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
 
-[sub_resource type="Resource" id=6]
+[sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
 alchemy = 0
 artifice = 0
@@ -61,7 +61,7 @@ fatigue = 0
 writeups = 0
 
 [sub_resource type="Resource" id=5]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
@@ -70,8 +70,8 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "fatigue", "sorcery" ]
+numResources = [ 1, 1 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
@@ -82,19 +82,19 @@ endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
 
-[sub_resource type="Resource" id=4]
-script = ExtResource( 5 )
-flavorText = "No thanks..."
-effectText = ""
+[sub_resource type="Resource" id=6]
+script = ExtResource( 3 )
+flavorText = "I can make it if I run!"
+effectText = "+1 fatigue, +1 sorcery marks"
 costText = ""
-cost = SubResource( 6 )
+cost = SubResource( 4 )
 effectData = SubResource( 5 )
 
 [resource]
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 tags = [  ]
-eventText = "A strange unlabeled vending machine"
-face = ExtResource( 2 )
+eventText = "You overslept! Sorcery class is about to start!"
+face = ExtResource( 5 )
 infinite = false
 startInDeck = true
-options = [ SubResource( 3 ), SubResource( 4 ) ]
+options = [ SubResource( 3 ), SubResource( 6 ) ]

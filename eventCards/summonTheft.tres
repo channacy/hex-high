@@ -1,54 +1,12 @@
 [gd_resource type="Resource" load_steps=12 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
-[ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
-[ext_resource path="res://EffectData.gd" type="Script" id=3]
+[ext_resource path="res://EffectData.gd" type="Script" id=2]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
 [ext_resource path="res://Cost.gd" type="Script" id=4]
-[ext_resource path="res://OptionCardData.gd" type="Script" id=5]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=5]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 4 )
-alchemy = 0
-artifice = 0
-sorcery = 0
-summon = 0
-textbook = 0
-coin = 2
-mana = 0
-fatigue = 0
-writeups = 0
-
-[sub_resource type="Resource" id=2]
-script = ExtResource( 3 )
-addId = [  ]
-addTag = [  ]
-removeId = [  ]
-removeTag = [  ]
-addHandId = [ "trade3choice1" ]
-addHandTag = [  ]
-removeHandId = [  ]
-removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
-removeResources = [ "coin" ]
-numRemoveResources = [ 2 ]
-numGuaranteeCardDraws = [  ]
-guaranteeCardID = [  ]
-createRandomNum = false
-rangeForRandom = [  ]
-endGame = false
-typeOfEnding = ""
-numDiscardCard = 0
-
-[sub_resource type="Resource" id=3]
-script = ExtResource( 5 )
-flavorText = "Buy something"
-effectText = "Receive... something..."
-costText = "2 coins"
-cost = SubResource( 1 )
-effectData = SubResource( 2 )
-
-[sub_resource type="Resource" id=6]
 script = ExtResource( 4 )
 alchemy = 0
 artifice = 0
@@ -60,8 +18,8 @@ mana = 0
 fatigue = 0
 writeups = 0
 
-[sub_resource type="Resource" id=5]
-script = ExtResource( 3 )
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
@@ -70,8 +28,8 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "fatigue" ]
+numResources = [ 2 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
@@ -82,19 +40,61 @@ endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
 
-[sub_resource type="Resource" id=4]
-script = ExtResource( 5 )
-flavorText = "No thanks..."
-effectText = ""
+[sub_resource type="Resource" id=3]
+script = ExtResource( 3 )
+flavorText = "Chase after it!"
+effectText = "+2 fatigue"
 costText = ""
-cost = SubResource( 6 )
-effectData = SubResource( 5 )
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 4 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [  ]
+numResources = [  ]
+removeResources = [ "coin" ]
+numRemoveResources = [ 10 ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
+
+[sub_resource type="Resource" id=9]
+script = ExtResource( 3 )
+flavorText = "Let it go"
+effectText = "-10 coins"
+costText = ""
+cost = SubResource( 7 )
+effectData = SubResource( 8 )
 
 [resource]
 script = ExtResource( 1 )
 tags = [  ]
-eventText = "A strange unlabeled vending machine"
-face = ExtResource( 2 )
+eventText = "Someone's summon is rummaging through your wallet!"
+face = ExtResource( 5 )
 infinite = false
 startInDeck = true
-options = [ SubResource( 3 ), SubResource( 4 ) ]
+options = [ SubResource( 3 ), SubResource( 9 ) ]

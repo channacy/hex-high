@@ -46,6 +46,8 @@ func _ready():
 			files[str(x.id)] = x
 			if x.startInDeck:
 				startingDeck.append(str(x.id))
+				
+	print(startingDeck);
 
 	dir.open("res://items/")
 	dir.list_dir_begin()

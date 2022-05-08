@@ -1,37 +1,37 @@
 [gd_resource type="Resource" load_steps=15 format=2]
 
-[ext_resource path="res://sprites/eventFront.png" type="Texture" id=1]
+[ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://EffectData.gd" type="Script" id=2]
-[ext_resource path="res://EventCardData.gd" type="Script" id=3]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
 [ext_resource path="res://Cost.gd" type="Script" id=4]
-[ext_resource path="res://OptionCardData.gd" type="Script" id=5]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=5]
 
-[sub_resource type="Resource" id=5]
+[sub_resource type="Resource" id=1]
 script = ExtResource( 4 )
 alchemy = 0
 artifice = 0
 sorcery = 0
 summon = 0
 textbook = 0
-coin = 10
+coin = 15
 mana = 0
 fatigue = 0
 writeups = 0
 
-[sub_resource type="Resource" id=1]
+[sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
 removeTag = [  ]
-addHandId = [ "trade1potion" ]
+addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "summon" ]
+numResources = [ 4 ]
 removeResources = [ "coin" ]
-numRemoveResources = [ 10 ]
+numRemoveResources = [ 15 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 createRandomNum = false
@@ -40,13 +40,13 @@ endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
 
-[sub_resource type="Resource" id=2]
-script = ExtResource( 5 )
-flavorText = "Buy a potion"
-effectText = "Receive a mysterious potion"
-costText = "10 coins"
-cost = SubResource( 5 )
-effectData = SubResource( 1 )
+[sub_resource type="Resource" id=3]
+script = ExtResource( 3 )
+flavorText = "Tame it with candy"
+effectText = "+4 summoning marks"
+costText = "-15 gold"
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
 
 [sub_resource type="Resource" id=7]
 script = ExtResource( 4 )
@@ -55,7 +55,7 @@ artifice = 0
 sorcery = 0
 summon = 0
 textbook = 0
-coin = 20
+coin = 0
 mana = 0
 fatigue = 0
 writeups = 0
@@ -70,10 +70,10 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [ "textbook" ]
-numResources = [ 1 ]
-removeResources = [ "coin" ]
-numRemoveResources = [ 20 ]
+addResources = [ "fatigue", "summon" ]
+numResources = [ 1, 2 ]
+removeResources = [  ]
+numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 createRandomNum = false
@@ -83,14 +83,14 @@ typeOfEnding = ""
 numDiscardCard = 0
 
 [sub_resource type="Resource" id=9]
-script = ExtResource( 5 )
-flavorText = "Buy a textbook"
-effectText = "+1 textbook"
-costText = " 20 coins"
+script = ExtResource( 3 )
+flavorText = "Be more strict"
+effectText = "+1 fatigue, +2 summoning marks"
+costText = ""
 cost = SubResource( 7 )
 effectData = SubResource( 8 )
 
-[sub_resource type="Resource" id=6]
+[sub_resource type="Resource" id=10]
 script = ExtResource( 4 )
 alchemy = 0
 artifice = 0
@@ -102,7 +102,7 @@ mana = 0
 fatigue = 0
 writeups = 0
 
-[sub_resource type="Resource" id=3]
+[sub_resource type="Resource" id=11]
 script = ExtResource( 2 )
 addId = [  ]
 addTag = [  ]
@@ -114,8 +114,8 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
-removeResources = [  ]
-numRemoveResources = [  ]
+removeResources = [ "summon" ]
+numRemoveResources = [ 3 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 createRandomNum = false
@@ -124,19 +124,19 @@ endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
 
-[sub_resource type="Resource" id=4]
-script = ExtResource( 5 )
-flavorText = "Don't buy anything"
-effectText = ""
+[sub_resource type="Resource" id=12]
+script = ExtResource( 3 )
+flavorText = "Let it be"
+effectText = "-3 summoning marks"
 costText = ""
-cost = SubResource( 6 )
-effectData = SubResource( 3 )
+cost = SubResource( 10 )
+effectData = SubResource( 11 )
 
 [resource]
-script = ExtResource( 3 )
-tags = [ "scenario", "tradesman" ]
-eventText = "A tradesman is passing through Ethereal!"
-face = ExtResource( 1 )
+script = ExtResource( 1 )
+tags = [  ]
+eventText = "Your summon isn't cooperating..."
+face = ExtResource( 5 )
 infinite = false
 startInDeck = true
-options = [ SubResource( 2 ), SubResource( 9 ), SubResource( 4 ) ]
+options = [ SubResource( 3 ), SubResource( 9 ), SubResource( 12 ) ]

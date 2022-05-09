@@ -33,5 +33,6 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+path = "res://tutorial/goodEnding1.tscn"
 
-[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_nav_pressed"]

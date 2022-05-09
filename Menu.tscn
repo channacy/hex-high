@@ -49,4 +49,4 @@ texture = ExtResource( 1 )
 [node name="Background" parent="." instance=ExtResource( 3 )]
 texture = ExtResource( 4 )
 
-[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_nav_pressed"]

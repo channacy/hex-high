@@ -2,12 +2,12 @@
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
 [ext_resource path="res://EffectData.gd" type="Script" id=2]
-[ext_resource path="res://OptionCardData.gd" type="Script" id=3]
-[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
-[ext_resource path="res://Cost.gd" type="Script" id=5]
+[ext_resource path="res://Cost.gd" type="Script" id=3]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=4]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=5]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 5 )
+script = ExtResource( 3 )
 alchemy = 0
 artifice = 0
 sorcery = 0
@@ -28,50 +28,8 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
-removeResources = [  ]
-numRemoveResources = [  ]
-numGuaranteeCardDraws = [ 1 ]
-guaranteeCardID = [ "scenario7Event1" ]
-createRandomNum = false
-rangeForRandom = [  ]
-endGame = false
-typeOfEnding = ""
-numDiscardCard = 0
-
-[sub_resource type="Resource" id=3]
-script = ExtResource( 3 )
-flavorText = "Join them for some fun."
-effectText = ""
-costText = ""
-cost = SubResource( 1 )
-effectData = SubResource( 2 )
-
-[sub_resource type="Resource" id=4]
-script = ExtResource( 5 )
-alchemy = 0
-artifice = 0
-sorcery = 0
-summon = 0
-textbook = 0
-coin = 0
-mana = 0
-fatigue = 0
-writeups = 0
-
-[sub_resource type="Resource" id=5]
-script = ExtResource( 2 )
-addId = [  ]
-addTag = [  ]
-removeId = [  ]
-removeTag = [  ]
-addHandId = [  ]
-addHandTag = [  ]
-removeHandId = [  ]
-removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "fatigue", "sorcery" ]
+numResources = [ 3, 5 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
@@ -82,19 +40,61 @@ endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
 
-[sub_resource type="Resource" id=6]
-script = ExtResource( 3 )
-flavorText = "You are a civil witch."
-effectText = ""
+[sub_resource type="Resource" id=3]
+script = ExtResource( 4 )
+flavorText = "Practice casting a small healing spell "
+effectText = "+3 fatigue, +5 sorcery"
 costText = ""
-cost = SubResource( 4 )
-effectData = SubResource( 5 )
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 3 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 2 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "fatigue", "artifice" ]
+numResources = [ 3, 5 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 4 )
+flavorText = "Study the wand's mechanics"
+effectText = "+3 fatigue, +5 artifice"
+costText = ""
+cost = SubResource( 5 )
+effectData = SubResource( 6 )
 
 [resource]
 script = ExtResource( 1 )
-tags = [ "scenario", "crime" ]
-eventText = "A group of young witches invite you on their heist."
-face = ExtResource( 4 )
+tags = [  ]
+eventText = "Practice the Fairy Wand"
+face = ExtResource( 5 )
 infinite = false
-startInDeck = true
-options = [ SubResource( 3 ), SubResource( 6 ) ]
+startInDeck = false
+options = [ SubResource( 3 ), SubResource( 4 ) ]

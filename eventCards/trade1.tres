@@ -44,7 +44,7 @@ numDiscardCard = 0
 script = ExtResource( 5 )
 flavorText = "Buy a potion"
 effectText = "Receive a mysterious potion"
-costText = "10 coins"
+costText = "Cost: 10 coins"
 cost = SubResource( 5 )
 effectData = SubResource( 1 )
 
@@ -54,8 +54,8 @@ alchemy = 0
 artifice = 0
 sorcery = 0
 summon = 0
-textbook = 0
-coin = 20
+textbook = 1
+coin = 0
 mana = 0
 fatigue = 0
 writeups = 0
@@ -70,10 +70,10 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [ "textbook" ]
-numResources = [ 1 ]
-removeResources = [ "coin" ]
-numRemoveResources = [ 20 ]
+addResources = [ "coin" ]
+numResources = [ 20 ]
+removeResources = [ "textbook" ]
+numRemoveResources = [ 1 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 createRandomNum = false
@@ -84,9 +84,9 @@ numDiscardCard = 0
 
 [sub_resource type="Resource" id=9]
 script = ExtResource( 5 )
-flavorText = "Buy a textbook"
-effectText = "+1 textbook"
-costText = " 20 coins"
+flavorText = "Sell your old textbook"
+effectText = "-1 textbook, + 20 coins"
+costText = "Required: 1 textbook"
 cost = SubResource( 7 )
 effectData = SubResource( 8 )
 
@@ -126,7 +126,7 @@ numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 5 )
-flavorText = "Don't buy anything"
+flavorText = "I am too poor..."
 effectText = ""
 costText = ""
 cost = SubResource( 6 )

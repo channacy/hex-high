@@ -1,13 +1,13 @@
 [gd_resource type="Resource" load_steps=15 format=2]
 
-[ext_resource path="res://EventCardData.gd" type="Script" id=1]
-[ext_resource path="res://sprites/eventFront.png" type="Texture" id=2]
-[ext_resource path="res://Cost.gd" type="Script" id=3]
-[ext_resource path="res://EffectData.gd" type="Script" id=4]
-[ext_resource path="res://OptionCardData.gd" type="Script" id=5]
+[ext_resource path="res://OptionCardData.gd" type="Script" id=1]
+[ext_resource path="res://EventCardData.gd" type="Script" id=2]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=3]
+[ext_resource path="res://Cost.gd" type="Script" id=4]
+[ext_resource path="res://EffectData.gd" type="Script" id=5]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 3 )
+script = ExtResource( 4 )
 alchemy = 0
 artifice = 0
 sorcery = 0
@@ -19,7 +19,7 @@ fatigue = 0
 writeups = 0
 
 [sub_resource type="Resource" id=2]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
@@ -33,13 +33,15 @@ numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [ 1 ]
-guaranteeCardID = [ "Scenario5Event2" ]
+guaranteeCardID = [ "scenario5Event2" ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
-script = ExtResource( 5 )
+script = ExtResource( 1 )
 flavorText = "Spindle Fireflies"
 effectText = ""
 costText = ""
@@ -47,7 +49,7 @@ cost = SubResource( 1 )
 effectData = SubResource( 2 )
 
 [sub_resource type="Resource" id=4]
-script = ExtResource( 3 )
+script = ExtResource( 4 )
 alchemy = 0
 artifice = 0
 sorcery = 0
@@ -59,7 +61,7 @@ fatigue = 0
 writeups = 0
 
 [sub_resource type="Resource" id=5]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
@@ -73,13 +75,15 @@ numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [ 1 ]
-guaranteeCardID = [ "Scenario5Event2" ]
+guaranteeCardID = [ "scenario5Event2" ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
 
 [sub_resource type="Resource" id=6]
-script = ExtResource( 5 )
+script = ExtResource( 1 )
 flavorText = "Rock Golem"
 effectText = ""
 costText = ""
@@ -87,7 +91,7 @@ cost = SubResource( 4 )
 effectData = SubResource( 5 )
 
 [sub_resource type="Resource" id=8]
-script = ExtResource( 3 )
+script = ExtResource( 4 )
 alchemy = 0
 artifice = 0
 sorcery = 0
@@ -99,7 +103,7 @@ fatigue = 0
 writeups = 0
 
 [sub_resource type="Resource" id=9]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
@@ -113,13 +117,15 @@ numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [ 1 ]
-guaranteeCardID = [ "Scenario5Event3" ]
+guaranteeCardID = [ "scenario5Event3" ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
 
 [sub_resource type="Resource" id=7]
-script = ExtResource( 5 )
+script = ExtResource( 1 )
 flavorText = "Ancient Hex Dragon "
 effectText = ""
 costText = ""
@@ -127,10 +133,10 @@ cost = SubResource( 8 )
 effectData = SubResource( 9 )
 
 [resource]
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 tags = [  ]
 eventText = "Your school team is close to winning and you are given the last question: What is the rarest familiar?"
-face = ExtResource( 2 )
+face = ExtResource( 3 )
 infinite = false
 startInDeck = false
 options = [ SubResource( 3 ), SubResource( 6 ), SubResource( 7 ) ]

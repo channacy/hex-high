@@ -34,8 +34,11 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [ 3 ]
 guaranteeCardID = [ "sorceryQuizFail" ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 3 )
@@ -73,8 +76,11 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [ 3 ]
 guaranteeCardID = [ "sorceryQuizPass" ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 3 )
@@ -112,8 +118,11 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [ 3 ]
 guaranteeCardID = [ "sorceryQuizFailCurve" ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
@@ -125,7 +134,6 @@ effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 4 )
-id = "sorceryQuiz0"
 tags = [ "quiz" ]
 eventText = "QUIZ: How many magic circles does a Fireball need to cast?"
 face = ExtResource( 5 )

@@ -14,6 +14,12 @@ func _ready():
 	addCard("debug")
 	addCard("test")
 	addCard("debug")
+	addCard("popQuiz")
+	addCard("trade1")
+	addCard("trade2")
+	addCard("trade3")
+	
+	
 	pass # Replace with function body.
 
 # Adds a card to the hand

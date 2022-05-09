@@ -28,20 +28,22 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "fatigue" ]
+numResources = [ 3 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 5 )
-flavorText = ""
-effectText = "Accept second place and some shame. "
+flavorText = "Accept second place and some shame. "
+effectText = "+ 3 fatigue"
 costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )

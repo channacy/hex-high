@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 flavorText = "Help Her "
-effectText = "Add resources"
+effectText = "+ 10 coin "
 costText = ""
 cost = SubResource( 5 )
 effectData = SubResource( 1 )
@@ -85,7 +85,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
 flavorText = "Ignore her"
-effectText = "Remove Resources"
+effectText = "- 10 coin "
 costText = ""
 cost = SubResource( 6 )
 effectData = SubResource( 3 )

@@ -44,7 +44,7 @@ numDiscardCard = 0
 script = ExtResource( 3 )
 flavorText = "Buy a textbook"
 effectText = "+1 textbook"
-costText = "30 coins"
+costText = "Cost: 10 coins"
 cost = SubResource( 2 )
 effectData = SubResource( 3 )
 
@@ -55,7 +55,7 @@ artifice = 0
 sorcery = 0
 summon = 0
 textbook = 0
-coin = 5
+coin = 15
 mana = 0
 fatigue = 0
 writeups = 0
@@ -66,14 +66,14 @@ addId = [  ]
 addTag = [  ]
 removeId = [  ]
 removeTag = [  ]
-addHandId = [  ]
+addHandId = [ "trade2wand" ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
-removeResources = [ "coin", "fatigue" ]
-numRemoveResources = [ 5, 2 ]
+removeResources = [ "coin" ]
+numRemoveResources = [ 15 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 createRandomNum = false
@@ -84,9 +84,9 @@ numDiscardCard = 0
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 3 )
-flavorText = "Buy a snack"
-effectText = "-2 fatigue"
-costText = "5 coins"
+flavorText = "Buy an anicent fairy wand "
+effectText = ""
+costText = "Cost: 15 coins"
 cost = SubResource( 4 )
 effectData = SubResource( 5 )
 
@@ -126,9 +126,9 @@ numDiscardCard = 0
 
 [sub_resource type="Resource" id=7]
 script = ExtResource( 3 )
-flavorText = "Watch a summoning demonstration"
-effectText = "+4 summoning marks"
-costText = "15 coins"
+flavorText = "Watch a witch's familiar summoning demonstration "
+effectText = "+4 summoning knowledge"
+costText = "Cost: 15 coins"
 cost = SubResource( 8 )
 effectData = SubResource( 9 )
 

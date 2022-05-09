@@ -1,25 +1,15 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://sprites/icon.png" type="Texture" id=1]
 [ext_resource path="res://Background.tscn" type="PackedScene" id=3]
 [ext_resource path="res://sprites/fillertitle.png" type="Texture" id=4]
 [ext_resource path="res://tutorial/navigation.gd" type="Script" id=5]
 
-[sub_resource type="GDScript" id=1]
-script/source = "extends Control
-
-# When the button is pressed, load the game
-func _on_Button_pressed():
-	Global.goto_scene(\"res://tutorial/slide1.tscn\")
-	
-"
-
 [node name="Control2" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -4.0
 margin_bottom = -4.0
-script = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

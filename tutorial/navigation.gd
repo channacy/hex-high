@@ -1,4 +1,11 @@
 extends Button
+export(String) var path = ""
+
+#func on_Button_pressed():
+	#Global.goto_scene(path)
+
+func _on_menuButton_pressed():
+	Global.goto_scene("res://tutorial/slide1.tscn")
 
 #forward buttons on tutorial slides
 func _on_forward_pressed():

@@ -29,5 +29,3 @@ func _on_Background_resized():
 	pass # Replace with function body.
 
 
-func _on_skip_pressed():
-	pass # Replace with function body.

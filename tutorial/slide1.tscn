@@ -29,6 +29,7 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+path = "res://Gameplay.tscn"
 
 [node name="back" type="Button" parent="."]
 anchor_left = 0.037
@@ -40,6 +41,7 @@ margin_top = -77.2
 margin_right = 11.112
 margin_bottom = 77.8
 script = ExtResource( 4 )
+path = "res://Menu.tscn"
 
 [node name="forward" type="Button" parent="."]
 anchor_left = 0.967
@@ -54,7 +56,8 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+path = "res://tutorial/slide2.tscn"
 
-[connection signal="pressed" from="skip" to="skip" method="_on_skip_pressed"]
-[connection signal="pressed" from="back" to="back" method="_on_back_pressed"]
-[connection signal="pressed" from="forward" to="forward" method="_on_forward_pressed"]
+[connection signal="pressed" from="skip" to="skip" method="_on_nav_pressed"]
+[connection signal="pressed" from="back" to="back" method="_on_nav_pressed"]
+[connection signal="pressed" from="forward" to="forward" method="_on_nav_pressed"]

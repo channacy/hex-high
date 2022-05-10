@@ -84,7 +84,7 @@ numDiscardCard = 0
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 3 )
-flavorText = "Buy an anicent fairy wand "
+flavorText = "Buy an ancient fairy wand "
 effectText = ""
 costText = "Cost: 15 coins"
 cost = SubResource( 4 )

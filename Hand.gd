@@ -15,10 +15,7 @@ func _ready():
 	addCard("test")
 	addCard("debug")
 	addCard("popQuiz")
-	addCard("trade1")
-	addCard("trade2")
-	addCard("trade3")
-	
+	addCard("scenario5")
 	
 	pass # Replace with function body.
 

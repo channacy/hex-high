@@ -8,8 +8,8 @@
 
 [sub_resource type="Resource" id=5]
 script = ExtResource( 5 )
-alchemy = 0
-artifice = 0
+alchemy = 3
+artifice = 5
 sorcery = 0
 summon = 0
 textbook = 0
@@ -28,12 +28,12 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [ "coin" ]
-numResources = [ 10 ]
+addResources = [ "fatigue" ]
+numResources = [ 3 ]
 removeResources = [  ]
 numRemoveResources = [  ]
-numGuaranteeCardDraws = [  ]
-guaranteeCardID = [  ]
+numGuaranteeCardDraws = [ 1 ]
+guaranteeCardID = [ "scenario2event1" ]
 createRandomNum = false
 rangeForRandom = [  ]
 endGame = false
@@ -42,9 +42,9 @@ numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
-flavorText = "Help Them"
-effectText = ""
-costText = ""
+flavorText = "Use your magic for the better good and help your fellow classmate"
+effectText = "+ 3 fatigue"
+costText = "Required: 3 alchemy knowledge, 5 artifice knowledge "
 cost = SubResource( 5 )
 effectData = SubResource( 1 )
 
@@ -84,7 +84,7 @@ numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
-flavorText = "Ignore Them"
+flavorText = "Hope someone else will help. "
 effectText = ""
 costText = ""
 cost = SubResource( 6 )

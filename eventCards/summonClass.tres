@@ -34,8 +34,11 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
@@ -69,17 +72,20 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [ "writeups" ]
 numResources = [ 1 ]
-removeResources = [  ]
-numRemoveResources = [  ]
+removeResources = [ "fatigue" ]
+numRemoveResources = [ 2 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
 flavorText = "Ditch class for a day :)"
-effectText = "+1 writeups"
+effectText = "+1 writeups, -2 fatigue"
 costText = ""
 cost = SubResource( 6 )
 effectData = SubResource( 3 )

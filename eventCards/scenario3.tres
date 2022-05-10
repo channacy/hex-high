@@ -8,11 +8,11 @@
 
 [sub_resource type="Resource" id=5]
 script = ExtResource( 5 )
-alchemy = 0
-artifice = 0
-sorcery = 0
-summon = 0
-textbook = 0
+alchemy = 5
+artifice = 5
+sorcery = 5
+summon = 5
+textbook = 1
 coin = 0
 mana = 0
 fatigue = 0
@@ -32,8 +32,8 @@ addResources = [ "artifice" ]
 numResources = [ 1 ]
 removeResources = [  ]
 numRemoveResources = [  ]
-numGuaranteeCardDraws = [  ]
-guaranteeCardID = [  ]
+numGuaranteeCardDraws = [ 1 ]
+guaranteeCardID = [ "scenario3event1" ]
 createRandomNum = false
 rangeForRandom = [  ]
 endGame = false
@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 flavorText = "Accept"
-effectText = ""
+effectText = "Required: 1 textbook, 5 summon, 5 alchemy,  5 artifice,  5 sorcery knowledges"
 costText = ""
 cost = SubResource( 5 )
 effectData = SubResource( 1 )
@@ -72,8 +72,8 @@ removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [  ]
 numResources = [  ]
-removeResources = [ "artifice" ]
-numRemoveResources = [ 1 ]
+removeResources = [  ]
+numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 createRandomNum = false
@@ -93,7 +93,7 @@ effectData = SubResource( 3 )
 [resource]
 script = ExtResource( 4 )
 tags = [ "scenario", "expedition" ]
-eventText = "You must complete a mini expedition to the mysterious Ancient Forest and complete a small task of finding a magical artifact. "
+eventText = "You are invited to an expedition to capture a powerful water golem familiar for scientific purposes. "
 face = ExtResource( 1 )
 infinite = false
 startInDeck = true

@@ -6,6 +6,48 @@
 [ext_resource path="res://EffectData.gd" type="Script" id=4]
 [ext_resource path="res://Cost.gd" type="Script" id=5]
 
+[sub_resource type="Resource" id=1]
+script = ExtResource( 5 )
+alchemy = 0
+artifice = 0
+sorcery = 0
+summon = 0
+textbook = 0
+coin = 0
+mana = 0
+fatigue = 0
+writeups = 0
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 4 )
+addId = [  ]
+addTag = [  ]
+removeId = [  ]
+removeTag = [  ]
+addHandId = [  ]
+addHandTag = [  ]
+removeHandId = [  ]
+removeHandTag = [  ]
+addResources = [ "fatigue" ]
+numResources = [ 2 ]
+removeResources = [  ]
+numRemoveResources = [  ]
+numGuaranteeCardDraws = [ 1 ]
+guaranteeCardID = [ "scenario3event2" ]
+createRandomNum = false
+rangeForRandom = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+flavorText = "Cast a binding spell "
+effectText = "+2 fatigue"
+costText = ""
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
+
 [sub_resource type="Resource" id=5]
 script = ExtResource( 5 )
 alchemy = 0
@@ -18,83 +60,41 @@ mana = 0
 fatigue = 0
 writeups = 0
 
-[sub_resource type="Resource" id=1]
+[sub_resource type="Resource" id=6]
 script = ExtResource( 4 )
 addId = [  ]
-addTag = [ "rose" ]
-removeId = [ "witchShop0" ]
+addTag = [  ]
+removeId = [  ]
 removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "fatigue" ]
+numResources = [ 2 ]
 removeResources = [  ]
 numRemoveResources = [  ]
-numGuaranteeCardDraws = [ 1 ]
-guaranteeCardID = [ "roseEvent3Choice1" ]
+numGuaranteeCardDraws = [ 0 ]
+guaranteeCardID = [ "scenario3event3" ]
 createRandomNum = false
 rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
-
-[sub_resource type="Resource" id=2]
-script = ExtResource( 2 )
-flavorText = "Accept responsibility"
-effectText = "Tell Rose"
-costText = ""
-cost = SubResource( 5 )
-effectData = SubResource( 1 )
-
-[sub_resource type="Resource" id=6]
-script = ExtResource( 5 )
-alchemy = 0
-artifice = 0
-sorcery = 0
-summon = 0
-textbook = 0
-coin = 0
-mana = 0
-fatigue = 0
-writeups = 0
 
 [sub_resource type="Resource" id=4]
-script = ExtResource( 4 )
-addId = [  ]
-addTag = [ "rose" ]
-removeId = [ "witchShop0" ]
-removeTag = [  ]
-addHandId = [  ]
-addHandTag = [  ]
-removeHandId = [  ]
-removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
-removeResources = [  ]
-numRemoveResources = [  ]
-numGuaranteeCardDraws = [ 1 ]
-guaranteeCardID = [ "roseEvent3Choice2" ]
-createRandomNum = false
-rangeForRandom = [  ]
-endGame = false
-typeOfEnding = ""
-numDiscardCard = 0
-
-[sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
-flavorText = "You try to glue the artiface back together."
-effectText = "Rose doesn't have to know about this..."
+flavorText = "Summon a familiar to help tame the water golem"
+effectText = "+2 fatigue"
 costText = ""
-cost = SubResource( 6 )
-effectData = SubResource( 4 )
+cost = SubResource( 5 )
+effectData = SubResource( 6 )
 
 [resource]
 script = ExtResource( 1 )
-tags = [ "rose" ]
-eventText = "While trying to find a magic wand for a customer, you accidentally step onto an artifice that is a rune which cracks to pieces."
+tags = [  ]
+eventText = "After much walking, your team encounters the water golem sleeping. Now is the perfect opportunity to…"
 face = ExtResource( 3 )
 infinite = false
 startInDeck = false
-options = [ SubResource( 2 ), SubResource( 3 ) ]
+options = [ SubResource( 3 ), SubResource( 4 ) ]

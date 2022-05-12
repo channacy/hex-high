@@ -43,8 +43,8 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=3]
 script = ExtResource( 5 )
 flavorText = "Get more reasources"
-effectText = ""
-costText = ""
+effectText = "+1 alchemy"
+costText = "-1 fatigue"
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
 
@@ -70,7 +70,7 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [ "coin" ]
-addResources = [ "1" ]
+addResources = [ "5" ]
 numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
@@ -85,7 +85,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=6]
 script = ExtResource( 5 )
 flavorText = "Don't collect"
-effectText = ""
+effectText = "-5 coins"
 costText = ""
 cost = SubResource( 4 )
 effectData = SubResource( 5 )

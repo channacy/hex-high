@@ -53,5 +53,4 @@ __meta__ = {
 
 [node name="Rotate" type="Tween" parent="."]
 
-[connection signal="area_entered" from="." to="." method="_on_EventCard_area_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_EventCard_mouse_exited"]

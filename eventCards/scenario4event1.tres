@@ -29,7 +29,7 @@ addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [ "fatigue" ]
-numResources = [ 10 ]
+numResources = [ 5 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
 flavorText = "Stay bedridden.."
-effectText = ""
+effectText = "+5 fatigue"
 costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )

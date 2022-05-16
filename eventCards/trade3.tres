@@ -44,7 +44,7 @@ numDiscardCard = 0
 script = ExtResource( 5 )
 flavorText = "Buy something"
 effectText = "Receive... something..."
-costText = "2 coins"
+costText = "Cost: 2 coins"
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
 

@@ -44,7 +44,7 @@ numDiscardCard = 0
 script = ExtResource( 2 )
 flavorText = "Pass the Exam!"
 effectText = "Win the game"
-costText = "40 marks in all subjects"
+costText = "Required: 40 alchemy, 40 summon, 40 atifice, 40 sorcery"
 cost = SubResource( 7 )
 effectData = SubResource( 8 )
 

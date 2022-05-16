@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
 flavorText = "I'm tired..."
-effectText = "+1 writeup, -1 fatigue, -2 sorcery marks"
+effectText = "+1 writeup, -1 fatigue, -2 sorcery "
 costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
@@ -85,7 +85,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=6]
 script = ExtResource( 3 )
 flavorText = "I can make it if I run!"
-effectText = "+1 fatigue, +1 sorcery marks"
+effectText = "+1 fatigue, +1 sorcery"
 costText = ""
 cost = SubResource( 4 )
 effectData = SubResource( 5 )

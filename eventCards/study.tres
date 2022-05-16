@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
 flavorText = "Review Notes"
-effectText = "+1 fatigue, +2 marks in all subjects"
+effectText = "+1 fatigue, +2 summon, +2 sorcery, +2 alchemy, +2 artifice"
 costText = ""
 cost = SubResource( 7 )
 effectData = SubResource( 1 )
@@ -85,7 +85,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )
 flavorText = "Study with textbooks"
-effectText = "+1 fatigue, +5 marks in all subjects"
+effectText = "+1 fatigue, +5 sorcery, +5 summon, +5 artifice, +5 alchemy"
 costText = "4 textbooks (not consumed)"
 cost = SubResource( 8 )
 effectData = SubResource( 3 )

@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
 flavorText = "Tame it with candy"
-effectText = "+4 summoning marks"
+effectText = "+4 summon"
 costText = "-15 gold"
 cost = SubResource( 1 )
 effectData = SubResource( 2 )

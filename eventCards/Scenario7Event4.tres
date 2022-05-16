@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=3]
 script = ExtResource( 5 )
 flavorText = "Go Home"
-effectText = "-5 summoning knowledge"
+effectText = "-5 summon"
 costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )

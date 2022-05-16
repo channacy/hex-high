@@ -43,8 +43,8 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
 flavorText = "Attend the 1st Magic Theory Club Meeting!"
-effectText = "Gain 10 Sorcery"
-costText = "Gain 1 Fatigue"
+effectText = "+ 10 sorcery"
+costText = "Required: 1 fatigue"
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
 

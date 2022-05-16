@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
 flavorText = "Accept her wisdom "
-effectText = "+ 4 alchemy marks"
+effectText = "+ 4 alchemy "
 costText = ""
 cost = SubResource( 3 )
 effectData = SubResource( 1 )

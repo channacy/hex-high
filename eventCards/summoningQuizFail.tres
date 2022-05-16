@@ -34,18 +34,22 @@ removeResources = [ "summon" ]
 numRemoveResources = [ 3 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
 flavorText = "Ah..."
-effectText = "Lose 3 summoning marks."
+effectText = "- 3 summon"
 costText = ""
 cost = SubResource( 7 )
 effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 4 )
-id = "summoningQuizFail"
 tags = [  ]
 eventText = "Summoning quiz results"
 face = ExtResource( 5 )

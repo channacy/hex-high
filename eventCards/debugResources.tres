@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
 flavorText = "Study"
-effectText = "Grants 10 marks in all subjects."
+effectText = "+10 alchemy, +10 summon, +10 atifice, +10 sorcery"
 costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
@@ -85,7 +85,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=6]
 script = ExtResource( 3 )
 flavorText = "Unstudy"
-effectText = "Removes 10 marks in all subjects."
+effectText = "-10 alchemy, -10 summon, -10 atifice, -10 sorcery"
 costText = "10 marks in each subject"
 cost = SubResource( 4 )
 effectData = SubResource( 5 )
@@ -127,7 +127,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=9]
 script = ExtResource( 3 )
 flavorText = "Bad resources"
-effectText = "Grants 5 fatigue and 5 writeups."
+effectText = "+5 fatigue, +5 writeups"
 costText = ""
 cost = SubResource( 7 )
 effectData = SubResource( 8 )
@@ -168,7 +168,7 @@ numDiscardCard = 0
 
 [sub_resource type="Resource" id=12]
 script = ExtResource( 3 )
-flavorText = "Be rich"
+flavorText = "Become rich"
 effectText = "+999 coins, +10 textbooks"
 costText = ""
 cost = SubResource( 10 )

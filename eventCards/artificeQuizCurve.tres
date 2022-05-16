@@ -34,23 +34,25 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
 flavorText = "Nice!"
-effectText = "Gain 2 artifice marks."
+effectText = "+ 2 artifice"
 costText = ""
 cost = SubResource( 7 )
 effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 4 )
-id = "artificeQuizCurve"
 tags = [  ]
 eventText = "Artifice quiz curve"
 face = ExtResource( 5 )
 infinite = false
 startInDeck = false
 options = [ SubResource( 2 ) ]
-endGame = false
-typeOfEnding = ""

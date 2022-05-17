@@ -28,7 +28,7 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [ "sorcery", "fatigue" ]
+addResources = [ "artifice", "fatigue" ]
 numResources = [ 20, 1 ]
 removeResources = [  ]
 numRemoveResources = [  ]
@@ -42,9 +42,9 @@ numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
-flavorText = "Attend the 4th Magic Theory Club Meeting!"
-effectText = "+ 20 Sorcery"
-costText = "+ 1 Fatigue"
+flavorText = "Attend the 4th Magic Engineering Club Meeting!"
+effectText = "+ 20 artifice"
+costText = "+ 1 fatigue"
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
 
@@ -75,7 +75,7 @@ numResources = [  ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [ -999 ]
-guaranteeCardID = [ "magicTheoryClub4" ]
+guaranteeCardID = [ "magicEngineeringClub4" ]
 createRandomNum = true
 rangeForRandom = [ 5, 10 ]
 endGame = false
@@ -93,7 +93,7 @@ effectData = SubResource( 5 )
 [resource]
 script = ExtResource( 5 )
 tags = [  ]
-eventText = "The 4th Magic Theory Club meeting is today!"
+eventText = "The 4th Magic Engineering Club meeting is today!"
 face = ExtResource( 1 )
 infinite = false
 startInDeck = false

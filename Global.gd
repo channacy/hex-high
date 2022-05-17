@@ -41,6 +41,7 @@ func _ready():
 					random.randomize()
 					if random.randi_range(0, 1) % 2 == 0:
 						x.startInDeck = true
+						print(x.id)
 			
 			# if card has startInDeck set to true, add to the starting deck
 			files[str(x.id)] = x

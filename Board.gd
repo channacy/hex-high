@@ -5,7 +5,8 @@ var eventCardNode = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print_tree()
+	#print_tree()
+	pass
 
 # Creates an event card node and initializes it
 func loadEvent(eventCardId, faceUp, fromDeck):
@@ -47,7 +48,6 @@ func execute(effectData):
 	#Create random number
 	if effectData.createRandomNum:
 		randomNumber = randi() % (effectData.rangeForRandom[1] - effectData.rangeForRandom[0]) + effectData.rangeForRandom[1]
-		print("Random Number is ... ", randomNumber)
 	
 	# Removes cards by id from the deck
 	if len(effectData.removeId) > 0:
@@ -140,10 +140,8 @@ func execute(effectData):
 	
 	#Add guarenteed card to deck (WITH RANDOMNESS IMPLEMENTED)
 	if len(effectData.numGuaranteeCardDraws) > 0:
-		print("EffectData for Guarantee Card Draw")
 		for i in range(len(effectData.numGuaranteeCardDraws)):
 			if effectData.numGuaranteeCardDraws[i] == -999:
-				print("Used random number to guarantee a card")
 				deck.addGuaranteed(randomNumber, effectData.guaranteeCardID[i])
 			else:
 				deck.addGuaranteed(effectData.numGuaranteeCardDraws[i], effectData.guaranteeCardID[i])
@@ -160,7 +158,7 @@ func execute(effectData):
 	# Updates the deck for resource conditionals
 	get_node("../InventoryNode/Inventory").updateResourceConditionals()
 	
-	if effectData.numDiscardCard > 0:
+	if effectData.numDiscardCard != null:
 		deck.counter = deck.counter + effectData.numDiscardCard
 # Returns true if there is an active event card on the board
 func hasEventCard():

@@ -80,7 +80,7 @@ createRandomNum = false
 rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
-numDiscardCard = 0
+numDiscardCard = -1
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )

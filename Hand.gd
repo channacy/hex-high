@@ -39,8 +39,6 @@ func removeCard(node):
 func updateHand():
 	
 	var num = len(eventCardNodes)
-	for card in eventCardNodes:
-		print(card)
 	
 	for card in num:
 		# Fan the cards out in 20 degree intervals

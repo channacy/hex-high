@@ -58,12 +58,10 @@ func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed and faceUp:
 		if is_instance_valid(optionData.cost):
 			if get_node("../").checkCost(optionData.cost) == true:
-				print("can use")
 				get_node("../").execute(optionData.effectData)
 			else:
-				print("can't use")
+				print("can't use, not enough resources...")
 		else:
-			print("test")
 			get_node("../").execute(optionData.effectData)
 	else:
 		return

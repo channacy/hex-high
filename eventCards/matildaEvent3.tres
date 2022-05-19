@@ -21,7 +21,7 @@ writeups = 0
 [sub_resource type="Resource" id=1]
 script = ExtResource( 1 )
 addId = [  ]
-addTag = [ "matilda" ]
+addTag = [  ]
 removeId = [ "potionShop0" ]
 removeTag = [  ]
 addHandId = [  ]
@@ -43,8 +43,8 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
 flavorText = "Work"
-effectText = "+10 coins, +1 fatigue"
-costText = " "
+effectText = "+10 coins"
+costText = " +1 fatigue"
 cost = SubResource( 5 )
 effectData = SubResource( 1 )
 
@@ -72,8 +72,8 @@ removeHandId = [ "prop2" ]
 removeHandTag = [ "matilda" ]
 addResources = [  ]
 numResources = [  ]
-removeResources = [ "coin" ]
-numRemoveResources = [ 10 ]
+removeResources = [  ]
+numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 createRandomNum = false

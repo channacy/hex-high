@@ -57,7 +57,7 @@ summon = 0
 textbook = 0
 coin = 0
 mana = 0
-fatigue = 10
+fatigue = 0
 writeups = 0
 
 [sub_resource type="Resource" id=4]

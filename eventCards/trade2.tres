@@ -127,7 +127,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=7]
 script = ExtResource( 3 )
 flavorText = "Watch a witch's familiar summoning demonstration "
-effectText = "+4 summoning knowledge"
+effectText = "+4 summon"
 costText = "Cost: 15 coins"
 cost = SubResource( 8 )
 effectData = SubResource( 9 )

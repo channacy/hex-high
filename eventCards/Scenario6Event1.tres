@@ -44,7 +44,7 @@ numDiscardCard = 0
 script = ExtResource( 4 )
 flavorText = "Bid 20 coins!"
 effectText = "- 20 coins"
-costText = ""
+costText = "Cost: 20 coins"
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
 
@@ -85,8 +85,8 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=6]
 script = ExtResource( 4 )
 flavorText = "Bid 30 coins! "
-effectText = ""
-costText = ""
+effectText = "-30 coins"
+costText = "Cost: 30 coins"
 cost = SubResource( 4 )
 effectData = SubResource( 5 )
 

@@ -85,7 +85,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
 flavorText = "Work overtime"
-effectText = "+1 fatigue, +5 coin "
+effectText = "+1 fatigue, +5 coins"
 costText = ""
 cost = SubResource( 6 )
 effectData = SubResource( 3 )

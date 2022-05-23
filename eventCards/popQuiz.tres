@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
 flavorText = "Buy notes from someone"
-effectText = "+1 alchemy mark"
+effectText = "+1 alchemy "
 costText = "-6 gold"
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
@@ -85,7 +85,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=6]
 script = ExtResource( 3 )
 flavorText = "Skip class"
-effectText = "+1 writeup, -2 alchemy marks"
+effectText = "+1 writeup, -2 alchemy "
 costText = ""
 cost = SubResource( 4 )
 effectData = SubResource( 5 )
@@ -127,7 +127,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=9]
 script = ExtResource( 3 )
 flavorText = "Take it blind"
-effectText = "-5 alchemy marks"
+effectText = "-5 alchemy "
 costText = ""
 cost = SubResource( 7 )
 effectData = SubResource( 8 )

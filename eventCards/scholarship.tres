@@ -29,7 +29,7 @@ addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
 addResources = [ "coin" ]
-numResources = [ 50 ]
+numResources = [ 25 ]
 removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
 flavorText = "Accept the offer!"
-effectText = "+50 coins"
+effectText = "+25 coins"
 costText = ""
 cost = SubResource( 3 )
 effectData = SubResource( 1 )

@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
 flavorText = "Grades are more important"
-effectText = "+3 marks in all subjects"
+effectText = "+3 alchemy, +3 sorcery, +3 summon, +3 artifice"
 costText = ""
 cost = SubResource( 6 )
 effectData = SubResource( 2 )
@@ -57,7 +57,7 @@ summon = 0
 textbook = 0
 coin = 0
 mana = 0
-fatigue = 10
+fatigue = 0
 writeups = 0
 
 [sub_resource type="Resource" id=4]

@@ -32,18 +32,24 @@ addResources = [ "artifice" ]
 numResources = [ 4 ]
 removeResources = [  ]
 numRemoveResources = [  ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 4 )
 flavorText = "Thank you!"
-effectText = "Gain 4 artifice marks."
+effectText = "+ 4 artifice "
 costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
 
 [resource]
 script = ExtResource( 1 )
-id = "artificeProfessorAdvice"
 tags = [  ]
 eventText = "Headmage Oswald's Advice"
 face = ExtResource( 2 )

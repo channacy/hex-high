@@ -41,13 +41,13 @@ func _ready():
 					random.randomize()
 					if random.randi_range(0, 1) % 2 == 0:
 						x.startInDeck = true
+						print(x.id, " club is available this game.")
 			
 			# if card has startInDeck set to true, add to the starting deck
 			files[str(x.id)] = x
 			if x.startInDeck:
 				startingDeck.append(str(x.id))
 				
-	print(startingDeck);
 
 	dir.open("res://items/")
 	dir.list_dir_begin()

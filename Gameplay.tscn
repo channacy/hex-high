@@ -4,7 +4,7 @@
 [ext_resource path="res://sprites/eventBack.jpg" type="Texture" id=2]
 [ext_resource path="res://Deck.gd" type="Script" id=3]
 [ext_resource path="res://Background.tscn" type="PackedScene" id=4]
-[ext_resource path="res://sprites/desk.png" type="Texture" id=5]
+[ext_resource path="res://sprites/fall_desk.png" type="Texture" id=5]
 [ext_resource path="res://Inventory.gd" type="Script" id=6]
 [ext_resource path="res://Hand.gd" type="Script" id=7]
 

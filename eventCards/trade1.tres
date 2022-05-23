@@ -86,7 +86,7 @@ numDiscardCard = 0
 script = ExtResource( 5 )
 flavorText = "Sell your old textbook"
 effectText = "-1 textbook, + 20 coins"
-costText = "Required: 1 textbook"
+costText = "Cost: 1 textbook"
 cost = SubResource( 7 )
 effectData = SubResource( 8 )
 
@@ -126,7 +126,7 @@ numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 5 )
-flavorText = "I am too poor..."
+flavorText = "I am too poor...maybe next time"
 effectText = ""
 costText = ""
 cost = SubResource( 6 )

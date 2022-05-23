@@ -34,8 +34,11 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [ 3 ]
 guaranteeCardID = [ "alchemyQuizFailCurve" ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
@@ -73,8 +76,11 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [ 3 ]
 guaranteeCardID = [ "alchemyQuizPass" ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 3 )
@@ -112,8 +118,11 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [ 3 ]
 guaranteeCardID = [ "alchemyQuizFail" ]
+createRandomNum = false
+rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 3 )
@@ -125,7 +134,6 @@ effectData = SubResource( 5 )
 
 [resource]
 script = ExtResource( 4 )
-id = "alchemyQuiz0"
 tags = [ "quiz" ]
 eventText = "QUIZ: What is the first ingredient in an energy potion?"
 face = ExtResource( 5 )

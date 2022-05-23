@@ -42,7 +42,7 @@ numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
-flavorText = "Gain all 40 knowledge "
+flavorText = "+40 alchemy, +40 summon, +40 atifice, +40 sorcery"
 effectText = ""
 costText = ""
 cost = SubResource( 5 )
@@ -80,7 +80,7 @@ createRandomNum = false
 rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
-numDiscardCard = 0
+numDiscardCard = -1
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 4 )

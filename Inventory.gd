@@ -9,7 +9,6 @@ export(Resource) var itemData = null
 func _ready():
 	
 	for item in Global.items:
-		print(item)
 		inventoryItems[item] = 0
 		itemImages[item] = Global.items[item]
 	updateInventoryItems()
@@ -71,43 +70,27 @@ func updateResourceConditionals():
 			deck.cards.erase("writeupsPenalty")
 			
 	#add scholarship
-	if inventoryItems["alchemy"] >= 25 and inventoryItems["summon"] >= 25 and inventoryItems["sorcery"] >= 25 and inventoryItems["artifice"] >= 25:
+	if inventoryItems["alchemy"] >= 25 and inventoryItems["summon"] >= 25 and inventoryItems["sorcery"] >= 25 and inventoryItems["artifice"] >= 25 and inventoryItems["coin"] < 25:
 		deck.cards.append("scholarship")
 	#remove scholarship
-	if inventoryItems["alchemy"] < 25 and inventoryItems["summon"] < 25 and inventoryItems["sorcery"] < 25 and inventoryItems["artifice"] < 25:
+	if inventoryItems["alchemy"] < 25 and inventoryItems["summon"] < 25 and inventoryItems["sorcery"] < 25 and inventoryItems["artifice"] < 25 and inventoryItems["coin"] >= 50:
 		while deck.cards.find("scholarship") != -1:
 			deck.cards.erase("scholarship")
 			
+			
 	#add social
-	if inventoryItems["fatigue"] >= 10:
+	if inventoryItems["fatigue"] >= 6:
 		deck.cards.append("social")
 	#remove social
-	if inventoryItems["fatigue"] < 10:
+	if inventoryItems["fatigue"] < 6:
 		while deck.cards.find("social") != -1:
 			deck.cards.erase("social")
 			
-	#add trade1
-	if inventoryItems["coin"] >= 10:
-		deck.cards.append("trade1")
-	#remove trade1
-	if inventoryItems["coin"] < 10:
-		while deck.cards.find('trade1') != -1:
-			deck.cards.erase('trade1')
-		
-	#add trade2
-	if inventoryItems["coin"] >= 15:
-		deck.cards.append("trade2")
-	#remove trade2
-	if inventoryItems["coin"] < 15:
-		while deck.cards.find('trade2') != -1:
-			deck.cards.erase('trade2')
-		
-	#add trade3
-	if inventoryItems["coin"] >= 2:
-		deck.cards.append("trade3")
-	#remove trade3
-	if inventoryItems["coin"] < 2:
-		while deck.cards.find('trade3') != -1:
-			deck.cards.erase('trade3')
-		
+	#add fallAsleep
+	if inventoryItems["fatigue"] >= 9:
+		deck.cards.append("fallAsleep")
+	#remove fallAsleep
+	if inventoryItems["fatigue"] < 9:
+		while deck.cards.find("fallAsleep") != -1:
+			deck.cards.erase("fallAsleep")
 	

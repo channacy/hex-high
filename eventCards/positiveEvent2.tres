@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=3]
 script = ExtResource( 4 )
 flavorText = "Accept"
-effectText = "1 textbook, 1 mana, and 1 socrcery"
+effectText = "+ 1 textbook, + 1 mana, +1 socrcery"
 costText = ""
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
@@ -85,7 +85,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=6]
 script = ExtResource( 4 )
 flavorText = "Decline"
-effectText = "-1 teextook, -1 mana, and -1socery"
+effectText = "-1 teextook, -1 mana, and -1 sorcery"
 costText = ""
 cost = SubResource( 4 )
 effectData = SubResource( 5 )

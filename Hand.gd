@@ -9,14 +9,18 @@ var highlighted = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#addCard("alchemyClassEvent1")
-	addCard("test")
 	addCard("potionShop0")
 	addCard("debug")
 	addCard("test")
 	addCard("debug")
 	addCard("popQuiz")
+<<<<<<< HEAD
 	addCard("scenario3")
 	addCard("studyCard")
+=======
+	addCard("potionShop0")
+	addCard("sleep")
+>>>>>>> ef61b42df4b19349df751424185165ecbf92ed1c
 	
 	pass # Replace with function body.
 
@@ -40,8 +44,6 @@ func removeCard(node):
 func updateHand():
 	
 	var num = len(eventCardNodes)
-	for card in eventCardNodes:
-		print(card)
 	
 	for card in num:
 		# Fan the cards out in 20 degree intervals

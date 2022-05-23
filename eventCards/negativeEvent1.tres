@@ -43,7 +43,7 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=2]
 script = ExtResource( 4 )
 flavorText = "You dropped it"
-effectText = "-1 mark in all subjects"
+effectText = "-1 sorcery, -1 summon, -1 alchemy, -1 artifice"
 costText = ""
 cost = SubResource( 3 )
 effectData = SubResource( 1 )

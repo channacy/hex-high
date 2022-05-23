@@ -34,18 +34,22 @@ removeResources = [  ]
 numRemoveResources = [  ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
+createRandomNum = false
+rangeForRandom = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
 flavorText = "Nice!"
-effectText = "Gain 2 alchemy marks."
+effectText = "+2 alchemy"
 costText = ""
 cost = SubResource( 7 )
 effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 4 )
-id = "alchemyQuizCurve"
 tags = [  ]
 eventText = "Alchemy quiz curve"
 face = ExtResource( 5 )

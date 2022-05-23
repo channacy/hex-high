@@ -34,18 +34,22 @@ removeResources = [ "sorcery" ]
 numRemoveResources = [ 3 ]
 numGuaranteeCardDraws = [ 2 ]
 guaranteeCardID = [ "sorceryQuizCurve" ]
+createRandomNum = false
+rangeForRandom = [  ]
+endGame = false
+typeOfEnding = ""
+numDiscardCard = 0
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 3 )
 flavorText = "Ah..."
-effectText = "Lose 3 sorcery marks."
+effectText = "-3 sorcery"
 costText = ""
 cost = SubResource( 7 )
 effectData = SubResource( 1 )
 
 [resource]
 script = ExtResource( 4 )
-id = "sorceryQuizFailCurve"
 tags = [  ]
 eventText = "Sorcery quiz results"
 face = ExtResource( 5 )

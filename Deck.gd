@@ -19,8 +19,10 @@ func _ready():
 	# Random Number Generator
 	randomNum.randomize()
 	board = get_node("../../Board")
-	# addGuaranteed(1, "popQuiz")
-
+	addGuaranteed(1, "devCardResources")
+	addGuaranteed(1, "finalExamNotification")
+	addGuaranteed(1, "devCardResources")
+	addGuaranteed(1, "devCardResources")
 
 
 # If left click the deck sprite, runs action.

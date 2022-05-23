@@ -1,25 +1,25 @@
 [gd_resource type="Resource" load_steps=12 format=2]
 
 [ext_resource path="res://EventCardData.gd" type="Script" id=1]
-[ext_resource path="res://EffectData.gd" type="Script" id=2]
+[ext_resource path="res://Cost.gd" type="Script" id=2]
 [ext_resource path="res://OptionCardData.gd" type="Script" id=3]
-[ext_resource path="res://sprites/eventFront.png" type="Texture" id=4]
-[ext_resource path="res://Cost.gd" type="Script" id=5]
+[ext_resource path="res://EffectData.gd" type="Script" id=4]
+[ext_resource path="res://sprites/eventFront.png" type="Texture" id=5]
 
-[sub_resource type="Resource" id=5]
-script = ExtResource( 5 )
-alchemy = 0
-artifice = 0
-sorcery = 0
-summon = 0
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+alchemy = 2
+artifice = 2
+sorcery = 2
+summon = 2
 textbook = 0
 coin = 0
 mana = 0
 fatigue = 0
 writeups = 0
 
-[sub_resource type="Resource" id=1]
-script = ExtResource( 2 )
+[sub_resource type="Resource" id=2]
+script = ExtResource( 4 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
@@ -28,28 +28,28 @@ addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
 removeHandTag = [  ]
-addResources = [  ]
-numResources = [  ]
+addResources = [ "textbook" ]
+numResources = [ 0 ]
 removeResources = [  ]
 numRemoveResources = [  ]
-numGuaranteeCardDraws = [ 1 ]
-guaranteeCardID = [ "Scenario5Event1" ]
+numGuaranteeCardDraws = [  ]
+guaranteeCardID = [  ]
 createRandomNum = false
 rangeForRandom = [  ]
 endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
 
-[sub_resource type="Resource" id=2]
+[sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
-flavorText = "Join the competition!"
-effectText = ""
+flavorText = "study!"
+effectText = "+1 textbook"
 costText = ""
-cost = SubResource( 5 )
-effectData = SubResource( 1 )
+cost = SubResource( 1 )
+effectData = SubResource( 2 )
 
-[sub_resource type="Resource" id=6]
-script = ExtResource( 5 )
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
 alchemy = 0
 artifice = 0
 sorcery = 0
@@ -60,8 +60,8 @@ mana = 0
 fatigue = 0
 writeups = 0
 
-[sub_resource type="Resource" id=3]
-script = ExtResource( 2 )
+[sub_resource type="Resource" id=5]
+script = ExtResource( 4 )
 addId = [  ]
 addTag = [  ]
 removeId = [  ]
@@ -82,19 +82,20 @@ endGame = false
 typeOfEnding = ""
 numDiscardCard = 0
 
-[sub_resource type="Resource" id=4]
+[sub_resource type="Resource" id=6]
 script = ExtResource( 3 )
-flavorText = "Olympiad makes me nervous "
+flavorText = "Don't study"
 effectText = ""
 costText = ""
-cost = SubResource( 6 )
-effectData = SubResource( 3 )
+cost = SubResource( 4 )
+effectData = SubResource( 5 )
 
 [resource]
+resource_local_to_scene = true
 script = ExtResource( 1 )
-tags = [ "scenario", "olympiad " ]
-eventText = "A rival witch academia has challenged Hex High to a Magic Olympiad!"
-face = ExtResource( 4 )
-infinite = false
+tags = [  ]
+eventText = "Study and exchange for textbook."
+face = ExtResource( 5 )
+infinite = true
 startInDeck = true
-options = [ SubResource( 2 ), SubResource( 4 ) ]
+options = [ SubResource( 3 ), SubResource( 6 ) ]

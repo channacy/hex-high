@@ -69,11 +69,11 @@ removeTag = [  ]
 addHandId = [  ]
 addHandTag = [  ]
 removeHandId = [  ]
-removeHandTag = [ "coin" ]
-addResources = [ "5" ]
-numResources = [  ]
-removeResources = [  ]
-numRemoveResources = [  ]
+removeHandTag = [  ]
+addResources = [ "fatigue" ]
+numResources = [ 1 ]
+removeResources = [ "alchemy" ]
+numRemoveResources = [ 1 ]
 numGuaranteeCardDraws = [  ]
 guaranteeCardID = [  ]
 createRandomNum = false
@@ -85,8 +85,8 @@ numDiscardCard = 0
 [sub_resource type="Resource" id=6]
 script = ExtResource( 5 )
 flavorText = "Don't collect"
-effectText = "-5 coins"
-costText = ""
+effectText = "- 1 alchemy"
+costText = "+1 fatigue"
 cost = SubResource( 4 )
 effectData = SubResource( 5 )
 

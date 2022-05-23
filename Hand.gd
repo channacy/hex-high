@@ -16,6 +16,7 @@ func _ready():
 	addCard("debug")
 	addCard("popQuiz")
 	addCard("scenario3")
+	addCard("studyCard")
 	
 	pass # Replace with function body.
 

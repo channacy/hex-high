@@ -14,13 +14,10 @@ func _ready():
 	addCard("test")
 	addCard("debug")
 	addCard("popQuiz")
-<<<<<<< HEAD
 	addCard("scenario3")
 	addCard("studyCard")
-=======
 	addCard("potionShop0")
 	addCard("sleep")
->>>>>>> ef61b42df4b19349df751424185165ecbf92ed1c
 	
 	pass # Replace with function body.
 

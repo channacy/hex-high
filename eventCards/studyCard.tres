@@ -44,7 +44,7 @@ numDiscardCard = 0
 script = ExtResource( 3 )
 flavorText = "study!"
 effectText = "+1 textbook"
-costText = ""
+costText = "Cost: 2 Alchemy , 2 Artifice, 2 Sorcery"
 cost = SubResource( 1 )
 effectData = SubResource( 2 )
 
